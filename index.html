@@ -1,67 +1,182 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="hanji-forest">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Korean Beauty</title>
-  <style>
-    :root {
-      --bg: #f7f3ef;
-      --ink: #2b2118;
-      --accent: #c45c6a;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
-      font-family: Georgia, "Times New Roman", serif;
-      background: var(--bg);
-      color: var(--ink);
-    }
-
-    main {
-      max-width: 36rem;
-      padding: 2rem;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: clamp(2rem, 5vw, 3.25rem);
-      font-weight: 400;
-      letter-spacing: 0.04em;
-    }
-
-    p {
-      margin-top: 1rem;
-      font-family: system-ui, sans-serif;
-      font-size: 1.05rem;
-      line-height: 1.6;
-      color: #5a4c42;
-    }
-
-    .accent {
-      display: inline-block;
-      margin-top: 1.5rem;
-      color: var(--accent);
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      font-family: system-ui, sans-serif;
-      font-size: 0.75rem;
-    }
-  </style>
+  <title>Korean Signature Aesthetics | Greater Vancouver</title>
+  <meta name="description" content="Premium Korean medical aesthetics for women across Greater Vancouver. Korean expertise. Confident results.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    document.documentElement.dataset.theme = localStorage.getItem("ksa-theme") || "hanji-forest";
+  </script>
 </head>
 <body>
-  <main>
-    <h1>Korean Beauty</h1>
-    <p>A simple starting page for skincare, glow, and K-beauty inspiration.</p>
-    <span class="accent">Coming soon</span>
-  </main>
+  <div class="site-chrome">
+    <div class="meta-nav">
+      <div class="wrap">
+        <span>Greater Vancouver · Coquitlam and the Tri-Cities</span>
+        <a href="#consultation">Book a consultation</a>
+      </div>
+    </div>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="wordmark" href="index.html">Korean Signature Aesthetics</a>
+        <nav class="primary-nav" aria-label="Primary">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="#injectables">Injectables</a>
+          <a href="#lasers">Lasers and Light</a>
+          <a href="#skincare">Medical Skincare</a>
+          <a href="#rejuvenation">Skin Rejuvenation</a>
+          <a href="#programs">Signature Programs</a>
+          <a href="brand-guideline.html">Brand Guideline</a>
+        </nav>
+      </div>
+    </header>
+  </div>
+
+  <section class="home-hero">
+    <div class="wrap">
+      <p class="eyebrow">Premium Korean medical aesthetics</p>
+      <h1>Korean Expertise.<br>Confident Results.</h1>
+      <p class="lede">Advanced Korean medical aesthetics for women across Greater Vancouver, delivered with professional experience, personalized care and realistic treatment expectations.</p>
+      <a class="btn" href="#consultation">Book a consultation</a>
+      <a class="btn btn-ghost" href="#concerns">Explore concerns</a>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="wrap intro-grid">
+      <div>
+        <div class="line"></div>
+        <h2>Medical confidence with Korean refinement.</h2>
+      </div>
+      <div>
+        <p>Korean Signature Aesthetics is a premium medical-aesthetics clinic serving women who appreciate Korean beauty and culture. Led by extensive South Korean cosmetic experience, the clinic combines advanced treatments, medical credibility and personalized care.</p>
+        <p>Every client receives a professional assessment, honest guidance and a plan focused on visible, realistic improvement.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-muted" id="injectables">
+    <div class="wrap">
+      <div class="line"></div>
+      <p class="kicker">Treatments</p>
+      <h2>Care shaped around your concern</h2>
+      <p>Communication stays focused on injectables, advanced lasers, medical skincare and facial aesthetic treatments.</p>
+      <div class="card-grid">
+        <article class="card" id="injectables-card">
+          <h3>Injectables</h3>
+          <p>Botox and filler treatments guided by extensive clinical history, careful assessment and honest expectations.</p>
+        </article>
+        <article class="card" id="lasers">
+          <h3>Lasers and Light</h3>
+          <p>Advanced laser and light protocols for pigmentation, texture and skin quality, explained in clear English.</p>
+        </article>
+        <article class="card" id="skincare">
+          <h3>Medical Skincare</h3>
+          <p>Clinical skincare plans that support in-clinic treatment and help maintain visible improvement over time.</p>
+        </article>
+        <article class="card" id="rejuvenation">
+          <h3>Skin Rejuvenation</h3>
+          <p>Refinement-focused care for aging, pores, scarring and overall skin quality, with a measured path forward.</p>
+        </article>
+        <article class="card" id="programs">
+          <h3>Signature Programs</h3>
+          <p>Combined treatment plans around a specific concern, such as Signature Pigmentation or Korean Skin Refinement.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="concerns">
+    <div class="wrap">
+      <div class="line"></div>
+      <h2>Start with the concern</h2>
+      <p>Lead with what you want to improve, then receive a professional recommendation—not a one-size treatment list.</p>
+      <div class="concern-grid">
+        <article class="concern"><h3>Pigmentation</h3><p>Uneven tone, sun spots and stubborn discoloration.</p></article>
+        <article class="concern"><h3>Aging and Wrinkles</h3><p>Lines, movement and changes in skin firmness.</p></article>
+        <article class="concern"><h3>Volume Loss</h3><p>Facial volume and contour that have softened over time.</p></article>
+        <article class="concern"><h3>Acne and Scarring</h3><p>Texture, marks and scarring after breakouts.</p></article>
+        <article class="concern"><h3>Texture and Pores</h3><p>Roughness, enlarged pores and uneven skin quality.</p></article>
+        <article class="concern"><h3>Facial Contouring</h3><p>Refinement of facial shape with a considered, clinical approach.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-muted" id="expertise">
+    <div class="wrap split">
+      <div>
+        <div class="line"></div>
+        <h2>Korean clinical experience, delivered inclusively</h2>
+        <p>Korean expertise is the centre of authority: professional cosmetic experience in South Korea, extensive injectable history, and clinical knowledge of Asian skin. Care is offered to Korean, Chinese, other Asian and Caucasian women who appreciate Korean aesthetics and culture.</p>
+      </div>
+      <div class="values">
+        <article>
+          <h3>Safety</h3>
+          <p>Clinical responsibility comes before sales or trends.</p>
+        </article>
+        <article>
+          <h3>Professionalism</h3>
+          <p>Every interaction should feel prepared, precise and credible.</p>
+        </article>
+        <article>
+          <h3>Korean expertise</h3>
+          <p>A meaningful clinical advantage, not a decorative theme.</p>
+        </article>
+        <article>
+          <h3>Results</h3>
+          <p>Realistic outcomes, with a clear path to improvement.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="consult" id="consultation">
+    <div class="wrap">
+      <p class="eyebrow">Consultation</p>
+      <h2>Feel informed, safe and confident</h2>
+      <p>A professional assessment comes first. We explain suitability, process and recovery in plain language, then build a personalized plan with realistic treatment expectations.</p>
+      <a class="btn" href="mailto:hello@koreansignatureaesthetics.com">Request a consultation</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <p>Korean Signature Aesthetics<br>Premium Korean medical aesthetics in Greater Vancouver</p>
+      <p><a href="brand-guideline.html">Brand Guideline</a></p>
+    </div>
+  </footer>
+  <nav class="palette-nav" aria-label="Colour schemes">
+    <button type="button" data-theme-option="hanji-forest" aria-pressed="true">
+      <span class="palette-dot" style="background:#23463F"></span>
+      Hanji Forest
+    </button>
+    <button type="button" data-theme-option="seoul-stone" aria-pressed="false">
+      <span class="palette-dot" style="background:#282C2B"></span>
+      Seoul Stone
+    </button>
+    <button type="button" data-theme-option="champagne-porcelain" aria-pressed="false">
+      <span class="palette-dot" style="background:#B59469"></span>
+      Champagne Porcelain
+    </button>
+    <span class="palette-divider" aria-hidden="true"></span>
+    <button type="button" data-theme-option="scholar-ink" aria-pressed="false">
+      <span class="palette-dot" style="background:#1E1C1A"></span>
+      Scholar Ink
+    </button>
+    <button type="button" data-theme-option="celadon-mist" aria-pressed="false">
+      <span class="palette-dot" style="background:#2C403C"></span>
+      Celadon Mist
+    </button>
+    <button type="button" data-theme-option="persimmon-silk" aria-pressed="false">
+      <span class="palette-dot" style="background:#C47A52"></span>
+      Persimmon Silk
+    </button>
+  </nav>
+  <script src="theme.js"></script>
 </body>
 </html>
