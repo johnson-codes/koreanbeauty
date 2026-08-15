@@ -402,9 +402,9 @@ td,
   justify-content: center;
   isolation: isolate;
   overflow: hidden;
-  min-height: 28rem;
-  height: 62vh;
-  max-height: 40rem;
+  min-height: 35rem;
+  height: 77.5vh;
+  max-height: 50rem;
   margin-top: calc(-1 * var(--chrome-height, 8.5rem));
   background: var(--deep-forest);
   color: var(--hanji-ivory);
