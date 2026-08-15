@@ -14,7 +14,7 @@
     document.documentElement.dataset.theme = localStorage.getItem("ksa-theme") || "hanji-forest";
   </script>
 </head>
-<body>
+<body class="has-hero-video">
   <div class="site-chrome">
     <div class="meta-nav">
       <div class="wrap">
@@ -47,18 +47,18 @@
   </div>
 
   <section class="home-hero">
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="videos/hero.mp4" type="video/mp4">
+    </video>
+    <div class="hero-filter" aria-hidden="true"></div>
+    <div class="hero-scrim" aria-hidden="true"></div>
     <div class="wrap">
-      <p class="eyebrow">Premium Korean medical aesthetics</p>
-      <h1>Medical Confidence with Korean Refinement.</h1>
       <p class="brand-tagline">Korean Expertise. Confident Results.</p>
-      <p class="lede">Advanced Korean medical aesthetics for women across Greater Vancouver, delivered with professional experience, personalized care and realistic treatment expectations.</p>
+      <h1>Medical Confidence with Korean Refinement.</h1>
+      <p class="hero-line">Advanced Korean Aesthetics for Every Woman.</p>
       <a class="btn icon-label" href="#consultation">
         <span class="material-symbols-outlined" aria-hidden="true">calendar_month</span>
         Book a consultation
-      </a>
-      <a class="btn btn-ghost icon-label" href="#concerns">
-        <span class="material-symbols-outlined" aria-hidden="true">explore</span>
-        Explore concerns
       </a>
     </div>
   </section>

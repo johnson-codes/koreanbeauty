@@ -45,4 +45,20 @@
       applyTheme(button.getAttribute("data-theme-option"));
     });
   });
+
+  var chrome = document.querySelector(".site-chrome");
+  var hero = document.querySelector(".home-hero");
+  if (chrome && hero) {
+    function setChromeHeight() {
+      document.documentElement.style.setProperty("--chrome-height", chrome.offsetHeight + "px");
+    }
+    setChromeHeight();
+    window.addEventListener("resize", setChromeHeight);
+    if ("IntersectionObserver" in window) {
+      var observer = new IntersectionObserver(function (entries) {
+        chrome.classList.toggle("is-solid", entries[0].intersectionRatio < 0.4);
+      }, { threshold: [0, 0.4, 1] });
+      observer.observe(hero);
+    }
+  }
 })();
