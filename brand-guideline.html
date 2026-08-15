@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script>
     document.documentElement.dataset.theme = localStorage.getItem("ksa-theme") || "hanji-forest";
@@ -17,13 +18,21 @@
   <div class="site-chrome">
     <div class="meta-nav">
       <div class="wrap">
-        <span>Greater Vancouver · Coquitlam and the Tri-Cities</span>
-        <a href="index.html#consultation">Book a consultation</a>
+        <span class="icon-label">
+          <span class="material-symbols-outlined" aria-hidden="true">location_on</span>
+          Greater Vancouver · Coquitlam and the Tri-Cities
+        </span>
+        <a class="icon-label" href="index.html#consultation">
+          <span class="material-symbols-outlined" aria-hidden="true">calendar_month</span>
+          Book a consultation
+        </a>
       </div>
     </div>
     <header class="site-header">
       <div class="wrap">
-        <a class="wordmark" href="index.html">Korean Signature Aesthetics</a>
+        <a class="logo-link" href="index.html">
+          <img class="logo" src="images/ksa-logo.png" alt="Korean Signature Aesthetics" width="88" height="88">
+        </a>
         <nav class="primary-nav" aria-label="Primary">
           <a href="index.html">Home</a>
           <a href="index.html#injectables">Injectables</a>
@@ -237,10 +246,19 @@
           </table>
         </div>
         <h3>Taglines</h3>
-        <p><strong>Recommended:</strong></p>
-        <blockquote>Korean Expertise. Confident Results.</blockquote>
-        <p><strong>Alternative:</strong></p>
-        <blockquote>Advanced Korean Aesthetics for Every Woman.</blockquote>
+        <p>Confine public slogans to the three ranked lines below. Full usage notes live in Voice and Writing.</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Rank</th><th>Slogan</th><th>Best use</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>Korean Expertise. Confident Results.</td><td>Main brand tagline, signage and website</td></tr>
+              <tr><td>2</td><td>Medical Confidence with Korean Refinement.</td><td>Homepage headline and premium campaigns</td></tr>
+              <tr><td>3</td><td>Advanced Korean Aesthetics for Every Woman.</td><td>Inclusive advertising and social media</td></tr>
+            </tbody>
+          </table>
+        </div>
       </section>
 
       <section id="voice">
@@ -287,6 +305,20 @@
           <li>Cheap</li>
           <li>Beauty defect</li>
         </ul>
+        <h3>Approved Slogans</h3>
+        <p>Public-facing slogans are confined to these three ranked lines. Do not invent additional taglines for ads, signage or the website. They are not medical claims and must not be presented as a guarantee of outcome.</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Rank</th><th>Slogan</th><th>Best use</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>Korean Expertise. Confident Results.</td><td>Main brand tagline, signage and website</td></tr>
+              <tr><td>2</td><td>Medical Confidence with Korean Refinement.</td><td>Homepage headline and premium campaigns</td></tr>
+              <tr><td>3</td><td>Advanced Korean Aesthetics for Every Woman.</td><td>Inclusive advertising and social media</td></tr>
+            </tbody>
+          </table>
+        </div>
       </section>
 
       <section id="services">
@@ -384,8 +416,17 @@
         <p>Accent colour should guide attention rather than decorate every element.</p>
 
         <h3>11. Colour System 01 — Hanji Forest</h3>
-        <p class="note"><strong>Status:</strong> Recommended. This site uses Hanji Forest as the working master palette.</p>
+        <p class="note"><strong>Status:</strong> Recommended master. This site uses Hanji Forest as the working brand palette.</p>
         <p>Deep Forest establishes medical trust without relying on conventional blue. Hanji Ivory and Sand Taupe bring warmth and cultural refinement; Soft Gold adds premium detail without looking flashy.</p>
+        <div class="brand-reason">
+          <h3>Brand reasoning</h3>
+          <p>The brand essence is <strong>medical confidence with Korean refinement</strong>. Deep Forest carries confidence and clinical responsibility without the hospital blue the guideline forbids. Hanji Ivory is a paper-like 60% ground so real skin and before-and-after photography stay dominant. Soft Gold is the 5% accent: premium and accessible, never gold-gradient luxury.</p>
+          <ul>
+            <li><strong>Personality:</strong> Clinical with warmth (2/5), premium but welcoming (4/5).</li>
+            <li><strong>Values:</strong> Safety and professionalism in the dark green; Korean expertise in the paper/gold materials, not in costume or flags.</li>
+            <li><strong>Watch-out:</strong> Do not push the green toward mint or spa wellness, which the brand excludes.</li>
+          </ul>
+        </div>
         <div class="swatches">
           <div class="swatch"><div class="swatch-chip" style="background:#23463F"></div><p><strong>Deep Forest</strong><br>#23463F<br>Primary anchor</p></div>
           <div class="swatch"><div class="swatch-chip" style="background:#172522"></div><p><strong>Clinical Ink</strong><br>#172522<br>Text and high contrast</p></div>
@@ -396,6 +437,16 @@
 
         <h3>12. Colour System 02 — Seoul Stone</h3>
         <p class="note"><strong>Status:</strong> Modern alternative</p>
+        <p>A quiet architectural palette inspired by contemporary Seoul interiors. It feels highly modern and sophisticated, with less cultural symbolism and more international premium appeal.</p>
+        <div class="brand-reason">
+          <h3>Brand reasoning</h3>
+          <p>The personality spectrum is <strong>traditional → modern 4/5</strong>: contemporary and forward-looking. Seoul Stone lets Korean expertise read as lived clinical experience, not as themed decoration. Graphite is credible; Warm White keeps the 60% light field; Soft Sage is clinical support without blue; Cocoa is a warm accent that is not flashy gold.</p>
+          <ul>
+            <li><strong>Audience:</strong> Inclusive for Korean, Chinese, other Asian and Caucasian clients who appreciate Korean culture without being shown palace, flag, or stereotype colour.</li>
+            <li><strong>Competitive contrast:</strong> More architectural than a salon; more restrained than a generic medical spa.</li>
+            <li><strong>Watch-out:</strong> If Graphite and Sage dominate, it can feel cold. Keep Warm White at approximately 60%.</li>
+          </ul>
+        </div>
         <div class="swatches">
           <div class="swatch"><div class="swatch-chip" style="background:#282C2B"></div><p><strong>Graphite</strong><br>#282C2B<br>Primary anchor</p></div>
           <div class="swatch"><div class="swatch-chip" style="background:#FBF8F2"></div><p><strong>Warm White</strong><br>#FBF8F2<br>Main background</p></div>
@@ -406,6 +457,16 @@
 
         <h3>13. Colour System 03 — Champagne Porcelain</h3>
         <p class="note"><strong>Status:</strong> Softer alternative</p>
+        <p>A softer and more feminine system that still feels mature. Porcelain and greige preserve cleanliness, while Espresso and Champagne create premium contrast for female-focused campaigns.</p>
+        <div class="brand-reason">
+          <h3>Brand reasoning</h3>
+          <p>The primary audience is women approximately 35–60+. Personality is <strong>feminine → gender-neutral 3/5</strong>: refined femininity without stereotypes. Porcelain keeps medical cleanliness; Espresso keeps authority; Champagne is a 5% premium cue, not body text and not cute pink.</p>
+          <ul>
+            <li><strong>Market level:</strong> Premium but accessible—never intimidatingly luxurious.</li>
+            <li><strong>Applications:</strong> Social, client materials and promotions, where the content mix allows about 10% offers without looking discount-led.</li>
+            <li><strong>Watch-out:</strong> Overusing Champagne can drift toward salon beauty. Keep Espresso for structure and Porcelain for space.</li>
+          </ul>
+        </div>
         <div class="swatches">
           <div class="swatch"><div class="swatch-chip" style="background:#352D2A"></div><p><strong>Espresso</strong><br>#352D2A<br>Primary anchor</p></div>
           <div class="swatch"><div class="swatch-chip" style="background:#FAF5ED"></div><p><strong>Porcelain</strong><br>#FAF5ED<br>Main background</p></div>
@@ -415,7 +476,16 @@
         </div>
 
         <h3>Colour System 04 — Scholar Ink</h3>
-        <p class="note"><strong>Status:</strong> Additional exploration. Inspired by Korean ink and paper, without green or gold. Deep ink carries authority; warm paper keeps skin tones the focus; dried-persimmon brown is the accent instead of seal-red.</p>
+        <p class="note"><strong>Status:</strong> Additional exploration</p>
+        <div class="brand-reason">
+          <h3>Brand reasoning</h3>
+          <p>Korean expertise must be a <strong>meaningful advantage, not a decorative theme</strong>. Scholar Ink uses calligraphy materials—ink and paper—so authority feels editorial and clinical rather than costumed. Dried persimmon is the accent instead of traditional seal-red, which would break the “no strong red” rule.</p>
+          <ul>
+            <li><strong>Voice:</strong> Professional, educational and reassuring. Best for credentials, practitioner story (about 20% of content) and treatment education (about 35%).</li>
+            <li><strong>Difference from Hanji Forest:</strong> Removes green and gold so Korean-ness is literary and precise, not botanical.</li>
+            <li><strong>Watch-out:</strong> Too much Ink can feel severe. Keep Paper Ivory at approximately 60% so the clinic still feels warm enough for comfort.</li>
+          </ul>
+        </div>
         <div class="swatches">
           <div class="swatch"><div class="swatch-chip" style="background:#1E1C1A"></div><p><strong>Ink</strong><br>#1E1C1A<br>Primary anchor</p></div>
           <div class="swatch"><div class="swatch-chip" style="background:#141312"></div><p><strong>Lampblack</strong><br>#141312<br>Text and high contrast</p></div>
@@ -425,7 +495,16 @@
         </div>
 
         <h3>Colour System 05 — Celadon Mist</h3>
-        <p class="note"><strong>Status:</strong> Additional exploration. Goryeo celadon as mineral grey-green: clinical and ceramic, not forest, spa, or hospital blue. Oxidized bronze is the accent so type never sits on a mid-tone green.</p>
+        <p class="note"><strong>Status:</strong> Additional exploration</p>
+        <div class="brand-reason">
+          <h3>Brand reasoning</h3>
+          <p>Professionalism should feel <strong>prepared, precise and credible</strong>. Goryeo celadon is Korean refinement through ceramic craft: mineral grey-green, not forest branding, not spa mint, and not hospital blue. Oxidized bronze is the 5% accent so labels never sit on a mid-tone green.</p>
+          <ul>
+            <li><strong>Personality:</strong> Clinical authority with enough warmth for comfort (2/5). Fits treatment explanation, equipment and protocol proof points.</li>
+            <li><strong>Strategic exclusion:</strong> Stays away from wellness, IV and naturopathic cues that mint-green often signals.</li>
+            <li><strong>Watch-out:</strong> Do not pair celadon with temple, lotus or palace graphics. Keep the graphic language minimal and medical.</li>
+          </ul>
+        </div>
         <div class="swatches">
           <div class="swatch"><div class="swatch-chip" style="background:#2C403C"></div><p><strong>Celadon Deep</strong><br>#2C403C<br>Primary anchor</p></div>
           <div class="swatch"><div class="swatch-chip" style="background:#1A2826"></div><p><strong>Kiln Ink</strong><br>#1A2826<br>Text and high contrast</p></div>
@@ -435,7 +514,16 @@
         </div>
 
         <h3>Colour System 06 — Persimmon Silk</h3>
-        <p class="note"><strong>Status:</strong> Additional exploration. More beauty-forward than Champagne Porcelain, still mature. Dried persimmon is warm without becoming a strong red; silk greige keeps photography dominant.</p>
+        <p class="note"><strong>Status:</strong> Additional exploration</p>
+        <div class="brand-reason">
+          <h3>Brand reasoning</h3>
+          <p>Clients should feel <strong>safe, confident and informed</strong>. Persimmon Silk is the warmer campaign sister to Champagne Porcelain: dried persimmon is a Korean material colour that sits next to skin without becoming a strong red. Silk greige keeps photography dominant; Silk Umber keeps the system medical rather than cute.</p>
+          <ul>
+            <li><strong>Emotional benefit:</strong> Confidence in the practitioner and the result, with visible warmth for social and client-facing pieces.</li>
+            <li><strong>Inclusive positioning:</strong> Reads as textile and fruit-tone, not as an ethnicity lock. Suitable across the stated cultural reach.</li>
+            <li><strong>Watch-out:</strong> Persimmon can look promotional if overused. Hold it at approximately 5% and never for long body text.</li>
+          </ul>
+        </div>
         <div class="swatches">
           <div class="swatch"><div class="swatch-chip" style="background:#3B2C28"></div><p><strong>Silk Umber</strong><br>#3B2C28<br>Primary anchor</p></div>
           <div class="swatch"><div class="swatch-chip" style="background:#271E1C"></div><p><strong>Seed Ink</strong><br>#271E1C<br>Text and high contrast</p></div>
@@ -601,6 +689,7 @@
       <span class="palette-dot" style="background:#C47A52"></span>
       Persimmon Silk
     </button>
+    <p class="palette-reason" data-palette-reason></p>
   </nav>
   <script src="theme.js"></script>
 </body>

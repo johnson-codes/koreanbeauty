@@ -144,13 +144,13 @@ For women in Greater Vancouver who value Korean aesthetics, Korean Signature Aes
 
 ### Taglines
 
-**Recommended:**
+Public slogans are confined to these three ranked lines. Full usage notes live in Voice and Writing.
 
-> **Korean Expertise. Confident Results.**
-
-**Alternative:**
-
-> **Advanced Korean Aesthetics for Every Woman.**
+| Rank | Slogan | Best use |
+|---:|---|---|
+| 1 | Korean Expertise. Confident Results. | Main brand tagline, signage and website |
+| 2 | Medical Confidence with Korean Refinement. | Homepage headline and premium campaigns |
+| 3 | Advanced Korean Aesthetics for Every Woman. | Inclusive advertising and social media |
 
 ---
 
@@ -192,7 +192,18 @@ The voice should be **professional, educational, reassuring and results-focused*
 - Cheap
 - Beauty defect
 
+### Approved Slogans
+
+Public-facing slogans are confined to these three ranked lines. Do not invent additional taglines for ads, signage or the website. They are not medical claims and must not be presented as a guarantee of outcome.
+
+| Rank | Slogan | Best use |
+|---:|---|---|
+| 1 | Korean Expertise. Confident Results. | Main brand tagline, signage and website |
+| 2 | Medical Confidence with Korean Refinement. | Homepage headline and premium campaigns |
+| 3 | Advanced Korean Aesthetics for Every Woman. | Inclusive advertising and social media |
+
 ---
+
 
 ## 8. Service Architecture
 
@@ -252,7 +263,7 @@ No logo has been approved. Until approval, use the complete business name as pla
 
 ## 10. Colour Strategy
 
-All three proposed palettes avoid strong red and blue. Each uses a warm-neutral foundation so photography and real skin tones remain the visual focus.
+The original three palettes avoid strong red and blue. Each uses a warm-neutral foundation so photography and real skin tones remain the visual focus. Three further explorations follow the same rules for comparison.
 
 ### Palette Comparison
 
@@ -261,6 +272,9 @@ All three proposed palettes avoid strong red and blue. Each uses a warm-neutral 
 | **01 Hanji Forest—Recommended** | Strongest balance of Korean refinement, medical trust and warmth | Master brand, website, signage and clinical materials |
 | **02 Seoul Stone** | Neutral, modern and architectural | Premium editorial campaigns and minimalist interiors |
 | **03 Champagne Porcelain** | Softer, more feminine and beauty-forward | Social campaigns, client materials and premium promotions |
+| **04 Scholar Ink—Exploration** | Calligraphic authority: ink, paper and editorial restraint | Credentials, practitioner story and long-form education |
+| **05 Celadon Mist—Exploration** | Ceramic calm: mineral grey-green without hospital blue or spa mint | Clinical materials and treatment explanation pages |
+| **06 Persimmon Silk—Exploration** | Mature warmth from dried persimmon and silk, not strong red | Beauty-forward campaigns that still feel medical |
 
 ### Colour Usage Principle
 
@@ -278,6 +292,14 @@ Accent colour should guide attention rather than decorate every element.
 **Status:** Recommended
 
 Deep Forest establishes medical trust without relying on conventional blue. Hanji Ivory and Sand Taupe bring warmth and cultural refinement; Soft Gold adds premium detail without looking flashy.
+
+### Brand reasoning
+
+The brand essence is **medical confidence with Korean refinement**. Deep Forest carries confidence and clinical responsibility without the hospital blue the guideline forbids. Hanji Ivory is a paper-like 60% ground so real skin and before-and-after photography stay dominant. Soft Gold is the 5% accent: premium and accessible, never gold-gradient luxury.
+
+- **Personality:** Clinical with warmth (2/5), premium but welcoming (4/5).
+- **Values:** Safety and professionalism in the dark green; Korean expertise in the paper and gold materials, not in costume or flags.
+- **Watch-out:** Do not push the green toward mint or spa wellness, which the brand excludes.
 
 | Colour | HEX | Role |
 |---|---|---|
@@ -305,6 +327,14 @@ Deep Forest establishes medical trust without relying on conventional blue. Hanj
 
 A quiet architectural palette inspired by contemporary Seoul interiors. It feels highly modern and sophisticated, with less cultural symbolism and more international premium appeal.
 
+### Brand reasoning
+
+The personality spectrum is **traditional → modern 4/5**: contemporary and forward-looking. Seoul Stone lets Korean expertise read as lived clinical experience, not as themed decoration. Graphite is credible; Warm White keeps the 60% light field; Soft Sage is clinical support without blue; Cocoa is a warm accent that is not flashy gold.
+
+- **Audience:** Inclusive for Korean, Chinese, other Asian and Caucasian clients who appreciate Korean culture without palace, flag or stereotype colour.
+- **Competitive contrast:** More architectural than a salon; more restrained than a generic medical spa.
+- **Watch-out:** If Graphite and Sage dominate, it can feel cold. Keep Warm White at approximately 60%.
+
 | Colour | HEX | Role |
 |---|---|---|
 | Graphite | `#282C2B` | Primary anchor |
@@ -330,6 +360,14 @@ A quiet architectural palette inspired by contemporary Seoul interiors. It feels
 
 A softer and more feminine system that still feels mature. Porcelain and greige preserve cleanliness, while Espresso and Champagne create premium contrast for female-focused campaigns.
 
+### Brand reasoning
+
+The primary audience is women approximately 35–60+. Personality is **feminine → gender-neutral 3/5**: refined femininity without stereotypes. Porcelain keeps medical cleanliness; Espresso keeps authority; Champagne is a 5% premium cue, not body text and not cute pink.
+
+- **Market level:** Premium but accessible—never intimidatingly luxurious.
+- **Applications:** Social, client materials and promotions, where the content mix allows about 10% offers without looking discount-led.
+- **Watch-out:** Overusing Champagne can drift toward salon beauty. Keep Espresso for structure and Porcelain for space.
+
 | Colour | HEX | Role |
 |---|---|---|
 | Espresso | `#352D2A` | Primary anchor |
@@ -347,6 +385,72 @@ A softer and more feminine system that still feels mature. Porcelain and greige 
 | Supporting colour | Pearl Greige—approximately 10% |
 | Accent | Champagne—approximately 5% |
 
+---
+
+## Colour System 04—Scholar Ink
+
+**Status:** Additional exploration
+
+### Brand reasoning
+
+Korean expertise must be a **meaningful advantage, not a decorative theme**. Scholar Ink uses calligraphy materials—ink and paper—so authority feels editorial and clinical rather than costumed. Dried persimmon is the accent instead of traditional seal-red, which would break the “no strong red” rule.
+
+- **Voice:** Professional, educational and reassuring. Best for credentials, practitioner story and treatment education.
+- **Difference from Hanji Forest:** Removes green and gold so Korean-ness is literary and precise, not botanical.
+- **Watch-out:** Too much Ink can feel severe. Keep Paper Ivory at approximately 60%.
+
+| Colour | HEX | Role |
+|---|---|---|
+| Ink | `#1E1C1A` | Primary anchor |
+| Lampblack | `#141312` | Text and high contrast |
+| Paper Ivory | `#F6F1E7` | Main background |
+| Sized Fibre | `#C5BBAE` | Supporting neutral |
+| Dried Persimmon | `#A56B42` | Premium accent |
+
+---
+
+## Colour System 05—Celadon Mist
+
+**Status:** Additional exploration
+
+### Brand reasoning
+
+Professionalism should feel **prepared, precise and credible**. Goryeo celadon is Korean refinement through ceramic craft: mineral grey-green, not forest branding, not spa mint, and not hospital blue. Oxidized bronze is the 5% accent so labels never sit on a mid-tone green.
+
+- **Personality:** Clinical authority with enough warmth for comfort (2/5). Fits treatment explanation and protocol proof points.
+- **Strategic exclusion:** Stays away from wellness, IV and naturopathic cues that mint-green often signals.
+- **Watch-out:** Do not pair celadon with temple, lotus or palace graphics.
+
+| Colour | HEX | Role |
+|---|---|---|
+| Celadon Deep | `#2C403C` | Primary anchor |
+| Kiln Ink | `#1A2826` | Text and high contrast |
+| Mist Glaze | `#F4F5F0` | Main background |
+| Ash Celadon | `#B5C0B8` | Supporting neutral |
+| Oxidized Bronze | `#8A6F4E` | Premium accent |
+
+---
+
+## Colour System 06—Persimmon Silk
+
+**Status:** Additional exploration
+
+### Brand reasoning
+
+Clients should feel **safe, confident and informed**. Persimmon Silk is the warmer campaign sister to Champagne Porcelain: dried persimmon is a Korean material colour that sits next to skin without becoming a strong red. Silk greige keeps photography dominant; Silk Umber keeps the system medical rather than cute.
+
+- **Emotional benefit:** Confidence in the practitioner and the result, with visible warmth for social pieces.
+- **Inclusive positioning:** Reads as textile and fruit-tone, not as an ethnicity lock.
+- **Watch-out:** Persimmon can look promotional if overused. Hold it at approximately 5% and never for long body text.
+
+| Colour | HEX | Role |
+|---|---|---|
+| Silk Umber | `#3B2C28` | Primary anchor |
+| Seed Ink | `#271E1C` | Text and high contrast |
+| Silk Ivory | `#F8F2EA` | Main background |
+| Weft Greige | `#D4C3B5` | Supporting neutral |
+| Persimmon | `#C47A52` | Premium accent |
+
 ### Colour Rules
 
 **Do:**
@@ -362,6 +466,7 @@ A softer and more feminine system that still feels mature. Porcelain and greige 
 - Introduce strong red or blue without revising the guideline.
 
 ---
+
 
 ## 14. Typography
 

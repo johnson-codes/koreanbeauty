@@ -126,6 +126,46 @@ a {
   color: var(--deep-forest);
 }
 
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 1;
+  letter-spacing: normal;
+  display: inline-block;
+  white-space: nowrap;
+  direction: ltr;
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+  color: var(--soft-gold);
+  user-select: none;
+}
+
+.icon-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.icon-label .material-symbols-outlined {
+  font-size: 1.15rem;
+  color: currentColor;
+}
+
+.card .material-symbols-outlined,
+.concern .material-symbols-outlined,
+.values .material-symbols-outlined {
+  display: block;
+  margin-bottom: 0.7rem;
+  font-size: 1.65rem;
+}
+
+.meta-nav .material-symbols-outlined,
+.site-footer .material-symbols-outlined {
+  font-size: 1.1rem;
+  color: currentColor;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -216,9 +256,21 @@ td,
   flex-direction: column;
   align-items: stretch;
   gap: 0.4rem;
+  width: 16.5rem;
   padding: 0.65rem;
   background: var(--color-anchor);
   box-shadow: 0 8px 24px rgba(23, 37, 34, 0.28);
+}
+
+.palette-reason {
+  margin: 0.35rem 0 0;
+  padding: 0.55rem 0.35rem 0.15rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.22);
+  color: var(--color-on-dark);
+  font-size: 0.72rem;
+  font-weight: 500;
+  line-height: 1.45;
+  white-space: normal;
 }
 
 .palette-divider {
@@ -283,12 +335,19 @@ td,
   padding-bottom: 0.95rem;
 }
 
-.wordmark {
-  font-family: "DM Serif Display", Georgia, serif;
-  font-size: 1.2rem;
-  line-height: 1.2;
-  color: var(--hanji-ivory);
+.logo-link {
+  display: inline-flex;
+  flex-shrink: 0;
   text-decoration: none;
+}
+
+.logo {
+  display: block;
+  width: 4.75rem;
+  height: 4.75rem;
+  object-fit: cover;
+  border-radius: 0.85rem;
+  background: #f7f2e8;
 }
 
 .primary-nav {
@@ -361,6 +420,14 @@ h3 {
   font-size: 1.05rem;
 }
 
+.brand-tagline {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--soft-gold);
+}
+
 .line {
   width: 4.5rem;
   height: 1px;
@@ -369,7 +436,9 @@ h3 {
 }
 
 .btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
   margin-top: 1.5rem;
   padding: 0.75rem 1.2rem;
   background: var(--hanji-ivory);
@@ -587,6 +656,21 @@ th {
   margin-top: 1rem;
   font-size: 0.9rem;
   color: var(--color-note);
+}
+
+.brand-reason {
+  margin: 1.1rem 0 1.5rem;
+  padding: 1.1rem 1.15rem 1.2rem;
+  background: var(--color-card);
+  border-left: 2px solid var(--soft-gold);
+}
+
+.brand-reason h3 {
+  margin-top: 0;
+}
+
+.brand-reason ul {
+  margin-top: 0.75rem;
 }
 
 .guideline-toc {
