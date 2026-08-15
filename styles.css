@@ -440,7 +440,7 @@ td,
   inset: 0;
   z-index: 1;
   background: #23463F;
-  opacity: 0.62;
+  opacity: 0.52;
   mix-blend-mode: multiply;
   pointer-events: none;
 }
@@ -452,7 +452,7 @@ td,
   background:
     linear-gradient(180deg, rgba(23, 37, 34, 0.4) 0%, transparent 32%),
     linear-gradient(90deg, #172522 0%, transparent 62%);
-  opacity: 0.55;
+  opacity: 0.46;
   pointer-events: none;
 }
 
