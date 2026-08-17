@@ -21,18 +21,6 @@
 </head>
 <body class="has-hero-video">
   <div class="site-chrome">
-    <div class="meta-nav">
-      <div class="wrap">
-        <span class="icon-label">
-          <span class="material-symbols-outlined" aria-hidden="true">location_on</span>
-          <span data-i18n="meta.location">Greater Vancouver · Coquitlam and the Tri-Cities</span>
-        </span>
-        <a class="icon-label" href="#consultation">
-          <span class="material-symbols-outlined" aria-hidden="true">calendar_month</span>
-          <span data-i18n="meta.book">Book a consultation</span>
-        </a>
-      </div>
-    </div>
     <header class="site-header">
       <div class="wrap">
         <a class="logo-link" href="index.html">
@@ -40,15 +28,37 @@
             <img class="site-logo" src="images/korean-beauty-clinic-logo.png" alt="Korean Beauty Clinic">
           </span>
         </a>
+        <nav class="primary-nav" id="primary-nav" aria-label="Primary" data-i18n-aria="nav.label">
+          <div class="nav-drawer-tools">
+            <div class="lang-switch" role="group" aria-label="Language" data-i18n-aria="lang.label">
+              <button type="button" data-lang="en" lang="en" aria-pressed="true">EN</button>
+              <button type="button" data-lang="zh" lang="zh-Hans" aria-pressed="false">中文</button>
+              <button type="button" data-lang="ko" lang="ko" aria-pressed="false">한국어</button>
+            </div>
+          </div>
+          <a href="#process" data-i18n="nav.process">Process</a>
+          <a href="#founder" data-i18n="nav.founder">Founder</a>
+          <a href="#reviews" data-i18n="nav.reviews">Reviews</a>
+          <a href="#faq" data-i18n="nav.faq">FAQ</a>
+        </nav>
         <div class="header-end">
-          <div class="lang-switch" role="group" aria-label="Language" data-i18n-aria="lang.label">
+          <div class="lang-switch header-lang" role="group" aria-label="Language" data-i18n-aria="lang.label">
             <button type="button" data-lang="en" lang="en" aria-pressed="true">EN</button>
             <button type="button" data-lang="zh" lang="zh-Hans" aria-pressed="false">中文</button>
             <button type="button" data-lang="ko" lang="ko" aria-pressed="false">한국어</button>
           </div>
+          <a class="btn header-book icon-label" href="#consultation" data-i18n-aria="cta.book">
+            <span class="material-symbols-outlined" aria-hidden="true">calendar_month</span>
+            <span class="header-book-full" data-i18n="cta.book">Book a consultation</span>
+            <span class="header-book-short" data-i18n="cta.book.short">Book</span>
+          </a>
+          <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" data-i18n-aria="nav.menu">
+            <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+          </button>
         </div>
       </div>
     </header>
+    <div class="nav-backdrop" hidden></div>
   </div>
 
   <section class="home-hero">
@@ -123,7 +133,6 @@
         <p class="kicker" data-i18n="founder.kicker">Founder</p>
         <h2 data-i18n="founder.title">South Korean clinical experience, close at hand</h2>
         <p data-i18n="founder.p1">The clinic is led by a practitioner with professional cosmetic experience in South Korea and an extensive history with injectables. That background shapes how we assess skin, recommend treatment and talk about results.</p>
-        <p data-i18n="founder.p2">Care in Greater Vancouver stays personal: a clear consult, a plan that fits the concern, and honest expectations—not a spa menu or a sales script.</p>
         <ul class="founder-points">
           <li>
             <img class="founder-flag" src="images/flags/kr.jpg" alt="" width="36" height="24">
