@@ -679,11 +679,13 @@ h3 {
   width: fit-content;
   max-width: 100%;
   margin: 0 0 0.55rem;
-  padding: 0.28rem 0.7rem;
-  background: var(--hanji-ivory);
+  padding: 0.2rem 0.55rem;
+  background: color-mix(in srgb, var(--hanji-ivory) 68%, transparent);
   color: var(--deep-forest);
   border-radius: calc(var(--radius) - 4px);
-  box-shadow: 0 0 0 1px color-mix(in srgb, var(--deep-forest) 18%, transparent);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--hanji-ivory) 28%, transparent);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
   font-size: 1.05rem;
   font-weight: 700;
   letter-spacing: 0.06em;
