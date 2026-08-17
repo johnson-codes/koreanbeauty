@@ -101,8 +101,10 @@
   --hanji-ivory: var(--color-bg);
   --sand-taupe: var(--color-support);
   --soft-gold: var(--color-accent);
-  --content-width: 68rem;
-  --page-gutter: 1.5rem;
+  --content-width: 70%;
+  --page-gutter: 15%;
+  --radius: 16px;
+  --radius-lg: 24px;
 }
 
 * {
@@ -130,15 +132,15 @@ a {
 
 .material-symbols-outlined {
   font-family: "Material Symbols Outlined";
-  font-weight: 300;
+  font-weight: 700;
   font-style: normal;
-  font-size: 1.5rem;
+  font-size: 2rem;
   line-height: 1;
   letter-spacing: normal;
   display: inline-block;
   white-space: nowrap;
   direction: ltr;
-  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+  font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 0, "opsz" 24;
   color: var(--soft-gold);
   user-select: none;
 }
@@ -150,21 +152,17 @@ a {
 }
 
 .icon-label .material-symbols-outlined {
-  font-size: 1.15rem;
+  font-size: 1.5rem;
   color: currentColor;
 }
 
-.card .material-symbols-outlined,
-.concern .material-symbols-outlined,
-.values .material-symbols-outlined {
-  display: block;
-  margin-bottom: 0.7rem;
-  font-size: 1.65rem;
+.btn .material-symbols-outlined {
+  font-size: 2rem;
 }
 
 .meta-nav .material-symbols-outlined,
 .site-footer .material-symbols-outlined {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   color: currentColor;
 }
 
@@ -174,13 +172,16 @@ img {
 }
 
 .wrap {
-  max-width: var(--content-width);
-  margin: 0 auto;
-  padding: 0 var(--page-gutter);
+  width: var(--content-width);
+  max-width: none;
+  margin-left: var(--page-gutter);
+  margin-right: var(--page-gutter);
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .wrap-narrow {
-  max-width: 52rem;
+  max-width: none;
 }
 
 .site-header,
@@ -244,10 +245,6 @@ td,
   gap: 1.25rem;
   align-items: center;
   min-height: 3.2rem;
-  max-width: none;
-  width: 100%;
-  padding-left: 2rem;
-  padding-right: 2rem;
   flex-wrap: nowrap;
 }
 
@@ -266,6 +263,7 @@ td,
   white-space: nowrap;
   flex-shrink: 0;
   box-shadow: inset 0 0 0 2px var(--soft-gold);
+  border-radius: var(--radius);
 }
 
 .meta-nav a:hover,
@@ -286,6 +284,7 @@ td,
   padding: 0.65rem;
   background: var(--color-anchor);
   box-shadow: 0 8px 24px rgba(23, 37, 34, 0.28);
+  border-radius: var(--radius);
 }
 
 .palette-reason {
@@ -473,10 +472,6 @@ td,
 .home-hero .wrap {
   position: relative;
   z-index: 3;
-  width: 100%;
-  max-width: var(--content-width);
-  margin-left: auto;
-  margin-right: auto;
   text-align: left;
 }
 
@@ -563,6 +558,7 @@ h3 {
   font-weight: 600;
   letter-spacing: 0.04em;
   box-shadow: inset 0 0 0 2px var(--soft-gold);
+  border-radius: var(--radius);
 }
 
 .btn:hover,
@@ -581,6 +577,28 @@ h3 {
 .btn-ghost:focus {
   background: transparent;
   color: var(--soft-gold);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  margin-top: auto;
+  padding: 0.5rem 0.9rem;
+  background: transparent;
+  color: var(--clinical-ink);
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  box-shadow: inset 0 0 0 1px var(--sand-taupe);
+  border-radius: var(--radius);
+  align-self: flex-start;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: var(--soft-gold);
+  box-shadow: inset 0 0 0 1px var(--soft-gold);
 }
 
 /* Homepage sections */
@@ -619,9 +637,35 @@ h3 {
 
 .card,
 .concern {
-  padding: 1.35rem 1.25rem 1.45rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden;
   background: var(--color-card);
   border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+.card-media {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: color-mix(in srgb, var(--sand-taupe) 58%, var(--hanji-ivory));
+}
+
+.card-copy {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.4rem;
+  padding: 1.15rem 1.2rem 1.3rem;
+}
+
+.card-copy h3 {
+  margin-bottom: 0;
+}
+
+.card-copy p {
+  margin-bottom: 0.75rem;
 }
 
 .section-muted .card,
@@ -755,6 +799,7 @@ th {
 .swatch {
   overflow: hidden;
   border: 1px solid var(--color-border);
+  border-radius: var(--radius);
 }
 
 .swatch-chip {

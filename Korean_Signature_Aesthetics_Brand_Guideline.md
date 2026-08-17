@@ -508,7 +508,7 @@ Use serif typography for premium Korean-editorial character and sans serif typog
 ### Graphic Elements
 
 - Use a restrained signature-line motif to connect sections or highlight treatment journeys.
-- Use minimal icons with consistent line weight.
+- Use bold, large icons (weight 700, 32px) so treatments and CTAs scan quickly. Do not use hairline icons.
 - Use clean diagrams when they improve treatment understanding.
 - Avoid cute graphics, generic stock imagery, stereotypes and short-lived trends.
 
