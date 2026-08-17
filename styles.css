@@ -413,6 +413,78 @@ td,
   box-shadow: 0 1px 0 var(--soft-gold);
 }
 
+.header-end {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.65rem 1.15rem;
+  flex: 1 1 12rem;
+}
+
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.1rem;
+  padding: 0.12rem;
+  border: 1px solid color-mix(in srgb, var(--hanji-ivory) 32%, transparent);
+  border-radius: var(--radius);
+  flex-shrink: 0;
+}
+
+.lang-switch button {
+  appearance: none;
+  margin: 0;
+  border: 0;
+  background: transparent;
+  color: var(--hanji-ivory);
+  font-family: inherit;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  padding: 0.42rem 0.58rem;
+  border-radius: calc(var(--radius) - 4px);
+  cursor: pointer;
+}
+
+.lang-switch button:hover,
+.lang-switch button:focus-visible {
+  color: var(--soft-gold);
+}
+
+.lang-switch button[aria-pressed="true"] {
+  background: var(--hanji-ivory);
+  color: var(--deep-forest);
+}
+
+html[data-lang="zh"] body {
+  font-family: "Noto Sans SC", Inter, Arial, Helvetica, sans-serif;
+}
+
+html[data-lang="ko"] body {
+  font-family: "Noto Sans KR", Inter, Arial, Helvetica, sans-serif;
+}
+
+html[data-lang="zh"] h1,
+html[data-lang="zh"] h2,
+html[data-lang="ko"] h1,
+html[data-lang="ko"] h2 {
+  font-family: inherit;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+html[data-lang="zh"] .kicker,
+html[data-lang="ko"] .kicker,
+html[data-lang="zh"] .eyebrow,
+html[data-lang="ko"] .eyebrow,
+html[data-lang="zh"] .brand-tagline,
+html[data-lang="ko"] .brand-tagline {
+  text-transform: none;
+  letter-spacing: 0.04em;
+}
+
 /* Page heroes */
 
 .page-hero {
