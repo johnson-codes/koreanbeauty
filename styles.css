@@ -611,7 +611,6 @@ h3 {
   background: var(--color-muted-bg);
 }
 
-.intro-grid,
 .card-grid,
 .concern-grid,
 .split {
@@ -619,10 +618,71 @@ h3 {
   gap: 1.25rem;
 }
 
-.intro-grid,
 .split {
   grid-template-columns: 1fr 1fr;
   align-items: start;
+}
+
+.founder {
+  display: grid;
+  grid-template-columns: minmax(16rem, 2fr) minmax(0, 3fr);
+  gap: 2.5rem 3.25rem;
+  align-items: center;
+}
+
+.founder-portrait {
+  position: relative;
+  margin: 0;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--sand-taupe) 58%, var(--hanji-ivory));
+}
+
+.founder-portrait img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 18%;
+}
+
+.founder-copy p {
+  color: var(--color-muted-text);
+}
+
+.founder-copy p + p {
+  margin-top: 0.9rem;
+}
+
+.founder-points {
+  list-style: none;
+  margin: 1.35rem 0 0;
+  padding: 0;
+}
+
+.founder-points li {
+  position: relative;
+  padding: 0.7rem 0 0.7rem 1.15rem;
+  color: var(--color-muted-text);
+  border-top: 1px solid var(--color-border);
+}
+
+.founder-points li:last-child {
+  padding-bottom: 0;
+}
+
+.founder-points li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1.15rem;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: var(--soft-gold);
 }
 
 .card-grid {
@@ -1010,9 +1070,13 @@ th {
 }
 
 @media (max-width: 800px) {
-  .intro-grid,
-  .split {
+  .split,
+  .founder {
     grid-template-columns: 1fr;
+  }
+
+  .founder-portrait {
+    max-width: 22rem;
   }
 
   .btn-ghost {
