@@ -123,6 +123,7 @@ body {
   line-height: 1.65;
   color: var(--clinical-ink);
   background: var(--hanji-ivory);
+  overflow-x: hidden;
   transition: background-color 0.45s ease, color 0.45s ease;
 }
 
@@ -140,8 +141,9 @@ a {
   display: inline-block;
   white-space: nowrap;
   direction: ltr;
-  font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 0, "opsz" 24;
-  color: var(--soft-gold);
+  font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 0, "opsz" 24;
+  color: var(--deep-forest);
+  -webkit-text-fill-color: var(--deep-forest);
   user-select: none;
 }
 
@@ -154,6 +156,7 @@ a {
 .icon-label .material-symbols-outlined {
   font-size: 1.5rem;
   color: currentColor;
+  -webkit-text-fill-color: currentColor;
 }
 
 .btn .material-symbols-outlined {
@@ -164,6 +167,7 @@ a {
 .site-footer .material-symbols-outlined {
   font-size: 1.5rem;
   color: currentColor;
+  -webkit-text-fill-color: currentColor;
 }
 
 img {
@@ -321,6 +325,7 @@ td,
 .palette-toggle .material-symbols-outlined {
   font-size: 1.45rem;
   color: var(--hanji-ivory);
+  -webkit-text-fill-color: var(--hanji-ivory);
 }
 
 .palette-nav.is-collapsed .palette-icon-close,
@@ -553,7 +558,7 @@ html[data-lang="ko"] .brand-tagline {
   margin-top: calc(-1 * var(--chrome-height, 8.5rem));
   background: var(--deep-forest);
   color: var(--hanji-ivory);
-  padding: calc(var(--chrome-height, 8.5rem) + 1.25rem) 0 3.25rem;
+  padding: calc(var(--chrome-height, 8.5rem) + 1.25rem) 0 5.5rem;
 }
 
 .hero-video {
@@ -738,6 +743,68 @@ h3 {
   background: var(--color-muted-bg);
 }
 
+.section-wave {
+  --wave-from: var(--hanji-ivory);
+  --wave-to: var(--hanji-ivory);
+  position: relative;
+  z-index: 2;
+  height: 3.15rem;
+  overflow: hidden;
+  background: var(--wave-from);
+  pointer-events: none;
+  line-height: 0;
+}
+
+.section-wave[data-from="ivory"] { --wave-from: var(--hanji-ivory); }
+.section-wave[data-from="muted"] { --wave-from: var(--color-muted-bg); }
+.section-wave[data-from="forest"] { --wave-from: var(--deep-forest); }
+.section-wave[data-to="ivory"] { --wave-to: var(--hanji-ivory); }
+.section-wave[data-to="muted"] { --wave-to: var(--color-muted-bg); }
+.section-wave[data-to="forest"] { --wave-to: var(--deep-forest); }
+
+.section-wave.is-after-hero {
+  height: 4rem;
+  margin-top: -4rem;
+  background: transparent;
+}
+
+.section-wave svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.section-wave.is-flip svg {
+  transform: scaleX(-1);
+}
+
+.section-wave-soft {
+  fill: color-mix(in srgb, var(--wave-to) 72%, var(--deep-forest));
+  opacity: 0.2;
+}
+
+.section-wave-fill {
+  fill: var(--wave-to);
+}
+
+.section-wave-line {
+  fill: none;
+  stroke: var(--deep-forest);
+  stroke-width: 1.2;
+  stroke-linecap: round;
+  opacity: 0.22;
+}
+
+.section-wave[data-to="forest"] .section-wave-soft {
+  fill: color-mix(in srgb, var(--wave-to) 78%, var(--hanji-ivory));
+  opacity: 0.32;
+}
+
+.section-wave[data-to="forest"] .section-wave-line {
+  stroke: var(--soft-gold);
+  opacity: 0.42;
+}
+
 .card-grid,
 .concern-grid,
 .split {
@@ -821,6 +888,8 @@ h3 {
   font-size: 1.5rem;
   line-height: 1;
   text-align: center;
+  color: var(--deep-forest);
+  -webkit-text-fill-color: var(--deep-forest);
 }
 
 .card-grid {
@@ -918,7 +987,7 @@ h3 {
 .faq-item summary::after {
   content: "+";
   flex-shrink: 0;
-  color: var(--soft-gold);
+  color: var(--deep-forest);
   font-size: 1.35rem;
   font-weight: 500;
   line-height: 1;
@@ -1003,6 +1072,8 @@ h3 {
   margin: 0;
   font-size: 2rem;
   line-height: 1;
+  color: var(--deep-forest);
+  -webkit-text-fill-color: var(--deep-forest);
 }
 
 .process-step h3 {
@@ -1038,6 +1109,8 @@ h3 {
   margin-bottom: 0.85rem;
   font-size: 2.75rem;
   line-height: 1;
+  color: var(--deep-forest);
+  -webkit-text-fill-color: var(--deep-forest);
 }
 
 .benefit h3 {
@@ -1098,11 +1171,6 @@ h3 {
   border-color: var(--deep-forest);
 }
 
-.review-btn:hover .material-symbols-outlined,
-.review-btn:focus-visible .material-symbols-outlined {
-  color: var(--soft-gold);
-}
-
 .review-viewport {
   min-height: 16rem;
 }
@@ -1148,7 +1216,8 @@ h3 {
 .filled-star {
   font-size: 1.05rem;
   font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 0, "opsz" 24;
-  color: var(--soft-gold);
+  color: var(--deep-forest);
+  -webkit-text-fill-color: var(--deep-forest);
 }
 
 .review-author {
@@ -1259,6 +1328,7 @@ h3 {
 .review-rating .filled-star {
   font-size: 0.85rem;
   color: var(--hanji-ivory);
+  -webkit-text-fill-color: var(--hanji-ivory);
 }
 
 .review-rating-label {
@@ -1511,11 +1581,20 @@ th {
     padding: 2.75rem 0;
   }
 
+  .section-wave {
+    height: 2.6rem;
+  }
+
+  .section-wave.is-after-hero {
+    height: 3.25rem;
+    margin-top: -3.25rem;
+  }
+
   .home-hero {
     height: auto;
     min-height: 100svh;
     max-height: none;
-    padding-bottom: 2.5rem;
+    padding-bottom: 4.25rem;
   }
 
   h1 {
