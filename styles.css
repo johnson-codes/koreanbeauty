@@ -105,6 +105,7 @@
   --page-gutter: 15%;
   --radius: 16px;
   --radius-lg: 24px;
+  --chrome-height: 5.75rem;
 }
 
 * {
@@ -115,6 +116,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: var(--chrome-height, 5.75rem);
 }
 
 body {
@@ -212,6 +214,7 @@ td,
   position: sticky;
   top: 0;
   z-index: 20;
+  padding-top: 12px;
   transition: background-color 0.35s ease, box-shadow 0.35s ease;
 }
 
@@ -502,7 +505,7 @@ td,
 
 .nav-backdrop {
   position: fixed;
-  inset: var(--chrome-height, 4.5rem) 0 0;
+  inset: var(--chrome-height, 5.75rem) 0 0;
   z-index: 2;
   background: rgba(23, 37, 34, 0.46);
 }
@@ -590,10 +593,10 @@ html[data-lang="ko"] .brand-tagline {
   min-height: 40.83rem;
   height: 90.4vh;
   max-height: 58.33rem;
-  margin-top: calc(-1 * var(--chrome-height, 5.25rem));
+  margin-top: calc(-1 * var(--chrome-height, 5.75rem));
   background: var(--hanji-ivory);
   color: var(--hanji-ivory);
-  padding: calc(var(--chrome-height, 5.25rem) + 1.25rem) 0 4.75rem;
+  padding: calc(var(--chrome-height, 5.75rem) + 1.25rem) 0 4.75rem;
 }
 
 .hero-video {
@@ -1472,7 +1475,7 @@ html[data-lang="ko"] .review-rating-label {
   padding: 3rem 0 0;
   border-top: 1px solid var(--sand-taupe);
   margin-top: 3rem;
-  scroll-margin-top: calc(var(--chrome-height, 5.25rem) + 0.5rem);
+  scroll-margin-top: calc(var(--chrome-height, 5.75rem) + 0.5rem);
 }
 
 .guideline main section:first-of-type {
@@ -1485,7 +1488,7 @@ html[data-lang="ko"] .review-rating-label {
 .consult,
 .card[id],
 .home-hero {
-  scroll-margin-top: calc(var(--chrome-height, 5.25rem) + 0.5rem);
+  scroll-margin-top: calc(var(--chrome-height, 5.75rem) + 0.5rem);
 }
 
 blockquote {
@@ -1685,7 +1688,7 @@ th {
 
   .primary-nav {
     position: fixed;
-    top: var(--chrome-height, 4.5rem);
+    top: var(--chrome-height, 5.75rem);
     right: 0;
     bottom: 0;
     z-index: 2;
