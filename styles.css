@@ -633,7 +633,7 @@ h3 {
 .founder-portrait {
   position: relative;
   margin: 0;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1 / 1;
   overflow: hidden;
   border: 2px solid var(--deep-forest);
   border-radius: var(--radius);
