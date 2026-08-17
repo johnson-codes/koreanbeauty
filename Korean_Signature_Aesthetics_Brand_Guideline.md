@@ -1,8 +1,8 @@
-# Korean Signature Aesthetics
+# K Beauty Clinic
 
 ## Brand Guideline
 
-**Brand focus:** Premium Korean medical aesthetics for women across Greater Vancouver  
+**Brand focus:** K-beauty aesthetics clinic for women across Greater Vancouver — not spa, not physiotherapy  
 **Version:** 1.0  
 **Date:** August 2026  
 **Logo status:** In development
@@ -17,17 +17,17 @@
 
 | Element | Direction |
 |---|---|
-| Category | Premium Korean medical aesthetics |
+| Category | K-beauty aesthetics clinic — medical aesthetics, not spa or physiotherapy |
 | Audience | Women across Greater Vancouver who appreciate Korean aesthetics and culture |
 | Difference | South Korean cosmetic experience, expertise with Asian skin and extensive treatment history |
 
 ### Positioning Statement
 
-Korean Signature Aesthetics is a premium medical-aesthetics clinic serving women across Greater Vancouver who appreciate Korean beauty and culture. Led by extensive South Korean cosmetic experience, the clinic combines advanced treatments, medical credibility and personalized care to deliver confident, visible results.
+K Beauty Clinic is a K-beauty aesthetics clinic serving women across Greater Vancouver who appreciate Korean beauty and culture. Led by extensive South Korean cosmetic experience, the clinic combines advanced treatments, medical credibility and personalized care to deliver confident, visible results.
 
 ### Strategic Exclusion
 
-The brand is not positioned around wellness, naturopathic care or IV therapy. Communication must remain focused on injectables, advanced lasers, medical skincare and facial aesthetic treatments.
+The brand is an aesthetics clinic. It is not a spa, physiotherapy clinic, wellness studio, naturopathic practice or IV lounge. Communication must remain focused on injectables, advanced lasers, medical skincare and facial aesthetic treatments.
 
 ---
 
@@ -92,7 +92,7 @@ Use Korean expertise as the centre of authority while showing multicultural wome
 
 ### Value Proposition
 
-For women in Greater Vancouver who value Korean aesthetics, Korean Signature Aesthetics provides premium medical-aesthetic treatments guided by South Korean experience, personalized clinical judgment and a strong commitment to safety and visible results.
+For women in Greater Vancouver who value Korean aesthetics, K Beauty Clinic provides premium medical-aesthetic treatments guided by South Korean experience, personalized clinical judgment and a strong commitment to safety and visible results.
 
 ### Proof Points to Build
 
@@ -213,7 +213,7 @@ Public-facing slogans are confined to these three ranked lines. Do not invent ad
 | Concern pathways | Pigmentation; Aging and Wrinkles; Volume Loss; Acne and Scarring; Texture and Pores; Facial Contouring |
 | Treatment pages | Use recognized descriptive English treatment names for clarity and search visibility. |
 | Signature programs | Combine treatments around a client concern using descriptive English names. |
-| Excluded focus | Wellness, naturopathic care and IV therapy should not lead the identity or navigation. |
+| Excluded focus | Spa, physiotherapy, wellness, naturopathic care and IV therapy should not lead the identity or navigation. |
 
 ### Naming Formula
 
@@ -247,7 +247,7 @@ No logo has been approved. Until approval, use the complete business name as pla
 |---|---|
 | Concept | Initials or monogram supported by a refined wordmark |
 | Tone | Medical professionalism, premium restraint and Korean modernity |
-| Potential idea | Custom KSA monogram or a restrained K/S letter relationship; a subtle signature-line gesture may be explored |
+| Potential idea | A restrained K mark with a K Beauty Clinic wordmark. Do not revive the KSA monogram. |
 | Required versions | Horizontal, stacked, monogram, dark one-colour, light one-colour and small-size versions |
 | Languages | English primary; Korean secondary lockup may be developed after approval of the main identity |
 
@@ -557,7 +557,7 @@ Before-and-after evidence is a primary brand asset. Accuracy, consent, consisten
 | Step | Deliverable | Status |
 |---:|---|---|
 | 1 | Select one of the three colour systems | Decision required |
-| 2 | Develop and approve the KSA monogram and wordmark | Pending |
+| 2 | Develop and approve the K Beauty Clinic wordmark | Pending |
 | 3 | Confirm the English and Korean typography system | Pending |
 | 4 | Create before-and-after, social and website templates | After logo approval |
 | 5 | Build a central asset library and approval process | After core identity approval |

@@ -364,16 +364,30 @@ td,
 .logo-link {
   display: inline-flex;
   flex-shrink: 0;
+  align-items: center;
   text-decoration: none;
 }
 
-.logo {
-  display: block;
-  width: 3.6rem;
-  height: 3.6rem;
-  object-fit: cover;
-  border-radius: 0.7rem;
-  background: #f7f2e8;
+.wordmark {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.18rem;
+}
+
+.wordmark-name {
+  font-family: "DM Serif Display", Georgia, serif;
+  font-size: 1.22rem;
+  line-height: 1.15;
+  color: var(--hanji-ivory);
+}
+
+.wordmark-focus {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--soft-gold);
 }
 
 .primary-nav {
