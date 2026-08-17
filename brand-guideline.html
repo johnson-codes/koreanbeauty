@@ -42,15 +42,6 @@
           </span>
         </a>
         <div class="header-end">
-          <nav class="primary-nav" aria-label="Primary" data-i18n-aria="nav.label">
-            <a href="index.html" data-i18n="nav.home">Home</a>
-            <a href="index.html#injectables" data-i18n="nav.injectables">Injectables</a>
-            <a href="index.html#lasers" data-i18n="nav.lasers">Lasers and Light</a>
-            <a href="index.html#skincare" data-i18n="nav.skincare">Medical Skincare</a>
-            <a href="index.html#rejuvenation" data-i18n="nav.rejuvenation">Skin Rejuvenation</a>
-            <a href="index.html#programs" data-i18n="nav.programs">Signature Programs</a>
-            <a href="brand-guideline.html" aria-current="page" data-i18n="nav.guideline">Brand Guideline</a>
-          </nav>
           <div class="lang-switch" role="group" aria-label="Language" data-i18n-aria="lang.label">
             <button type="button" data-lang="en" lang="en" aria-pressed="true">EN</button>
             <button type="button" data-lang="zh" lang="zh-Hans" aria-pressed="false">中文</button>
@@ -678,33 +669,39 @@
       <p><a href="Korean_Signature_Aesthetics_Brand_Guideline.md">Source markdown</a></p>
     </div>
   </footer>
-  <nav class="palette-nav" aria-label="Colour schemes">
-    <button type="button" data-theme-option="hanji-forest" aria-pressed="true">
-      <span class="palette-dot" style="background:#23463F"></span>
-      Hanji Forest
+  <nav class="palette-nav is-collapsed" aria-label="Colour schemes">
+    <button type="button" class="palette-toggle" aria-expanded="false" aria-controls="palette-panel" data-i18n-aria="palette.open">
+      <span class="material-symbols-outlined palette-icon-open" aria-hidden="true">palette</span>
+      <span class="material-symbols-outlined palette-icon-close" aria-hidden="true">close</span>
     </button>
-    <button type="button" data-theme-option="seoul-stone" aria-pressed="false">
-      <span class="palette-dot" style="background:#282C2B"></span>
-      Seoul Stone
-    </button>
-    <button type="button" data-theme-option="champagne-porcelain" aria-pressed="false">
-      <span class="palette-dot" style="background:#B59469"></span>
-      Champagne Porcelain
-    </button>
-    <span class="palette-divider" aria-hidden="true"></span>
-    <button type="button" data-theme-option="scholar-ink" aria-pressed="false">
-      <span class="palette-dot" style="background:#1E1C1A"></span>
-      Scholar Ink
-    </button>
-    <button type="button" data-theme-option="celadon-mist" aria-pressed="false">
-      <span class="palette-dot" style="background:#2C403C"></span>
-      Celadon Mist
-    </button>
-    <button type="button" data-theme-option="persimmon-silk" aria-pressed="false">
-      <span class="palette-dot" style="background:#C47A52"></span>
-      Persimmon Silk
-    </button>
-    <p class="palette-reason" data-palette-reason></p>
+    <div class="palette-panel" id="palette-panel">
+      <button type="button" data-theme-option="hanji-forest" aria-pressed="true">
+        <span class="palette-dot" style="background:#23463F"></span>
+        Hanji Forest
+      </button>
+      <button type="button" data-theme-option="seoul-stone" aria-pressed="false">
+        <span class="palette-dot" style="background:#282C2B"></span>
+        Seoul Stone
+      </button>
+      <button type="button" data-theme-option="champagne-porcelain" aria-pressed="false">
+        <span class="palette-dot" style="background:#B59469"></span>
+        Champagne Porcelain
+      </button>
+      <span class="palette-divider" aria-hidden="true"></span>
+      <button type="button" data-theme-option="scholar-ink" aria-pressed="false">
+        <span class="palette-dot" style="background:#1E1C1A"></span>
+        Scholar Ink
+      </button>
+      <button type="button" data-theme-option="celadon-mist" aria-pressed="false">
+        <span class="palette-dot" style="background:#2C403C"></span>
+        Celadon Mist
+      </button>
+      <button type="button" data-theme-option="persimmon-silk" aria-pressed="false">
+        <span class="palette-dot" style="background:#C47A52"></span>
+        Persimmon Silk
+      </button>
+      <p class="palette-reason" data-palette-reason></p>
+    </div>
   </nav>
   <script src="theme.js"></script>
   <script src="i18n.js"></script>

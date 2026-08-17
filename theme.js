@@ -46,6 +46,23 @@
     });
   });
 
+  var paletteOpenKey = "ksa-palette-open";
+  var paletteNav = document.querySelector(".palette-nav");
+  var paletteToggle = document.querySelector(".palette-toggle");
+  if (paletteNav && paletteToggle) {
+    function setPaletteOpen(open) {
+      paletteNav.classList.toggle("is-collapsed", !open);
+      paletteToggle.setAttribute("aria-expanded", open ? "true" : "false");
+      paletteToggle.setAttribute("data-i18n-aria", open ? "palette.close" : "palette.open");
+      paletteToggle.setAttribute("aria-label", open ? "Close colour schemes" : "Open colour schemes");
+      localStorage.setItem(paletteOpenKey, open ? "1" : "0");
+    }
+    setPaletteOpen(localStorage.getItem(paletteOpenKey) === "1");
+    paletteToggle.addEventListener("click", function () {
+      setPaletteOpen(paletteNav.classList.contains("is-collapsed"));
+    });
+  }
+
   var chrome = document.querySelector(".site-chrome");
   var hero = document.querySelector(".home-hero");
   if (chrome) {

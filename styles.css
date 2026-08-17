@@ -278,13 +278,59 @@ td,
   z-index: 40;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  gap: 0.4rem;
+  align-items: flex-end;
+  gap: 0.45rem;
   width: 16.5rem;
   padding: 0.65rem;
   background: var(--color-anchor);
   box-shadow: 0 8px 24px rgba(23, 37, 34, 0.28);
   border-radius: var(--radius);
+}
+
+.palette-nav.is-collapsed {
+  width: auto;
+  padding: 0.4rem;
+}
+
+.palette-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.4rem;
+  width: 100%;
+}
+
+.palette-nav.is-collapsed .palette-panel {
+  display: none;
+}
+
+.palette-toggle {
+  appearance: none;
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  border: 0;
+  border-radius: calc(var(--radius) - 4px);
+  background: transparent;
+  color: var(--hanji-ivory);
+  cursor: pointer;
+}
+
+.palette-toggle .material-symbols-outlined {
+  font-size: 1.45rem;
+  color: var(--hanji-ivory);
+}
+
+.palette-nav.is-collapsed .palette-icon-close,
+.palette-nav:not(.is-collapsed) .palette-icon-open {
+  display: none;
+}
+
+.palette-toggle:hover,
+.palette-toggle:focus-visible {
+  background: rgba(255, 255, 255, 0.12);
 }
 
 .palette-reason {
@@ -305,7 +351,7 @@ td,
   background: rgba(255, 255, 255, 0.28);
 }
 
-.palette-nav button {
+.palette-nav [data-theme-option] {
   appearance: none;
   border: 0;
   background: transparent;
@@ -325,13 +371,13 @@ td,
   white-space: nowrap;
 }
 
-.palette-nav button:hover,
-.palette-nav button:focus {
+.palette-nav [data-theme-option]:hover,
+.palette-nav [data-theme-option]:focus {
   background: rgba(255, 255, 255, 0.12);
   color: #fff;
 }
 
-.palette-nav button[aria-pressed="true"] {
+.palette-nav [data-theme-option][aria-pressed="true"] {
   color: var(--clinical-ink);
   background: var(--hanji-ivory);
   box-shadow: inset 0 0 0 2px var(--soft-gold);
@@ -707,7 +753,7 @@ h3 {
 .founder {
   display: grid;
   grid-template-columns: minmax(16rem, 2fr) minmax(0, 3fr);
-  gap: 2.5rem 3.25rem;
+  gap: 2.5rem 6.5rem;
   align-items: center;
 }
 
