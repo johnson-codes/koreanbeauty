@@ -683,7 +683,8 @@ h3 {
 }
 
 .founder-flag {
-  height: 1.15rem;
+  width: 2rem;
+  height: 1.35rem;
   object-fit: cover;
   border-radius: 2px;
   box-shadow: inset 0 0 0 1px var(--color-border);
