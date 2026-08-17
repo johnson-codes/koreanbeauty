@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300..700,0..1,0" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script>
     document.documentElement.dataset.theme = localStorage.getItem("ksa-theme") || "hanji-forest";
@@ -247,11 +247,6 @@
           <h3 data-i18n="advantage.4.title">Honest expectations</h3>
           <p data-i18n="advantage.4.body">Results are discussed as a path to improvement. We do not make miracle claims.</p>
         </article>
-        <article class="benefit">
-          <span class="material-symbols-outlined" aria-hidden="true">dermatology</span>
-          <h3 data-i18n="advantage.6.title">Advanced equipment</h3>
-          <p data-i18n="advantage.6.body">Medical-grade technology, including Onda, supports skincare, tightening and measured contouring.</p>
-        </article>
       </div>
     </div>
   </section>
@@ -299,6 +294,120 @@
           </article>
         </li>
       </ol>
+    </div>
+  </section>
+
+  <section class="section" id="reviews">
+    <div class="wrap reviews">
+      <div class="reviews-copy">
+        <div class="reviews-heading">
+          <div>
+            <div class="line"></div>
+            <p class="kicker" data-i18n="reviews.kicker">Reviews</p>
+            <h2 data-i18n="reviews.title">What our Coquitlam clients say</h2>
+          </div>
+          <div class="review-controls">
+            <button type="button" class="review-btn" data-review-prev aria-label="Previous reviews" data-i18n-aria="reviews.prev">
+              <span class="material-symbols-outlined" aria-hidden="true">chevron_left</span>
+            </button>
+            <button type="button" class="review-btn" data-review-next aria-label="Next reviews" data-i18n-aria="reviews.next">
+              <span class="material-symbols-outlined" aria-hidden="true">chevron_right</span>
+            </button>
+          </div>
+        </div>
+        <div class="review-viewport">
+          <div class="review-page is-active">
+            <article class="review-card">
+              <p class="review-stars" aria-hidden="true">
+                <span class="material-symbols-outlined filled-star">star</span>
+                <span class="material-symbols-outlined filled-star">star</span>
+                <span class="material-symbols-outlined filled-star">star</span>
+                <span class="material-symbols-outlined filled-star">star</span>
+                <span class="material-symbols-outlined filled-star">star</span>
+              </p>
+              <p data-i18n="reviews.1.quote">The consult was clear. I understood what was suitable and what to wait on, with no pressure to book the same day. I left knowing the next step, and that it was fine to think it over. It felt like a clinic appointment, not a sales visit.</p>
+              <div class="review-author">
+                <span class="review-avatar" aria-hidden="true">M</span>
+                <span>
+                  <strong>Min J.</strong>
+                  <span data-i18n="reviews.source">Google Review</span>
+                </span>
+              </div>
+            </article>
+            <article class="review-card">
+              <p class="review-stars" aria-hidden="true">
+                <span class="material-symbols-outlined filled-star">star</span>
+                <span class="material-symbols-outlined filled-star">star</span>
+                <span class="material-symbols-outlined filled-star">star</span>
+                <span class="material-symbols-outlined filled-star">star</span>
+                <span class="material-symbols-outlined filled-star">star</span>
+              </p>
+              <p data-i18n="reviews.2.quote">Korean techniques were explained in plain language. The pigment plan felt considered, not a packaged menu. They talked through what to expect over time, not a one-session promise. I felt informed enough to decide without being rushed.</p>
+              <div class="review-author">
+                <span class="review-avatar" aria-hidden="true">S</span>
+                <span>
+                  <strong>Sarah L.</strong>
+                  <span data-i18n="reviews.source">Google Review</span>
+                </span>
+              </div>
+            </article>
+          </div>
+          <div class="review-page">
+            <article class="review-card">
+              <p class="review-stars" aria-hidden="true">
+                <span class="material-symbols-outlined filled-star">star</span>
+                <span class="material-symbols-outlined filled-star">star</span>
+                <span class="material-symbols-outlined filled-star">star</span>
+                <span class="material-symbols-outlined filled-star">star</span>
+                <span class="material-symbols-outlined filled-star">star</span>
+              </p>
+              <p data-i18n="reviews.3.quote">I appreciated the honest recovery notes. Results have been gradual, which is what they said to expect. Nothing was overstated. Follow-up was clear, including what to watch for and when to come back.</p>
+              <div class="review-author">
+                <span class="review-avatar" aria-hidden="true">H</span>
+                <span>
+                  <strong>Hana K.</strong>
+                  <span data-i18n="reviews.source">Google Review</span>
+                </span>
+              </div>
+            </article>
+            <article class="review-card">
+              <p class="review-stars" aria-hidden="true">
+                <span class="material-symbols-outlined filled-star">star</span>
+                <span class="material-symbols-outlined filled-star">star</span>
+                <span class="material-symbols-outlined filled-star">star</span>
+                <span class="material-symbols-outlined filled-star">star</span>
+                <span class="material-symbols-outlined filled-star">star</span>
+              </p>
+              <p data-i18n="reviews.4.quote">Professional from assessment to aftercare. It feels like a clinic, not a spa. Recommendations followed my concern rather than a package. I understood the plan, the recovery, and what would be reviewed later.</p>
+              <div class="review-author">
+                <span class="review-avatar" aria-hidden="true">E</span>
+                <span>
+                  <strong>Emily W.</strong>
+                  <span data-i18n="reviews.source">Google Review</span>
+                </span>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="review-dots" role="tablist" aria-label="Review pages" data-i18n-aria="reviews.pages">
+          <button type="button" class="is-active" data-review-page="0" aria-label="Review page 1" data-i18n-aria="reviews.page1" aria-selected="true"></button>
+          <button type="button" data-review-page="1" aria-label="Review page 2" data-i18n-aria="reviews.page2" aria-selected="false"></button>
+        </div>
+      </div>
+      <figure class="review-feature">
+        <div class="review-feature-media" aria-hidden="true"></div>
+        <div class="review-rating">
+          <p class="review-rating-score">4.9</p>
+          <p class="review-stars" aria-hidden="true">
+            <span class="material-symbols-outlined filled-star">star</span>
+            <span class="material-symbols-outlined filled-star">star</span>
+            <span class="material-symbols-outlined filled-star">star</span>
+            <span class="material-symbols-outlined filled-star">star</span>
+            <span class="material-symbols-outlined filled-star">star</span>
+          </p>
+          <p class="review-rating-label" data-i18n="reviews.rating">Clients rating</p>
+        </div>
+      </figure>
     </div>
   </section>
 
@@ -397,5 +506,6 @@
   </nav>
   <script src="theme.js"></script>
   <script src="i18n.js"></script>
+  <script src="reviews.js"></script>
 </body>
 </html>
