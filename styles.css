@@ -2426,6 +2426,40 @@ th {
   gap: 1.25rem;
 }
 
+.service-cta {
+  padding-block: 5.75rem;
+  text-align: center;
+  background: var(--hanji-ivory);
+}
+
+.service-cta .service-center {
+  margin-bottom: 0;
+}
+
+.service-cta h2 {
+  margin-bottom: 1rem;
+  font-size: clamp(1.85rem, 3.2vw, 2.55rem);
+  color: var(--deep-forest);
+}
+
+.service-cta .line {
+  margin-bottom: 1.35rem;
+}
+
+.service-cta .service-sub {
+  max-width: 36rem;
+}
+
+.service-cta .btn {
+  margin-top: 1.75rem;
+  padding: 0.9rem 1.65rem;
+  border-radius: 999px;
+}
+
+.service-cta .btn .material-symbols-outlined {
+  font-size: 1.15rem;
+}
+
 .service-related .card {
   overflow: hidden;
 }
@@ -2449,8 +2483,8 @@ th {
 
 .service-split {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 24rem);
-  column-gap: 6rem;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 30rem);
+  column-gap: 4.5rem;
   row-gap: 2rem;
   align-items: center;
 }
@@ -2470,7 +2504,7 @@ th {
 }
 
 .service-photo {
-  width: 66.666%;
+  width: 83.333%;
   margin: 0;
   justify-self: start;
 }
@@ -2587,6 +2621,10 @@ th {
   .service-hero {
     min-height: 26.5rem;
     padding: 3.25rem 0;
+  }
+
+  .service-cta {
+    padding-block: 4.25rem;
   }
 
   .service-hero-media .card-media {
