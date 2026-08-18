@@ -2484,7 +2484,7 @@ th {
 .service-split {
   display: grid;
   grid-template-columns: minmax(15rem, 0.9fr) minmax(0, 1.1fr);
-  column-gap: 4.75rem;
+  column-gap: calc(4.75rem + 100px);
   row-gap: 2.25rem;
   align-items: center;
 }
