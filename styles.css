@@ -2449,22 +2449,30 @@ th {
 
 .service-split {
   display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 24rem);
   column-gap: 9rem;
   row-gap: 2rem;
   align-items: center;
 }
 
+.service-split-copy {
+  padding-block: 1.5rem;
+}
+
 .service-split h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 1.15rem;
 }
 
 .service-split p {
+  margin-bottom: 1.2rem;
+  line-height: 1.75;
   color: var(--color-muted-text);
 }
 
 .service-photo {
+  width: 66.666%;
   margin: 0;
+  justify-self: start;
 }
 
 .service-photo .card-media {
@@ -2502,18 +2510,12 @@ th {
   background: var(--soft-gold);
 }
 
-.service-why {
-  max-width: 40rem;
-  margin: 0 auto;
-  text-align: center;
+.service-why-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.service-why h2 {
-  margin-bottom: 1.25rem;
-}
-
-.service-why p {
-  color: var(--color-muted-text);
+.service-center + .service-why-grid {
+  margin-top: 0;
 }
 
 .expect-list {
@@ -2571,6 +2573,10 @@ th {
   .service-split,
   .service-benefits,
   .service-hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-why-grid {
     grid-template-columns: 1fr;
   }
 
