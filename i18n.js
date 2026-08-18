@@ -136,7 +136,19 @@
       "consult.title": "Feel informed, safe and confident",
       "consult.body": "A professional assessment comes first. We explain suitability, process and recovery in plain language, then build a personalized plan with realistic treatment expectations.",
       "cta.request": "Request a consultation",
-      "footer.blurb": "K-beauty aesthetics in Greater Vancouver"
+      "footer.blurb": "K-beauty aesthetics in Greater Vancouver",
+      "footer.links": "Quick Links",
+      "footer.treatments": "Our treatments",
+      "footer.hours": "Opening Hours",
+      "footer.hours.label": "Visits",
+      "footer.hours.by": "By consultation",
+      "footer.hours.booking": "Booking",
+      "footer.hours.note": "A professional assessment comes first.",
+      "footer.address": "Greater Vancouver, beginning with Coquitlam, the Tri-Cities and nearby communities.",
+      "footer.social": "Social media",
+      "footer.social.instagram": "Instagram",
+      "footer.social.facebook": "Facebook",
+      "footer.social.x": "X"
     },
     zh: {
       "doc.title": "K Beauty Clinic | 大温哥华",
@@ -267,7 +279,19 @@
       "consult.title": "知情、安全、有信心",
       "consult.body": "先做专业评估。我们用明白的语言说明是否适合、流程与恢复，再制定个性化方案与现实治疗预期。",
       "cta.request": "申请咨询",
-      "footer.blurb": "大温哥华韩式医美"
+      "footer.blurb": "大温哥华韩式医美",
+      "footer.links": "快速链接",
+      "footer.treatments": "我们的治疗",
+      "footer.hours": "就诊时间",
+      "footer.hours.label": "就诊",
+      "footer.hours.by": "需预约咨询",
+      "footer.hours.booking": "预约",
+      "footer.hours.note": "先做专业评估。",
+      "footer.address": "大温哥华，从高贵林、三城市及邻近社区开始。",
+      "footer.social": "社交媒体",
+      "footer.social.instagram": "Instagram",
+      "footer.social.facebook": "Facebook",
+      "footer.social.x": "X"
     },
     ko: {
       "doc.title": "K Beauty Clinic | 그레이터 밴쿠버",
@@ -398,7 +422,19 @@
       "consult.title": "충분히 알고, 안전하고, 자신 있게",
       "consult.body": "전문 평가가 먼저입니다. 적합 여부, 과정, 회복을 쉬운 말로 설명한 뒤 현실적인 시술 기대와 함께 맞춤 계획을 만듭니다.",
       "cta.request": "상담 신청",
-      "footer.blurb": "그레이터 밴쿠버 케이뷰티 에스테틱"
+      "footer.blurb": "그레이터 밴쿠버 케이뷰티 에스테틱",
+      "footer.links": "바로가기",
+      "footer.treatments": "시술 안내",
+      "footer.hours": "진료 시간",
+      "footer.hours.label": "방문",
+      "footer.hours.by": "상담 예약제",
+      "footer.hours.booking": "예약",
+      "footer.hours.note": "전문 평가가 먼저입니다.",
+      "footer.address": "그레이터 밴쿠버, 코퀴틀람과 트라이시티 및 인근 지역부터입니다.",
+      "footer.social": "소셜 미디어",
+      "footer.social.instagram": "Instagram",
+      "footer.social.facebook": "Facebook",
+      "footer.social.x": "X"
     }
   };
 
