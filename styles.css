@@ -656,17 +656,19 @@ td,
   align-self: center;
   margin-top: 0;
   margin-bottom: 0;
-  min-height: 3.5rem;
-  padding: 0.7rem 1.15rem;
+  height: 2.75rem;
+  min-height: 2.75rem;
+  padding: 0 1.05rem;
   font-size: 0.88rem;
   letter-spacing: 0.03em;
   line-height: 1;
   white-space: nowrap;
   flex-shrink: 0;
+  box-sizing: border-box;
 }
 
 .site-header .header-book .material-symbols-outlined {
-  font-size: 1.35rem;
+  font-size: 1.2rem;
   color: var(--deep-forest);
   -webkit-text-fill-color: var(--deep-forest);
 }
@@ -720,7 +722,9 @@ td,
 }
 
 .header-end .lang-switch {
+  height: 2.75rem;
   min-height: 2.75rem;
+  box-sizing: border-box;
 }
 
 .lang-switch button {
@@ -2271,6 +2275,7 @@ th {
   }
 
   .site-header .header-book {
+    height: auto;
     min-height: 2.6rem;
     padding: 0.55rem 0.9rem;
     font-size: 0.8rem;
