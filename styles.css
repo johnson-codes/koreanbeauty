@@ -612,30 +612,9 @@ html[data-lang="ko"] .brand-tagline {
   outline: none;
 }
 
-.hero-filter {
-  position: absolute;
-  inset: 0 0 12px;
-  z-index: 1;
-  background: #23463F;
-  opacity: 0.36;
-  mix-blend-mode: multiply;
-  pointer-events: none;
-}
-
-.hero-scrim {
-  position: absolute;
-  inset: 0 0 12px;
-  z-index: 2;
-  background:
-    linear-gradient(180deg, rgba(23, 37, 34, 0.28) 0%, transparent 32%),
-    linear-gradient(90deg, #172522 0%, transparent 62%);
-  opacity: 0.32;
-  pointer-events: none;
-}
-
 .home-hero .wrap {
   position: relative;
-  z-index: 3;
+  z-index: 1;
   margin-bottom: 80px;
   text-align: left;
 }
