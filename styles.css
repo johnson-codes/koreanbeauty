@@ -2450,7 +2450,7 @@ th {
 .service-split {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 24rem);
-  column-gap: 9rem;
+  column-gap: 6rem;
   row-gap: 2rem;
   align-items: center;
 }
