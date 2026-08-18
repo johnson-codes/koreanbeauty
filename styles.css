@@ -2354,7 +2354,7 @@ th {
 .service-hero {
   display: flex;
   align-items: center;
-  min-height: 35.25rem;
+  min-height: 47rem;
   padding: 4.5rem 0;
   text-align: left;
   background: var(--hanji-ivory);
@@ -2483,35 +2483,47 @@ th {
 
 .service-split {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 30rem);
-  column-gap: 4.5rem;
-  row-gap: 2rem;
+  grid-template-columns: minmax(15rem, 0.9fr) minmax(0, 1.1fr);
+  column-gap: 4.75rem;
+  row-gap: 2.25rem;
   align-items: center;
 }
 
 .service-split-copy {
-  padding-block: 1.5rem;
+  max-width: 38rem;
 }
 
-.service-split h2 {
-  margin-bottom: 1.15rem;
+.service-split-copy h2 {
+  max-width: 16ch;
+  margin-bottom: 0.9rem;
 }
 
-.service-split p {
-  margin-bottom: 1.2rem;
+.service-split-copy .line {
+  margin: 0 0 1.25rem;
+}
+
+.service-split-copy p {
+  margin-bottom: 1.05rem;
   line-height: 1.75;
   color: var(--color-muted-text);
 }
 
+.service-split-copy p:last-child {
+  margin-bottom: 0;
+}
+
 .service-photo {
-  width: 83.333%;
+  width: 100%;
   margin: 0;
-  justify-self: start;
 }
 
 .service-photo .card-media {
   aspect-ratio: 4 / 5;
   border-radius: var(--radius);
+}
+
+#about-treatment {
+  padding-block: 5.25rem;
 }
 
 #benefits {
@@ -2521,27 +2533,40 @@ th {
 .service-benefits {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.85rem 2.5rem;
+  gap: 1.45rem 3.25rem;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .service-benefits li {
-  position: relative;
-  padding-left: 1.15rem;
-  color: var(--color-muted-text);
+  display: grid;
+  grid-template-columns: 4rem minmax(0, 1fr);
+  column-gap: 1.15rem;
+  align-items: center;
 }
 
-.service-benefits li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.55em;
-  width: 0.4rem;
-  height: 0.4rem;
+.service-benefits .material-symbols-outlined {
+  display: grid;
+  place-items: center;
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
-  background: var(--soft-gold);
+  background: color-mix(in srgb, var(--soft-gold) 22%, var(--hanji-ivory));
+  font-size: 2.15rem;
+  line-height: 1;
+  color: var(--deep-forest);
+  -webkit-text-fill-color: var(--deep-forest);
+}
+
+.service-benefits h3 {
+  margin: 0.15rem 0 0.28rem;
+  font-size: 1.02rem;
+}
+
+.service-benefits p {
+  margin: 0;
+  color: var(--color-muted-text);
 }
 
 .service-why-grid {
@@ -2618,8 +2643,20 @@ th {
     padding-block: 4.75rem;
   }
 
+  #about-treatment {
+    padding-block: 3.75rem;
+  }
+
+  .service-photo {
+    max-width: 22rem;
+  }
+
+  .service-split-copy h2 {
+    max-width: none;
+  }
+
   .service-hero {
-    min-height: 26.5rem;
+    min-height: 35.35rem;
     padding: 3.25rem 0;
   }
 
