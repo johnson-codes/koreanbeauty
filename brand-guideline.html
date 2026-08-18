@@ -36,10 +36,91 @@
               <button type="button" data-lang="ko" lang="ko" aria-pressed="false">한국어</button>
             </div>
           </div>
-          <a href="index.html#process" data-i18n="nav.process">Process</a>
-          <a href="index.html#founder" data-i18n="nav.founder">Founder</a>
-          <a href="index.html#reviews" data-i18n="nav.reviews">Reviews</a>
-          <a href="index.html#faq" data-i18n="nav.faq">FAQ</a>
+          <div class="nav-item has-mega">
+            <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="mega-treatments" data-i18n="nav.treatments">Treatments</button>
+            <div class="mega-panel" id="mega-treatments" hidden>
+              <div class="mega-inner">
+                <div class="mega-head">
+                  <p class="mega-title" data-i18n="nav.treatments">Treatments</p>
+                  <a class="mega-viewall" href="index.html#injectables" data-i18n="nav.viewAllTreatments">View all treatments</a>
+                </div>
+                <div class="mega-body">
+                  <ul class="mega-cats" role="list">
+                    <li><button type="button" class="mega-cat" data-mega-cat="injectables" aria-pressed="true" data-i18n="nav.injectables">Injectables</button></li>
+                    <li><button type="button" class="mega-cat" data-mega-cat="lasers" aria-pressed="false" data-i18n="nav.lasers">Lasers and Light</button></li>
+                    <li><button type="button" class="mega-cat" data-mega-cat="skincare" aria-pressed="false" data-i18n="nav.skincare">Medical Skincare</button></li>
+                    <li><button type="button" class="mega-cat" data-mega-cat="rejuvenation" aria-pressed="false" data-i18n="nav.rejuvenation">Skin Rejuvenation</button></li>
+                    <li><button type="button" class="mega-cat" data-mega-cat="programs" aria-pressed="false" data-i18n="nav.programs">Signature Programs</button></li>
+                  </ul>
+                  <div class="mega-detail">
+                    <div class="mega-pane is-active" data-mega-pane="injectables">
+                      <h3 data-i18n="nav.injectables">Injectables</h3>
+                      <ul class="mega-links">
+                        <li><a href="index.html#injectables" data-i18n="nav.botox">Botox</a></li>
+                        <li><a href="index.html#injectables" data-i18n="nav.filler">Filler</a></li>
+                      </ul>
+                    </div>
+                    <div class="mega-pane" data-mega-pane="lasers" hidden>
+                      <h3 data-i18n="nav.lasers">Lasers and Light</h3>
+                      <ul class="mega-links">
+                        <li><a href="index.html#lasers" data-i18n="nav.lasers">Lasers and Light</a></li>
+                      </ul>
+                    </div>
+                    <div class="mega-pane" data-mega-pane="skincare" hidden>
+                      <h3 data-i18n="nav.skincare">Medical Skincare</h3>
+                      <ul class="mega-links">
+                        <li><a href="index.html#skincare" data-i18n="nav.skincare">Medical Skincare</a></li>
+                      </ul>
+                    </div>
+                    <div class="mega-pane" data-mega-pane="rejuvenation" hidden>
+                      <h3 data-i18n="nav.rejuvenation">Skin Rejuvenation</h3>
+                      <ul class="mega-links">
+                        <li><a href="index.html#rejuvenation" data-i18n="nav.rejuvenation">Skin Rejuvenation</a></li>
+                        <li><a href="index.html#rejuvenation" data-i18n="nav.onda">Onda tightening</a></li>
+                      </ul>
+                    </div>
+                    <div class="mega-pane" data-mega-pane="programs" hidden>
+                      <h3 data-i18n="nav.programs">Signature Programs</h3>
+                      <ul class="mega-links">
+                        <li><a href="index.html#programs" data-i18n="nav.programs">Signature Programs</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-item has-mega">
+            <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="mega-conditions" data-i18n="nav.conditions">Conditions</button>
+            <div class="mega-panel" id="mega-conditions" hidden>
+              <div class="mega-inner">
+                <div class="mega-head">
+                  <p class="mega-title" data-i18n="nav.conditions">Conditions</p>
+                  <a class="mega-viewall" href="index.html#concerns" data-i18n="nav.viewAllConditions">View all conditions</a>
+                </div>
+                <div class="mega-body">
+                  <ul class="mega-cats" role="list">
+                    <li><button type="button" class="mega-cat" data-mega-cat="face" aria-pressed="true" data-i18n="nav.face">Face</button></li>
+                  </ul>
+                  <div class="mega-detail">
+                    <div class="mega-pane is-active" data-mega-pane="face">
+                      <h3 data-i18n="nav.face">Face</h3>
+                      <ul class="mega-links mega-links-grid">
+                        <li><a href="index.html#concerns" data-i18n="concern.pigment.title">Pigmentation</a></li>
+                        <li><a href="index.html#concerns" data-i18n="concern.aging.title">Aging and Wrinkles</a></li>
+                        <li><a href="index.html#concerns" data-i18n="concern.volume.title">Volume Loss</a></li>
+                        <li><a href="index.html#concerns" data-i18n="concern.acne.title">Acne and Scarring</a></li>
+                        <li><a href="index.html#concerns" data-i18n="concern.texture.title">Texture and Pores</a></li>
+                        <li><a href="index.html#concerns" data-i18n="concern.contour.title">Facial Contouring</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="nav-link" href="index.html#founder" data-i18n="nav.about">About</a>
+          <a class="nav-link" href="index.html#consultation" data-i18n="nav.contact">Contact</a>
         </nav>
         <div class="header-end">
           <div class="lang-switch header-lang" role="group" aria-label="Language" data-i18n-aria="lang.label">
@@ -60,6 +141,13 @@
     </header>
     <div class="nav-backdrop" hidden></div>
   </div>
+
+  <section class="ds-cover" data-node-id="3:69" data-name="Cover" aria-label="Design system cover">
+    <p class="ds-cover-kicker">K Beauty Clinic</p>
+    <h1>Design System</h1>
+    <p class="ds-cover-tagline">Korean Expertise. Confident Results.</p>
+    <p class="ds-cover-meta">v1  ·  Library only  ·  August 2026</p>
+  </section>
 
   <section class="page-hero">
     <div class="wrap wrap-narrow">

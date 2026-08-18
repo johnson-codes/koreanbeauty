@@ -128,11 +128,15 @@
       primaryNav.querySelectorAll("a").forEach(function (link) {
         link.addEventListener("click", function () {
           setNavOpen(false);
+          closeNavMenus();
         });
       });
     }
     document.addEventListener("keydown", function (event) {
-      if (event.key === "Escape") setNavOpen(false);
+      if (event.key === "Escape") {
+        setNavOpen(false);
+        closeNavMenus();
+      }
     });
     window.addEventListener("resize", function () {
       if (window.innerWidth > 1100) setNavOpen(false);
@@ -147,8 +151,72 @@
     }
   }
 
+  var hoverTimer;
+
+  function closeNavMenus(except) {
+    document.querySelectorAll(".nav-item.is-open").forEach(function (item) {
+      if (item === except) return;
+      item.classList.remove("is-open");
+      var trigger = item.querySelector(".nav-trigger");
+      var panel = item.querySelector(".mega-panel, .nav-flyout");
+      if (trigger) trigger.setAttribute("aria-expanded", "false");
+      if (panel) panel.hidden = true;
+    });
+  }
+
+  function openNavItem(item) {
+    if (!item) return;
+    closeNavMenus(item);
+    item.classList.add("is-open");
+    var trigger = item.querySelector(".nav-trigger");
+    var panel = item.querySelector(".mega-panel, .nav-flyout");
+    if (trigger) trigger.setAttribute("aria-expanded", "true");
+    if (panel) panel.hidden = false;
+  }
+
+  document.querySelectorAll(".nav-item").forEach(function (item) {
+    var trigger = item.querySelector(".nav-trigger");
+    if (!trigger) return;
+    trigger.addEventListener("click", function (event) {
+      event.preventDefault();
+      if (item.classList.contains("is-open")) closeNavMenus();
+      else openNavItem(item);
+    });
+    item.addEventListener("mouseenter", function () {
+      if (window.innerWidth <= 1100) return;
+      window.clearTimeout(hoverTimer);
+      openNavItem(item);
+    });
+    item.addEventListener("mouseleave", function () {
+      if (window.innerWidth <= 1100) return;
+      hoverTimer = window.setTimeout(function () {
+        closeNavMenus();
+      }, 140);
+    });
+  });
+
+  document.querySelectorAll(".mega-panel").forEach(function (panel) {
+    panel.addEventListener("click", function (event) {
+      var cat = event.target.closest(".mega-cat");
+      if (!cat || !panel.contains(cat)) return;
+      var id = cat.getAttribute("data-mega-cat");
+      panel.querySelectorAll(".mega-cat").forEach(function (button) {
+        button.setAttribute("aria-pressed", button === cat ? "true" : "false");
+      });
+      panel.querySelectorAll(".mega-pane").forEach(function (pane) {
+        var on = pane.getAttribute("data-mega-pane") === id;
+        pane.classList.toggle("is-active", on);
+        pane.hidden = !on;
+      });
+    });
+  });
+
+  document.addEventListener("click", function (event) {
+    if (!event.target.closest(".nav-item")) closeNavMenus();
+  });
+
   if (primaryNav && "IntersectionObserver" in window) {
-    var navLinks = Array.prototype.slice.call(primaryNav.querySelectorAll('a[href*="#"]'));
+    var navLinks = Array.prototype.slice.call(primaryNav.querySelectorAll(".nav-link"));
     var watched = navLinks.map(function (link) {
       var hash = link.getAttribute("href").split("#")[1];
       var section = hash ? document.getElementById(hash) : null;
