@@ -603,23 +603,13 @@ html[data-lang="ko"] .brand-tagline {
   position: absolute;
   inset: 0 0 -2px;
   z-index: 0;
-  overflow: hidden;
-  pointer-events: none;
-  background: var(--hanji-ivory);
-  container-type: size;
-}
-
-.hero-video iframe {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: max(100%, calc(100cqh * 16 / 9));
-  height: max(100%, calc(100cqw * 9 / 16));
-  min-width: 100%;
-  min-height: 100%;
-  transform: translate(-50%, -50%);
+  display: block;
+  width: 100%;
+  height: calc(100% + 2px);
+  object-fit: cover;
+  object-position: center 22%;
   border: 0;
-  pointer-events: none;
+  outline: none;
 }
 
 .home-hero .wrap {
