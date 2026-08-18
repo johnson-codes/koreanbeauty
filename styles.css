@@ -590,9 +590,9 @@ html[data-lang="ko"] .brand-tagline {
   justify-content: center;
   isolation: isolate;
   overflow: hidden;
-  min-height: 40.83rem;
-  height: 90.4vh;
-  max-height: 58.33rem;
+  min-height: 49rem;
+  height: 108.48vh;
+  max-height: 70rem;
   margin-top: calc(-1 * var(--chrome-height, 5.75rem));
   background: var(--hanji-ivory);
   color: var(--hanji-ivory);
@@ -615,7 +615,7 @@ html[data-lang="ko"] .brand-tagline {
 .home-hero .wrap {
   position: relative;
   z-index: 1;
-  margin-bottom: 80px;
+  margin-bottom: 96px;
   text-align: left;
 }
 
@@ -1747,7 +1747,7 @@ th {
 
   .home-hero {
     height: auto;
-    min-height: 100svh;
+    min-height: 120svh;
     max-height: none;
     padding-bottom: 4.25rem;
   }
