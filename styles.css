@@ -187,17 +187,17 @@ td,
   align-items: center;
   background: var(--hanji-ivory);
   border-radius: calc(var(--radius) - 4px);
-  padding: 0.28rem 0.5rem;
+  padding: 0.12rem 0.28rem;
 }
 
 .site-logo {
   display: block;
-  height: 48px;
+  height: 64px;
   width: auto;
 }
 
 .site-logo-lg {
-  height: 72px;
+  height: 96px;
 }
 
 .logo-specimen {
@@ -1728,7 +1728,7 @@ th {
 }
 
 .site-footer .site-logo {
-  height: 44px;
+  height: 56px;
   width: auto;
   max-width: 100%;
   max-height: none;
@@ -1932,7 +1932,7 @@ th {
   .site-logo {
     width: auto;
     max-width: 100%;
-    max-height: 48px;
+    max-height: 56px;
     height: auto;
     object-fit: contain;
     object-position: left center;
@@ -2121,11 +2121,11 @@ th {
 
   .site-logo {
     height: auto;
-    max-height: 40px;
+    max-height: 52px;
   }
 
   .site-logo-lg {
-    height: 56px;
+    height: 80px;
   }
 
   .site-header .header-book {
@@ -2169,7 +2169,7 @@ th {
 }
 
 .site-footer .site-logo {
-  height: 44px;
+  height: 56px;
   width: auto;
   max-width: 100%;
   max-height: none;
