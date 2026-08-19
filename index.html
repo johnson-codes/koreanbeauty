@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="hanji-forest">
+<html lang="en" data-theme="warm-k-beauty">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300..700,0..1,0" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script>
-    document.documentElement.dataset.theme = localStorage.getItem("ksa-theme") || "hanji-forest";
+    document.documentElement.dataset.theme = "warm-k-beauty";
     (function () {
       var lang = localStorage.getItem("ksa-lang");
       if (lang === "zh") document.documentElement.lang = "zh-Hans";
@@ -144,7 +144,7 @@
 
   <section class="home-hero">
     <video class="hero-video" autoplay muted loop playsinline>
-      <source src="videos/hero-haha-model.mp4" type="video/mp4">
+      <source src="videos/hero-olive-green.mp4" type="video/mp4">
     </video>
     <div class="wrap">
       <p class="brand-tagline">
@@ -187,7 +187,7 @@
       </p>
       <h1 data-i18n="hero.title">Medical Confidence with Korean Refinement.</h1>
       <p class="hero-line" data-i18n="hero.line">Advanced Korean Aesthetics for Every Woman.</p>
-      <a class="btn icon-label" href="https://smilewellclinic.janeapp.com/#/list" target="_blank" rel="noopener noreferrer">
+      <a class="btn btn-forest icon-label" href="https://smilewellclinic.janeapp.com/#/list" target="_blank" rel="noopener noreferrer">
         <span class="material-symbols-outlined" aria-hidden="true">calendar_month</span>
         <span data-i18n="cta.book">Book a consultation</span>
       </a>
@@ -723,40 +723,6 @@
       </div>
     </div>
   </footer>
-  <nav class="palette-nav is-collapsed" aria-label="Colour schemes">
-    <button type="button" class="palette-toggle" aria-expanded="false" aria-controls="palette-panel" data-i18n-aria="palette.open">
-      <span class="material-symbols-outlined palette-icon-open" aria-hidden="true">palette</span>
-      <span class="material-symbols-outlined palette-icon-close" aria-hidden="true">close</span>
-    </button>
-    <div class="palette-panel" id="palette-panel">
-      <button type="button" data-theme-option="hanji-forest" aria-pressed="true">
-        <span class="palette-dot" style="background:#23463F"></span>
-        Hanji Forest
-      </button>
-      <button type="button" data-theme-option="seoul-stone" aria-pressed="false">
-        <span class="palette-dot" style="background:#282C2B"></span>
-        Seoul Stone
-      </button>
-      <button type="button" data-theme-option="champagne-porcelain" aria-pressed="false">
-        <span class="palette-dot" style="background:#B59469"></span>
-        Champagne Porcelain
-      </button>
-      <span class="palette-divider" aria-hidden="true"></span>
-      <button type="button" data-theme-option="scholar-ink" aria-pressed="false">
-        <span class="palette-dot" style="background:#1E1C1A"></span>
-        Scholar Ink
-      </button>
-      <button type="button" data-theme-option="celadon-mist" aria-pressed="false">
-        <span class="palette-dot" style="background:#2C403C"></span>
-        Celadon Mist
-      </button>
-      <button type="button" data-theme-option="persimmon-silk" aria-pressed="false">
-        <span class="palette-dot" style="background:#C47A52"></span>
-        Persimmon Silk
-      </button>
-      <p class="palette-reason" data-palette-reason></p>
-    </div>
-  </nav>
   <script src="theme.js"></script>
   <script src="i18n.js"></script>
   <script src="reviews.js"></script>
