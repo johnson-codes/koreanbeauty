@@ -3157,17 +3157,18 @@ th {
 .founder-journey {
   list-style: none;
   display: grid;
-  max-width: 52rem;
-  margin: 2.15rem auto 0;
+  width: 100%;
+  max-width: none;
+  margin: 2.5rem 0 0;
   padding: 0;
 }
 
 .founder-journey > li {
   display: grid;
-  grid-template-columns: 11.5rem minmax(0, 1fr);
-  column-gap: 1.75rem;
-  align-items: start;
-  padding: 1.5rem 0;
+  grid-template-columns: minmax(14.5rem, 16.5rem) minmax(0, 1fr);
+  column-gap: 2.5rem;
+  align-items: center;
+  padding: 2.65rem 0;
 }
 
 .founder-journey > li + li {
@@ -3245,16 +3246,21 @@ th {
 }
 
 .founder-journey-copy {
+  display: grid;
+  grid-template-columns: minmax(16rem, 0.4fr) minmax(22rem, 0.6fr);
+  column-gap: 2.5rem;
+  align-items: start;
   min-width: 0;
-  padding-top: 0.15rem;
+  padding-top: 0;
 }
 
 .founder-journey-lead {
+  grid-column: 1;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.35rem 1rem;
-  margin-bottom: 0.4rem;
+  gap: 0.4rem 1.15rem;
+  margin-bottom: 0.55rem;
 }
 
 .founder-journey-place {
@@ -3264,8 +3270,8 @@ th {
 }
 
 .founder-flag.founder-journey-flag {
-  width: 1.25rem;
-  height: 0.84rem;
+  width: 2.15rem;
+  height: 1.45rem;
 }
 
 .founder-journey-year {
@@ -3285,19 +3291,22 @@ th {
 }
 
 .founder-journey-copy h3 {
-  margin: 0 0 0.55rem;
+  grid-column: 1;
+  margin: 0;
   font-family: "DM Serif Display", Georgia, serif;
-  font-size: clamp(1.25rem, 1.9vw, 1.5rem);
+  font-size: clamp(1.3rem, 2vw, 1.6rem);
   font-weight: 400;
   line-height: 1.28;
   color: var(--deep-forest);
 }
 
 .founder-journey-copy p:not(.kicker) {
+  grid-column: 2;
+  grid-row: 1 / span 3;
   margin: 0;
-  max-width: 38rem;
+  max-width: none;
   color: var(--color-muted-text);
-  line-height: 1.7;
+  line-height: 1.75;
 }
 
 .about-page .about-values {
@@ -3325,7 +3334,7 @@ th {
 }
 
 .about-process {
-  padding: 2.25rem 2.1rem 2.5rem;
+  padding: 2.5rem 2.35rem 2.85rem;
 }
 
 .about-offer-grid {
@@ -3396,6 +3405,20 @@ th {
   .about-offer-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .founder-journey-copy {
+    grid-template-columns: 1fr;
+    row-gap: 0.7rem;
+  }
+
+  .founder-journey-copy h3 {
+    margin-bottom: 0;
+  }
+
+  .founder-journey-copy p:not(.kicker) {
+    grid-column: 1;
+    grid-row: auto;
+  }
 }
 
 @media (max-width: 960px) {
@@ -3407,8 +3430,8 @@ th {
 
   .founder-journey > li {
     grid-template-columns: 1fr;
-    row-gap: 0.85rem;
-    padding: 1.35rem 0;
+    row-gap: 1.1rem;
+    padding: 2rem 0;
   }
 
   .about-photo {
@@ -3418,7 +3441,7 @@ th {
   }
 
   .founder-journey-media {
-    max-width: 14.5rem;
+    max-width: 16rem;
     aspect-ratio: 4 / 5;
   }
 
