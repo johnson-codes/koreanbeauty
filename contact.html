@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title data-i18n="svc.lasers.doc.title">Lasers and Light in Coquitlam | K Beauty Clinic</title>
-  <meta name="description" data-i18n="svc.lasers.doc.description" content="Laser and light protocols for pigment, texture and skin quality at K Beauty Clinic in Coquitlam. Assessment first. Honest expectations.">
+  <title data-i18n="contact.doc.title">Contact | K Beauty Clinic</title>
+  <meta name="description" data-i18n="contact.doc.description" content="Contact K Beauty Clinic in Coquitlam. Address, hours, phone and email, plus a map to book a consultation.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
     })();
   </script>
 </head>
-<body class="service-page">
+<body class="contact-page">
   <div class="site-chrome">
     <header class="site-header">
       <div class="wrap">
@@ -120,7 +120,7 @@
             </div>
           </div>
           <a class="nav-link" href="index.html#founder" data-i18n="nav.about">About</a>
-          <a class="nav-link" href="contact.html" data-i18n="nav.contact">Contact</a>
+          <a class="nav-link" href="contact.html" aria-current="page" data-i18n="nav.contact">Contact</a>
         </nav>
         <div class="header-end">
           <div class="lang-switch header-lang" role="group" aria-label="Language" data-i18n-aria="lang.label">
@@ -128,7 +128,7 @@
             <button type="button" data-lang="zh" lang="zh-Hans" aria-pressed="false">中文</button>
             <button type="button" data-lang="ko" lang="ko" aria-pressed="false">한국어</button>
           </div>
-          <a class="btn header-book icon-label" href="contact.html#consultation" data-i18n-aria="cta.book">
+          <a class="btn header-book icon-label" href="#consultation" data-i18n-aria="cta.book">
             <span class="material-symbols-outlined" aria-hidden="true">calendar_month</span>
             <span class="header-book-full" data-i18n="cta.book">Book a consultation</span>
             <span class="header-book-short" data-i18n="cta.book.short">Book</span>
@@ -142,209 +142,117 @@
     <div class="nav-backdrop" hidden></div>
   </div>
 
-  <section class="service-hero">
-    <div class="wrap service-hero-grid">
-      <div class="service-hero-copy">
-        <p class="kicker" data-i18n="svc.kicker">Treatment</p>
-        <h1 data-i18n="svc.lasers.title">Lasers and Light in Coquitlam</h1>
-        <div class="line" role="presentation"></div>
-        <p class="service-lede" data-i18n="svc.lasers.lede">Laser and light protocols for pigment, texture and skin quality at K Beauty Clinic. Suitability is assessed first, then a personalized plan with realistic expectations.</p>
-        <a class="btn btn-forest icon-label" href="contact.html#consultation">
-          <span class="material-symbols-outlined" aria-hidden="true">calendar_month</span>
-          <span data-i18n="cta.book">Book a consultation</span>
-        </a>
-      </div>
-      <figure class="service-hero-media" aria-hidden="true">
-        <div class="card-media"></div>
-      </figure>
-    </div>
-  </section>
-
-  <div class="section-wave" data-from="gold" data-to="pine" aria-hidden="true">
-    <svg viewBox="0 0 1440 140" preserveAspectRatio="none">
-      <path class="section-wave-soft" d="M0 96C180 96 250 26 540 30C820 34 880 124 1160 118C1300 114 1360 44 1440 50V140H0Z"/>
-      <path class="section-wave-fill" d="M0 88C180 88 250 16 540 20C820 24 880 118 1160 110C1300 106 1360 36 1440 42V140H0Z"/>
-      <path class="section-wave-line" d="M0 88C180 88 250 16 540 20C820 24 880 118 1160 110C1300 106 1360 36 1440 42"/>
-    </svg>
-  </div>
-
-  <section class="section" id="about-treatment">
+  <section class="contact-hero">
     <div class="wrap">
-      <div class="service-split">
-        <figure class="service-photo">
-          <div class="card-media" aria-hidden="true"></div>
-        </figure>
-        <div class="service-split-copy">
-          <p class="kicker" data-i18n="svc.lasers.what.kicker">About</p>
-          <h2 data-i18n="svc.lasers.what.title">What is laser and light treatment?</h2>
-          <div class="line" role="presentation"></div>
-          <p data-i18n="svc.lasers.what.p1">Laser and light care is planned after a professional assessment of your concern, skin type and history. The protocol is chosen for pigment, texture or skin quality—not as a packaged spa menu.</p>
-          <p data-i18n="svc.lasers.what.p2">We explain suitability, recovery and realistic expectations in plain language before any treatment is offered. Combined plans are only suggested when they serve the concern.</p>
+      <div class="contact-hero-frame">
+        <div class="contact-hero-media" aria-hidden="true"></div>
+        <div class="contact-hero-copy">
+          <h1 data-i18n="contact.hero.title">Contact K Beauty Clinic</h1>
+          <p data-i18n="contact.hero.lede">We would love to hear from you. Book a consultation in Coquitlam or reach out with any questions.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="section-wave is-flip" data-from="pine" data-to="gold" aria-hidden="true">
-    <svg viewBox="0 0 1440 140" preserveAspectRatio="none">
-      <path class="section-wave-soft" d="M0 96C180 96 250 26 540 30C820 34 880 124 1160 118C1300 114 1360 44 1440 50V140H0Z"/>
-      <path class="section-wave-fill" d="M0 88C180 88 250 16 540 20C820 24 880 118 1160 110C1300 106 1360 36 1440 42V140H0Z"/>
-      <path class="section-wave-line" d="M0 88C180 88 250 16 540 20C820 24 880 118 1160 110C1300 106 1360 36 1440 42"/>
-    </svg>
-  </div>
-
-  <section class="section" id="why">
-    <div class="wrap">
-      <div class="service-center">
+  <section class="section contact-details">
+    <div class="wrap contact-grid">
+      <article class="contact-card">
+        <h2 data-i18n="contact.info.title">Clinic information</h2>
         <div class="line" role="presentation"></div>
-        <p class="kicker" data-i18n="svc.lasers.why.kicker">Why</p>
-        <h2 data-i18n="svc.lasers.why.title">Why choose K Beauty Clinic for lasers and light?</h2>
-        <p class="service-sub" data-i18n="svc.lasers.why.lede">Korean expertise for laser and light, with an assessment first and honest aftercare—not a spa menu or a one-session claim.</p>
-      </div>
-      <div class="benefit-grid service-why-grid">
-        <article class="benefit">
-          <span class="material-symbols-outlined" aria-hidden="true">public</span>
-          <h3 data-i18n="svc.lasers.why.1.title">Korean expertise</h3>
-          <p data-i18n="svc.lasers.why.p1">The clinic is led with professional cosmetic experience from South Korea, including considered use of energy-based treatments. That background shapes how we assess skin and talk about results.</p>
-        </article>
-        <article class="benefit">
-          <span class="material-symbols-outlined" aria-hidden="true">clinical_notes</span>
-          <h3 data-i18n="svc.lasers.why.2.title">Assessment first</h3>
-          <p data-i18n="svc.lasers.why.p2">Care is delivered in Coquitlam for women across Greater Vancouver. A professional assessment comes first. We do not offer spa menus or one-session miracle claims.</p>
-        </article>
-        <article class="benefit">
-          <span class="material-symbols-outlined" aria-hidden="true">event_repeat</span>
-          <h3 data-i18n="svc.lasers.why.3.title">Aftercare and follow-up</h3>
-          <p data-i18n="svc.lasers.why.p3">After treatment you leave with clear aftercare. Follow-up checks progress and decides the next step, including when more time or a different approach is needed.</p>
-        </article>
-      </div>
+        <dl class="contact-facts">
+          <div>
+            <dt data-i18n="contact.label.address">Address</dt>
+            <dd>
+              <a href="https://maps.google.com/?q=504+Young+Dr+%23206,+Coquitlam,+BC+V3K+0H9">
+                <span data-i18n="contact.address.line1">504 Young Dr #206</span><br>
+                <span data-i18n="contact.address.line2">Coquitlam, BC V3K 0H9</span><br>
+                <span data-i18n="contact.address.line3">SOCO One — Tower A</span>
+              </a>
+            </dd>
+          </div>
+          <div>
+            <dt data-i18n="contact.label.phone">Phone</dt>
+            <dd><a href="tel:+17789398705">+1-778-939-8705</a></dd>
+          </div>
+          <div>
+            <dt data-i18n="contact.label.email">Email</dt>
+            <dd><a href="mailto:smilewellaesthetics@gmail.com">smilewellaesthetics@gmail.com</a></dd>
+          </div>
+        </dl>
+        <div class="contact-hours">
+          <p class="kicker" data-i18n="contact.label.hours">Hours</p>
+          <ul>
+            <li>
+              <span data-i18n="contact.hours.mwf">Mon, Wed, Fri</span>
+              <span data-i18n="contact.hours.mwf.time">9 am – 5 pm</span>
+            </li>
+            <li>
+              <span data-i18n="contact.hours.tt">Tue, Thu</span>
+              <span data-i18n="contact.hours.tt.time">9 am – 9 pm</span>
+            </li>
+            <li>
+              <span data-i18n="contact.hours.sat">Sat</span>
+              <span data-i18n="contact.hours.sat.time">9 am – 7 pm</span>
+            </li>
+            <li>
+              <span data-i18n="contact.hours.sun">Sun</span>
+              <span data-i18n="contact.hours.sun.time">12 pm – 7 pm</span>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <aside class="contact-book" id="consultation">
+        <p class="kicker" data-i18n="contact.book.kicker">Book a consultation</p>
+        <h2 data-i18n="contact.book.title">Choose your preferred way to book</h2>
+        <a class="btn btn-forest icon-label contact-book-btn" href="tel:+17789398705">
+          <span class="material-symbols-outlined" aria-hidden="true">call</span>
+          <span data-i18n="contact.book.call">Call us</span>
+        </a>
+        <a class="btn icon-label contact-book-btn" href="mailto:smilewellaesthetics@gmail.com">
+          <span class="material-symbols-outlined" aria-hidden="true">calendar_month</span>
+          <span data-i18n="contact.book.schedule">Make my schedule</span>
+        </a>
+      </aside>
     </div>
   </section>
 
-  <div class="section-wave" data-from="gold" data-to="pine" aria-hidden="true">
-    <svg viewBox="0 0 1440 140" preserveAspectRatio="none">
-      <path class="section-wave-soft" d="M0 96C180 96 250 26 540 30C820 34 880 124 1160 118C1300 114 1360 44 1440 50V140H0Z"/>
-      <path class="section-wave-fill" d="M0 88C180 88 250 16 540 20C820 24 880 118 1160 110C1300 106 1360 36 1440 42V140H0Z"/>
-      <path class="section-wave-line" d="M0 88C180 88 250 16 540 20C820 24 880 118 1160 110C1300 106 1360 36 1440 42"/>
-    </svg>
-  </div>
-
-  <section class="section section-muted" id="benefits">
+  <section class="contact-map" aria-labelledby="contact-map-heading">
     <div class="wrap">
-      <div class="service-center">
-        <h2 data-i18n="svc.benefits.title">Key Benefits</h2>
-        <div class="line" role="presentation"></div>
+      <h2 class="visually-hidden" id="contact-map-heading" data-i18n="contact.map.title">Map of K Beauty Clinic in Coquitlam</h2>
+      <div class="contact-map-frame">
+        <iframe
+          title="Map of K Beauty Clinic at 504 Young Dr, Coquitlam"
+          src="https://maps.google.com/maps?q=504%20Young%20Dr%20%23206%2C%20Coquitlam%2C%20BC%20V3K%200H9&amp;z=16&amp;output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen></iframe>
       </div>
-      <ul class="service-benefits">
-        <li>
-          <span class="material-symbols-outlined" aria-hidden="true">texture</span>
-          <div>
-            <h3 data-i18n="svc.lasers.b1.title">Pigment, texture and quality</h3>
-            <p data-i18n="svc.lasers.b1">The protocol is chosen for pigment, texture or skin quality—not as a packaged spa menu.</p>
-          </div>
-        </li>
-        <li>
-          <span class="material-symbols-outlined" aria-hidden="true">diversity_3</span>
-          <div>
-            <h3 data-i18n="svc.lasers.b2.title">Matched to skin type</h3>
-            <p data-i18n="svc.lasers.b2">Suitability considers skin type and history, including Asian skin, before laser or light is offered.</p>
-          </div>
-        </li>
-        <li>
-          <span class="material-symbols-outlined" aria-hidden="true">hourglass_empty</span>
-          <div>
-            <h3 data-i18n="svc.lasers.b3.title">Honest downtime</h3>
-            <p data-i18n="svc.lasers.b3">Recovery is explained before treatment so expectations stay honest. We do not over-promise downtime.</p>
-          </div>
-        </li>
-        <li>
-          <span class="material-symbols-outlined" aria-hidden="true">event_repeat</span>
-          <div>
-            <h3 data-i18n="svc.lasers.b4.title">Planned over sessions</h3>
-            <p data-i18n="svc.lasers.b4">How many sessions depends on the concern and the skin. We do not promise a single-session transformation.</p>
-          </div>
-        </li>
-        <li>
-          <span class="material-symbols-outlined" aria-hidden="true">touch_app</span>
-          <div>
-            <h3 data-i18n="svc.lasers.b5.title">Sensation explained</h3>
-            <p data-i18n="svc.lasers.b5">What you are likely to feel is explained before treatment. We do not describe it as painless if it is not.</p>
-          </div>
-        </li>
-        <li>
-          <span class="material-symbols-outlined" aria-hidden="true">hub</span>
-          <div>
-            <h3 data-i18n="svc.lasers.b6.title">Complements other care</h3>
-            <p data-i18n="svc.lasers.b6">Combined with other treatments only when it serves the concern.</p>
-          </div>
-        </li>
-      </ul>
+      <div class="contact-map-bar">
+        <a class="contact-map-open" href="https://maps.google.com/?q=504+Young+Dr+%23206,+Coquitlam,+BC+V3K+0H9" target="_blank" rel="noopener noreferrer">
+          <span data-i18n="contact.map.open">Open in Google Maps</span>
+          <span class="material-symbols-outlined" aria-hidden="true">open_in_new</span>
+        </a>
+        <ul class="footer-social contact-social" data-i18n-aria="footer.social" aria-label="Social media">
+          <li>
+            <a class="footer-social-link" href="#" data-i18n-aria="footer.social.instagram" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <rect x="3.4" y="3.4" width="17.2" height="17.2" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+                <circle cx="12" cy="12" r="4.1" fill="none" stroke="currentColor" stroke-width="1.6"/>
+                <circle cx="17.15" cy="6.85" r="1.05" fill="currentColor"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="footer-social-link" href="#" data-i18n-aria="footer.social.facebook" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path fill="currentColor" d="M14.6 8.4V6.7c0-.7.5-1.2 1.2-1.2H17V3h-2.1C12.5 3 11 4.6 11 6.7v1.7H9v2.7h2V21h3v-9.9h2.3l.3-2.7z"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
-
-  <div class="section-wave is-flip" data-from="pine" data-to="gold" aria-hidden="true">
-    <svg viewBox="0 0 1440 140" preserveAspectRatio="none">
-      <path class="section-wave-soft" d="M0 96C180 96 250 26 540 30C820 34 880 124 1160 118C1300 114 1360 44 1440 50V140H0Z"/>
-      <path class="section-wave-fill" d="M0 88C180 88 250 16 540 20C820 24 880 118 1160 110C1300 106 1360 36 1440 42V140H0Z"/>
-      <path class="section-wave-line" d="M0 88C180 88 250 16 540 20C820 24 880 118 1160 110C1300 106 1360 36 1440 42"/>
-    </svg>
-  </div>
-
-  <section class="section section-muted" id="expect">
-    <div class="wrap">
-      <div class="service-center">
-        <p class="kicker" data-i18n="svc.expect.kicker">The visit</p>
-        <h2 data-i18n="svc.expect.title">What to Expect</h2>
-        <div class="line" role="presentation"></div>
-        <p class="service-sub" data-i18n="svc.expect.lede">Five steps from consultation to review, explained before treatment begins.</p>
-      </div>
-      <ol class="expect-list">
-        <li>
-          <article>
-            <span class="material-symbols-outlined" aria-hidden="true">clinical_notes</span>
-            <h3 data-i18n="svc.expect.1.title">Consultation</h3>
-            <p data-i18n="svc.expect.1.body">A professional assessment of your concern, history and goals. Suitability is explained clearly, with no pressure to treat the same day.</p>
-          </article>
-        </li>
-        <li>
-          <article>
-            <span class="material-symbols-outlined" aria-hidden="true">dermatology</span>
-            <h3 data-i18n="svc.expect.2.title">Preparation</h3>
-            <p data-i18n="svc.expect.2.body">Skin is prepared according to the agreed plan. You know what to pause, what to expect, and how the session will run.</p>
-          </article>
-        </li>
-        <li>
-          <article>
-            <span class="material-symbols-outlined" aria-hidden="true">wb_twilight</span>
-            <h3 data-i18n="svc.expect.3.title">Laser treatment</h3>
-            <p data-i18n="svc.expect.3.body">The agreed protocol is delivered with clinical care. Settings follow the assessment, not a fixed package.</p>
-          </article>
-        </li>
-        <li>
-          <article>
-            <span class="material-symbols-outlined" aria-hidden="true">healing</span>
-            <h3 data-i18n="svc.expect.4.title">Immediate aftercare</h3>
-            <p data-i18n="svc.expect.4.body">You leave with clear instructions so recovery stays measured. We do not skip aftercare or over-promise downtime.</p>
-          </article>
-        </li>
-        <li>
-          <article>
-            <span class="material-symbols-outlined" aria-hidden="true">visibility</span>
-            <h3 data-i18n="svc.expect.5.title">Results</h3>
-            <p data-i18n="svc.expect.5.body">Progress is reviewed over time. Results are discussed as a path to improvement, not a single-session transformation.</p>
-          </article>
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <div class="section-wave" data-from="gold" data-to="pine" aria-hidden="true">
-    <svg viewBox="0 0 1440 140" preserveAspectRatio="none">
-      <path class="section-wave-soft" d="M0 96C180 96 250 26 540 30C820 34 880 124 1160 118C1300 114 1360 44 1440 50V140H0Z"/>
-      <path class="section-wave-fill" d="M0 88C180 88 250 16 540 20C820 24 880 118 1160 110C1300 106 1360 36 1440 42V140H0Z"/>
-      <path class="section-wave-line" d="M0 88C180 88 250 16 540 20C820 24 880 118 1160 110C1300 106 1360 36 1440 42"/>
-    </svg>
-  </div>
 
   <section class="section" id="faq">
     <div class="wrap">
@@ -352,99 +260,42 @@
         <div class="line"></div>
         <p class="kicker" data-i18n="faq.kicker">FAQ</p>
         <h2 data-i18n="faq.title">Questions we hear first</h2>
+        <p class="service-sub" data-i18n="faq.lede">Clear answers before a consult: who we are, who we treat, and how recommendations are made.</p>
       </div>
       <div class="faq-list">
         <details class="faq-item" open>
-          <summary data-i18n="svc.lasers.faq.1.q">Is the treatment painful?</summary>
-          <p data-i18n="svc.lasers.faq.1.a">Sensation varies by protocol and skin. We explain what you are likely to feel before treatment, and we do not describe it as painless if it is not.</p>
+          <summary data-i18n="faq.1.q">Is this a spa?</summary>
+          <p data-i18n="faq.1.a">No. K Beauty Clinic is a K-beauty aesthetics clinic. We do not offer spa menus, physiotherapy, wellness programmes, naturopathic care or IV therapy.</p>
         </details>
         <details class="faq-item">
-          <summary data-i18n="svc.lasers.faq.2.q">How many sessions will I need?</summary>
-          <p data-i18n="svc.lasers.faq.2.a">That depends on the concern and the skin. A plan is made after assessment. We do not promise a single-session transformation.</p>
+          <summary data-i18n="faq.2.q">Who is the clinic for?</summary>
+          <p data-i18n="faq.2.a">Women across Greater Vancouver who appreciate Korean aesthetics and culture, typically 35–60+. Care is offered to Korean, Chinese, other Asian and Caucasian clients.</p>
         </details>
         <details class="faq-item">
-          <summary data-i18n="svc.lasers.faq.3.q">Is it suitable for Asian skin?</summary>
-          <p data-i18n="svc.lasers.faq.3.a">Korean clinical knowledge of Asian skin is a centre of authority, and care is inclusive. Suitability is always assessed individually.</p>
+          <summary data-i18n="faq.3.q">What happens in a consultation?</summary>
+          <p data-i18n="faq.3.a">A professional assessment comes first. We explain suitability, process and recovery in plain language, then build a personalized plan with realistic expectations. There is no pressure selling.</p>
         </details>
         <details class="faq-item">
-          <summary data-i18n="svc.lasers.faq.4.q">What is the downtime?</summary>
-          <p data-i18n="svc.lasers.faq.4.a">Recovery is explained before treatment so expectations stay honest. We do not over-promise downtime.</p>
+          <summary data-i18n="faq.4.q">Do you only treat Asian skin?</summary>
+          <p data-i18n="faq.4.a">Korean clinical knowledge of Asian skin is a centre of authority, but treatment is inclusive. We see women of all backgrounds who value Korean aesthetic techniques.</p>
         </details>
         <details class="faq-item">
-          <summary data-i18n="svc.lasers.faq.5.q">Who should wait?</summary>
-          <p data-i18n="svc.lasers.faq.5.a">Some medical history, medications or skin states mean laser is not suitable. That decision is made in consultation, before any treatment is offered.</p>
+          <summary data-i18n="faq.5.q">Which treatments do you offer?</summary>
+          <p data-i18n="faq.5.a">Injectables, advanced lasers and light, medical skincare, skin rejuvenation, and signature programmes built around one concern—not a salon menu.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq.6.q">How do you talk about results?</summary>
+          <p data-i18n="faq.6.a">We show realistic outcomes and the path to improvement. We do not make miracle claims or promise a single-session transformation.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq.7.q">Where is the clinic?</summary>
+          <p data-i18n="faq.7.a">Greater Vancouver, beginning with Coquitlam, the Tri-Cities and nearby communities.</p>
         </details>
       </div>
     </div>
   </section>
 
-  <div class="section-wave is-flip" data-from="pine" data-to="gold" aria-hidden="true">
-    <svg viewBox="0 0 1440 140" preserveAspectRatio="none">
-      <path class="section-wave-soft" d="M0 96C180 96 250 26 540 30C820 34 880 124 1160 118C1300 114 1360 44 1440 50V140H0Z"/>
-      <path class="section-wave-fill" d="M0 88C180 88 250 16 540 20C820 24 880 118 1160 110C1300 106 1360 36 1440 42V140H0Z"/>
-      <path class="section-wave-line" d="M0 88C180 88 250 16 540 20C820 24 880 118 1160 110C1300 106 1360 36 1440 42"/>
-    </svg>
-  </div>
-
-  <section class="section section-muted" id="related">
-    <div class="wrap">
-      <div class="service-center">
-        <h2 data-i18n="svc.related.title">Related Conditions</h2>
-        <div class="line" role="presentation"></div>
-        <p class="service-sub" data-i18n="svc.related.lede">Conditions this treatment may help address.</p>
-      </div>
-      <div class="service-related">
-        <article class="card">
-          <div class="card-media" aria-hidden="true"></div>
-          <div class="card-copy">
-            <h3 data-i18n="concern.pigment.title">Pigmentation</h3>
-            <p data-i18n="concern.pigment.body">Uneven tone, sun spots and stubborn discoloration.</p>
-            <a class="text-link" href="lasers.html" data-i18n="cta.learn">Learn more</a>
-          </div>
-        </article>
-        <article class="card">
-          <div class="card-media" aria-hidden="true"></div>
-          <div class="card-copy">
-            <h3 data-i18n="concern.acne.title">Acne and Scarring</h3>
-            <p data-i18n="concern.acne.body">Texture, marks and scarring after breakouts.</p>
-            <a class="text-link" href="lasers.html" data-i18n="cta.learn">Learn more</a>
-          </div>
-        </article>
-        <article class="card">
-          <div class="card-media" aria-hidden="true"></div>
-          <div class="card-copy">
-            <h3 data-i18n="concern.texture.title">Texture and Pores</h3>
-            <p data-i18n="concern.texture.body">Roughness, enlarged pores and uneven skin quality.</p>
-            <a class="text-link" href="lasers.html" data-i18n="cta.learn">Learn more</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <div class="section-wave" data-from="gold" data-to="pine" aria-hidden="true">
-    <svg viewBox="0 0 1440 140" preserveAspectRatio="none">
-      <path class="section-wave-soft" d="M0 96C180 96 250 26 540 30C820 34 880 124 1160 118C1300 114 1360 44 1440 50V140H0Z"/>
-      <path class="section-wave-fill" d="M0 88C180 88 250 16 540 20C820 24 880 118 1160 110C1300 106 1360 36 1440 42V140H0Z"/>
-      <path class="section-wave-line" d="M0 88C180 88 250 16 540 20C820 24 880 118 1160 110C1300 106 1360 36 1440 42"/>
-    </svg>
-  </div>
-
-  <section class="section service-cta" id="service-cta">
-    <div class="wrap">
-      <div class="service-center">
-        <h2 data-i18n="svc.cta.title">Begin with a consultation.</h2>
-        <div class="line" role="presentation"></div>
-        <p class="service-sub" data-i18n="svc.cta.lede">Book a laser and light consultation at K Beauty Clinic in Coquitlam. A professional assessment comes first, then a personalized plan with realistic expectations.</p>
-        <a class="btn btn-forest icon-label" href="mailto:smilewellaesthetics@gmail.com">
-          <span data-i18n="svc.cta.button">Book your consultation</span>
-          <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <div class="section-wave is-flip" data-from="pine" data-to="forest" aria-hidden="true">
+  <div class="section-wave is-flip" data-from="ivory" data-to="forest" aria-hidden="true">
     <svg viewBox="0 0 1440 140" preserveAspectRatio="none">
       <path class="section-wave-soft" d="M0 96C180 96 250 26 540 30C820 34 880 124 1160 118C1300 114 1360 44 1440 50V140H0Z"/>
       <path class="section-wave-fill" d="M0 88C180 88 250 16 540 20C820 24 880 118 1160 110C1300 106 1360 36 1440 42V140H0Z"/>
