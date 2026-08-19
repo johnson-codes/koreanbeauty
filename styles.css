@@ -1686,7 +1686,8 @@ html[data-lang="ko"] .review-rating-label {
 .benefit,
 .process-step article,
 .faq-item,
-.review-card {
+.review-card,
+.expect-list article {
   position: relative;
   transition: background-color 0.45s ease, color 0.45s ease, border-color 0.45s ease, transform 0.28s ease, box-shadow 0.28s ease;
 }
@@ -1696,7 +1697,8 @@ html[data-lang="ko"] .review-rating-label {
 .benefit:hover,
 .process-step article:hover,
 .faq-item:hover,
-.review-card:hover {
+.review-card:hover,
+.expect-list article:hover {
   z-index: 1;
   transform: translateY(-6px);
   box-shadow:
@@ -2577,53 +2579,103 @@ th {
   margin-top: 0;
 }
 
+#expect {
+  padding-block: 5.75rem;
+}
+
 .expect-list {
   list-style: none;
-  margin: 0;
+  position: relative;
+  max-width: 44rem;
+  margin: 0 auto;
   padding: 0;
   display: grid;
-  gap: 0.85rem;
+  gap: 1.15rem;
   counter-reset: expect-step;
 }
 
+.service-center + .expect-list {
+  margin-top: 0;
+}
+
 .expect-list li {
+  position: relative;
   display: grid;
-  grid-template-columns: 2.15rem minmax(0, 1fr);
-  column-gap: 1.1rem;
-  align-items: stretch;
+  grid-template-columns: 2.5rem minmax(0, 1fr);
+  column-gap: 1.25rem;
+  align-items: center;
   counter-increment: expect-step;
 }
 
 .expect-list li::before {
   content: counter(expect-step);
+  position: relative;
+  z-index: 1;
   display: grid;
   place-items: center;
-  width: 2.15rem;
-  height: 2.15rem;
-  margin-top: 0.85rem;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
   background: var(--deep-forest);
   color: var(--hanji-ivory);
   font-size: 0.82rem;
   font-weight: 600;
+  line-height: 1;
+  box-shadow: 0 0 0 6px var(--color-muted-bg);
+}
+
+.expect-list li::after {
+  content: "";
+  position: absolute;
+  left: 1.25rem;
+  top: 50%;
+  bottom: calc(-1.15rem);
+  width: 1px;
+  background: color-mix(in srgb, var(--sand-taupe) 58%, var(--soft-gold));
+  transform: translateX(-50%);
+}
+
+.expect-list li:last-child::after {
+  content: none;
 }
 
 .expect-list article {
-  padding: 1.05rem 1.25rem;
+  display: grid;
+  grid-template-columns: 2.15rem minmax(0, 1fr);
+  column-gap: 0.9rem;
+  row-gap: 0.3rem;
+  align-items: start;
+  padding: 1.2rem 1.35rem 1.3rem;
   background: var(--color-card);
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
 }
 
+.expect-list .material-symbols-outlined {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  align-self: center;
+  font-size: 1.85rem;
+  line-height: 1;
+  color: var(--deep-forest);
+  -webkit-text-fill-color: var(--deep-forest);
+}
+
 .expect-list h3 {
-  margin: 0 0 0.3rem;
+  grid-column: 2;
+  grid-row: 1;
+  margin: 0;
   font-family: Inter, system-ui, sans-serif;
-  font-size: 1.02rem;
+  font-size: 1.05rem;
   font-weight: 600;
+  line-height: 1.25;
 }
 
 .expect-list p {
+  grid-column: 2;
+  grid-row: 2;
   margin: 0;
+  line-height: 1.65;
   color: var(--color-muted-text);
 }
 
@@ -2641,6 +2693,10 @@ th {
 
   #benefits {
     padding-block: 4.75rem;
+  }
+
+  #expect {
+    padding-block: 4.25rem;
   }
 
   #about-treatment {
