@@ -2655,6 +2655,8 @@ th {
   grid-column: 1;
   grid-row: 1 / span 2;
   align-self: center;
+  width: 1.15em;
+  overflow: hidden;
   font-size: 1.85rem;
   line-height: 1;
   color: var(--deep-forest);
