@@ -1083,9 +1083,13 @@ h3 {
 .section-wave[data-from="ivory"] { --wave-from: var(--hanji-ivory); }
 .section-wave[data-from="muted"] { --wave-from: var(--color-muted-bg); }
 .section-wave[data-from="forest"] { --wave-from: var(--deep-forest); }
+.section-wave[data-from="gold"] { --wave-from: var(--svc-bg-gold); }
+.section-wave[data-from="pine"] { --wave-from: var(--svc-bg-pine); }
 .section-wave[data-to="ivory"] { --wave-to: var(--hanji-ivory); }
 .section-wave[data-to="muted"] { --wave-to: var(--color-muted-bg); }
 .section-wave[data-to="forest"] { --wave-to: var(--deep-forest); }
+.section-wave[data-to="gold"] { --wave-to: var(--svc-bg-gold); }
+.section-wave[data-to="pine"] { --wave-to: var(--svc-bg-pine); }
 
 .section-wave.is-after-hero {
   height: 6.75rem;
@@ -2350,7 +2354,25 @@ th {
 /* Service landing page */
 
 .service-page {
-  background: var(--hanji-ivory);
+  --svc-bg-gold: color-mix(in srgb, var(--soft-gold) 12%, var(--hanji-ivory));
+  --svc-bg-pine: #fff;
+  background: var(--svc-bg-gold);
+}
+
+.service-page .service-hero,
+.service-page #why,
+.service-page #expect,
+.service-page #related {
+  --svc-band: var(--svc-bg-gold);
+  background: var(--svc-band);
+}
+
+.service-page #about-treatment,
+.service-page #benefits,
+.service-page #faq,
+.service-page .service-cta {
+  --svc-band: var(--svc-bg-pine);
+  background: var(--svc-band);
 }
 
 .service-hero {
@@ -2621,7 +2643,7 @@ th {
   font-size: 0.82rem;
   font-weight: 600;
   line-height: 1;
-  box-shadow: 0 0 0 6px var(--color-muted-bg);
+  box-shadow: 0 0 0 6px var(--svc-band, var(--color-muted-bg));
 }
 
 .expect-list li::after {
@@ -2679,6 +2701,71 @@ th {
   margin: 0;
   line-height: 1.65;
   color: var(--color-muted-text);
+}
+
+.service-page #about-treatment .kicker,
+.service-page #expect .kicker,
+.service-page #faq .kicker {
+  color: var(--deep-forest);
+}
+
+.service-page #about-treatment .line,
+.service-page #why .line,
+.service-page #benefits .line,
+.service-page #expect .line,
+.service-page #faq .line,
+.service-page #related .line,
+.service-page .service-cta .line {
+  background: var(--deep-forest);
+}
+
+.service-page .service-hero-media .card-media {
+  background: color-mix(in srgb, var(--soft-gold) 30%, var(--hanji-ivory));
+}
+
+.service-page .service-photo .card-media {
+  background: color-mix(in srgb, var(--deep-forest) 14%, var(--hanji-ivory));
+}
+
+.service-page .service-why-grid .benefit:nth-child(odd) {
+  border-top: 2px solid var(--deep-forest);
+}
+
+.service-page .service-why-grid .benefit:nth-child(even) {
+  border-top: 2px solid var(--soft-gold);
+}
+
+.service-page .service-why-grid .benefit:nth-child(even) .material-symbols-outlined {
+  color: var(--soft-gold);
+  -webkit-text-fill-color: var(--soft-gold);
+}
+
+.service-page .service-benefits li:nth-child(even) .material-symbols-outlined {
+  background: color-mix(in srgb, var(--deep-forest) 16%, var(--hanji-ivory));
+  color: var(--soft-gold);
+  -webkit-text-fill-color: var(--soft-gold);
+}
+
+.service-page .expect-list li:nth-child(even)::before {
+  background: var(--soft-gold);
+  color: var(--deep-forest);
+}
+
+.service-page .expect-list li:nth-child(even) .material-symbols-outlined {
+  color: var(--soft-gold);
+  -webkit-text-fill-color: var(--soft-gold);
+}
+
+.service-page .faq-item:nth-child(even) summary::after {
+  color: var(--soft-gold);
+}
+
+.service-page .service-related .card:nth-child(odd) .card-media {
+  background: color-mix(in srgb, var(--soft-gold) 32%, var(--hanji-ivory));
+}
+
+.service-page .service-related .card:nth-child(even) .card-media {
+  background: color-mix(in srgb, var(--deep-forest) 14%, var(--hanji-ivory));
 }
 
 @media (max-width: 960px) {
