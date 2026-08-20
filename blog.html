@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title data-i18n="col.cond.doc.title">Conditions | K Beauty Clinic</title>
-  <meta name="description" data-i18n="col.cond.doc.description" content="Face, body and health concerns treated at K Beauty Clinic in Coquitlam.">
+  <title data-i18n="col.blog.doc.title">Blog | K Beauty Clinic</title>
+  <meta name="description" data-i18n="col.blog.doc.description" content="Clinic notes from K Beauty Clinic in Coquitlam: consultations, skin care and honest expectations.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -18,30 +18,9 @@
       else if (lang === "ko") document.documentElement.lang = "ko";
     })();
   </script>
-  <script>
-    (function () {
-      var map = {
-      "pigment": "conditions/face/pigmentation.html",
-      "aging": "conditions/face/aging-and-wrinkles.html",
-      "volume": "conditions/face/volume-loss.html",
-      "acne": "conditions/face/acne.html",
-      "texture": "conditions/face/texture-and-pores.html",
-      "contour": "conditions/face/facial-contouring.html",
-      "hair-loss": "conditions/body/hair-loss.html",
-      "sweating": "conditions/body/excessive-sweating.html",
-      "grinding": "conditions/body/teeth-grinding.html",
-      "unwanted-hair": "conditions/body/unwanted-hair.html",
-      "pain": "conditions/body/pain-reduction.html",
-      "functional": "conditions/health/functional-medicine.html",
-      "preventative": "conditions/health/preventative-health.html"
-      };
-      var key = (location.hash || "").replace(/^#/, "");
-      if (map[key]) location.replace(map[key]);
-    })();
-  </script>
 </head>
-<body class="collection-page conditions-page">
-  <div class="site-chrome">
+<body class="collection-page blog-page">
+<div class="site-chrome">
     <header class="site-header">
       <div class="wrap">
         <a class="logo-link" href="index.html">
@@ -198,8 +177,8 @@
             </div>
           </div>
           <a class="nav-link" href="about.html" data-i18n="nav.about">About</a>
-          <a class="nav-link" href="blog.html" data-i18n="nav.blog">Blog</a>
-          <a class="nav-link" href="parking.html" aria-current="page" data-i18n="nav.parking">Parking</a>
+          <a class="nav-link" href="blog.html" aria-current="page" data-i18n="nav.blog">Blog</a>
+          <a class="nav-link" href="parking.html" data-i18n="nav.parking">Parking</a>
           <a class="nav-link" href="contact.html" data-i18n="nav.contact">Contact</a>
         </nav>
         <div class="header-end">
@@ -226,7 +205,7 @@
     <div class="wrap">
       <ol class="breadcrumb-list">
         <li><a href="index.html" data-i18n="nav.home">Home</a></li>
-        <li><span aria-current="page" data-i18n="nav.conditions">Conditions</span></li>
+        <li><span aria-current="page" data-i18n="nav.blog">Blog</span></li>
       </ol>
     </div>
   </nav>
@@ -235,18 +214,10 @@
     <div class="wrap collection-hero-grid">
       <div class="collection-hero-intro">
         <div class="collection-hero-copy">
-          <p class="kicker" data-i18n="nav.conditions">Conditions</p>
-          <h1 data-i18n="col.cond.title">All conditions</h1>
-          <p data-i18n="col.cond.lede">Start with what you want to improve. We recommend a path after assessment—not a one-size list.</p>
+          <p class="kicker" data-i18n="nav.blog">Blog</p>
+          <h1 data-i18n="col.blog.title">Clinic notes</h1>
+          <p data-i18n="col.blog.lede">Practical reading on consultations, skin care and realistic expectations at K Beauty Clinic.</p>
         </div>
-        <nav class="collection-jump" aria-labelledby="collection-jump-heading">
-          <p class="collection-jump-label" id="collection-jump-heading" data-i18n="col.jump">Jump to a category</p>
-          <ul>
-            <li><a href="#cat-face" data-i18n="nav.face">Face</a></li>
-            <li><a href="#cat-body" data-i18n="cond.body">Body</a></li>
-            <li><a href="#cat-health" data-i18n="cond.health">Health</a></li>
-          </ul>
-        </nav>
       </div>
       <figure class="collection-hero-media" aria-hidden="true">
         <img src="images/placeholder.svg" alt="">
@@ -254,122 +225,41 @@
     </div>
   </section>
 
-  <section class="collection-group" id="cat-face">
+  <section class="collection-group" id="posts">
     <div class="wrap">
-      <h2 data-i18n="nav.face">Face</h2>
-      <div class="card-grid collection-grid">
-          <article class="card collection-card" id="pigment">
+      <div class="card-grid collection-grid blog-grid">
+          <article class="card collection-card blog-card" id="consultation">
             <div class="card-media" aria-hidden="true"><img src="images/placeholder.svg" alt=""></div>
             <div class="card-copy">
-              <h3 data-i18n="concern.pigment.title">Pigmentation</h3>
-              <a class="btn-secondary" href="conditions/face/pigmentation.html" data-i18n="cta.learn">Learn more</a>
+              <p class="blog-card-date"><time datetime="2026-08-12">12 August 2026</time></p>
+              <h3 data-i18n="blog.consultation.title">What to expect at a consultation</h3>
+              <p data-i18n="blog.consultation.card">How a first visit works—assessment, plan and realistic expectations.</p>
+              <a class="btn-secondary" href="blog/what-to-expect-at-a-consultation.html" data-i18n="cta.learn">Learn more</a>
             </div>
           </article>
-          <article class="card collection-card" id="aging">
+          <article class="card collection-card blog-card" id="asian-skin">
             <div class="card-media" aria-hidden="true"><img src="images/placeholder.svg" alt=""></div>
             <div class="card-copy">
-              <h3 data-i18n="concern.aging.title">Aging and Wrinkles</h3>
-              <a class="btn-secondary" href="conditions/face/aging-and-wrinkles.html" data-i18n="cta.learn">Learn more</a>
+              <p class="blog-card-date"><time datetime="2026-08-05">5 August 2026</time></p>
+              <h3 data-i18n="blog.asian-skin.title">Asian skin and laser care</h3>
+              <p data-i18n="blog.asian-skin.card">Why assessment matters before laser or light protocols.</p>
+              <a class="btn-secondary" href="blog/asian-skin-and-laser-care.html" data-i18n="cta.learn">Learn more</a>
             </div>
           </article>
-          <article class="card collection-card" id="volume">
+          <article class="card collection-card blog-card" id="honest-results">
             <div class="card-media" aria-hidden="true"><img src="images/placeholder.svg" alt=""></div>
             <div class="card-copy">
-              <h3 data-i18n="concern.volume.title">Volume Loss</h3>
-              <a class="btn-secondary" href="conditions/face/volume-loss.html" data-i18n="cta.learn">Learn more</a>
-            </div>
-          </article>
-          <article class="card collection-card" id="acne">
-            <div class="card-media" aria-hidden="true"><img src="images/placeholder.svg" alt=""></div>
-            <div class="card-copy">
-              <h3 data-i18n="concern.acne.title">Acne and Scarring</h3>
-              <a class="btn-secondary" href="conditions/face/acne.html" data-i18n="cta.learn">Learn more</a>
-            </div>
-          </article>
-          <article class="card collection-card" id="texture">
-            <div class="card-media" aria-hidden="true"><img src="images/placeholder.svg" alt=""></div>
-            <div class="card-copy">
-              <h3 data-i18n="concern.texture.title">Texture and Pores</h3>
-              <a class="btn-secondary" href="conditions/face/texture-and-pores.html" data-i18n="cta.learn">Learn more</a>
-            </div>
-          </article>
-          <article class="card collection-card" id="contour">
-            <div class="card-media" aria-hidden="true"><img src="images/placeholder.svg" alt=""></div>
-            <div class="card-copy">
-              <h3 data-i18n="concern.contour.title">Facial Contouring</h3>
-              <a class="btn-secondary" href="conditions/face/facial-contouring.html" data-i18n="cta.learn">Learn more</a>
+              <p class="blog-card-date"><time datetime="2026-07-28">28 July 2026</time></p>
+              <h3 data-i18n="blog.honest-results.title">Honest results and aftercare</h3>
+              <p data-i18n="blog.honest-results.card">Why recovery talk and follow-up matter as much as the treatment day.</p>
+              <a class="btn-secondary" href="blog/honest-results-and-aftercare.html" data-i18n="cta.learn">Learn more</a>
             </div>
           </article>
       </div>
     </div>
   </section>
 
-  <section class="collection-group" id="cat-body">
-    <div class="wrap">
-      <h2 data-i18n="cond.body">Body</h2>
-      <div class="card-grid collection-grid">
-          <article class="card collection-card" id="hair-loss">
-            <div class="card-media" aria-hidden="true"><img src="images/placeholder.svg" alt=""></div>
-            <div class="card-copy">
-              <h3 data-i18n="cond.hairLoss">Hair Loss</h3>
-              <a class="btn-secondary" href="conditions/body/hair-loss.html" data-i18n="cta.learn">Learn more</a>
-            </div>
-          </article>
-          <article class="card collection-card" id="sweating">
-            <div class="card-media" aria-hidden="true"><img src="images/placeholder.svg" alt=""></div>
-            <div class="card-copy">
-              <h3 data-i18n="cond.sweating">Excessive Sweating</h3>
-              <a class="btn-secondary" href="conditions/body/excessive-sweating.html" data-i18n="cta.learn">Learn more</a>
-            </div>
-          </article>
-          <article class="card collection-card" id="grinding">
-            <div class="card-media" aria-hidden="true"><img src="images/placeholder.svg" alt=""></div>
-            <div class="card-copy">
-              <h3 data-i18n="cond.grinding">Teeth Grinding</h3>
-              <a class="btn-secondary" href="conditions/body/teeth-grinding.html" data-i18n="cta.learn">Learn more</a>
-            </div>
-          </article>
-          <article class="card collection-card" id="unwanted-hair">
-            <div class="card-media" aria-hidden="true"><img src="images/placeholder.svg" alt=""></div>
-            <div class="card-copy">
-              <h3 data-i18n="cond.unwantedHair">Unwanted Hair</h3>
-              <a class="btn-secondary" href="conditions/body/unwanted-hair.html" data-i18n="cta.learn">Learn more</a>
-            </div>
-          </article>
-          <article class="card collection-card" id="pain">
-            <div class="card-media" aria-hidden="true"><img src="images/placeholder.svg" alt=""></div>
-            <div class="card-copy">
-              <h3 data-i18n="cond.pain">Pain Reduction</h3>
-              <a class="btn-secondary" href="conditions/body/pain-reduction.html" data-i18n="cta.learn">Learn more</a>
-            </div>
-          </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="collection-group" id="cat-health">
-    <div class="wrap">
-      <h2 data-i18n="cond.health">Health</h2>
-      <div class="card-grid collection-grid">
-          <article class="card collection-card" id="functional">
-            <div class="card-media" aria-hidden="true"><img src="images/placeholder.svg" alt=""></div>
-            <div class="card-copy">
-              <h3 data-i18n="cond.functional">Functional Medicine</h3>
-              <a class="btn-secondary" href="conditions/health/functional-medicine.html" data-i18n="cta.learn">Learn more</a>
-            </div>
-          </article>
-          <article class="card collection-card" id="preventative">
-            <div class="card-media" aria-hidden="true"><img src="images/placeholder.svg" alt=""></div>
-            <div class="card-copy">
-              <h3 data-i18n="cond.preventative">Preventative Health</h3>
-              <a class="btn-secondary" href="conditions/health/preventative-health.html" data-i18n="cta.learn">Learn more</a>
-            </div>
-          </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section service-cta collection-cta">
+  <section class="section service-cta collection-cta" id="service-cta">
     <div class="wrap">
       <div class="service-center">
         <h2 data-i18n="col.cta.title">Begin with a consultation.</h2>
@@ -383,6 +273,28 @@
           <span class="material-symbols-outlined" aria-hidden="true">call</span>
           <span><span data-i18n="cta.orCall">Or call us</span> +1-778-939-8705</span>
         </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section newsletter-band" id="newsletter">
+    <div class="wrap">
+      <div class="newsletter-band-grid">
+        <div class="newsletter-band-intro">
+          <p class="kicker" data-i18n="footer.newsletter.title">Clinic updates</p>
+          <h2 data-i18n="blog.newsletter.heading">Stay informed</h2>
+          <div class="line" role="presentation"></div>
+          <p data-i18n="footer.newsletter.lede">Occasional notes on treatments and clinic news from K Beauty Clinic—no spa-menu spam.</p>
+        </div>
+        <form class="footer-newsletter-form newsletter-band-form" action="#" method="post">
+          <label class="visually-hidden" for="blog-collection-newsletter-email" data-i18n="footer.newsletter.email">Email address</label>
+          <input id="blog-collection-newsletter-email" class="footer-newsletter-input" name="email" type="email" autocomplete="email" required data-i18n-placeholder="footer.newsletter.placeholder" placeholder="Email address">
+          <button type="submit" class="btn icon-label footer-newsletter-submit">
+            <span class="material-symbols-outlined" aria-hidden="true">mail</span>
+            <span data-i18n="footer.newsletter.submit">Subscribe</span>
+          </button>
+        </form>
+        <p class="footer-newsletter-status" data-newsletter-status hidden aria-live="polite"></p>
       </div>
     </div>
   </section>

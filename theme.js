@@ -244,4 +244,38 @@
       setValue(now);
     });
   });
+
+  document.querySelectorAll(".footer-newsletter-form").forEach(function (form) {
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+      var input = form.querySelector('input[type="email"]');
+      var status = form.parentElement && form.parentElement.querySelector("[data-newsletter-status]");
+      var lang = currentUiLang();
+      var messages = {
+        success: {
+          en: "Thanks. We will be in touch when clinic updates are ready.",
+          zh: "谢谢。有诊所动态时我们会联系您。",
+          ko: "감사합니다. 클리닉 소식이 준비되면 연락드리겠습니다."
+        },
+        error: {
+          en: "Enter a valid email address.",
+          zh: "请输入有效的电子邮箱。",
+          ko: "유효한 이메일 주소를 입력해 주세요."
+        }
+      };
+      if (!status) return;
+      if (!input || !input.checkValidity()) {
+        status.hidden = false;
+        status.textContent = messages.error[lang] || messages.error.en;
+        if (input) input.focus();
+        return;
+      }
+      try {
+        localStorage.setItem("ksa-newsletter-email", input.value.trim());
+      } catch (err) {}
+      status.hidden = false;
+      status.textContent = messages.success[lang] || messages.success.en;
+      form.reset();
+    });
+  });
 })();
