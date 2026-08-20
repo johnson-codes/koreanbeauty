@@ -798,15 +798,18 @@ h3 {
   align-items: center;
   margin-top: auto;
   padding: 0.5rem 0.9rem;
+  border: 0;
   background: transparent;
   color: var(--clinical-ink);
   text-decoration: none;
+  font-family: inherit;
   font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.04em;
   box-shadow: inset 0 0 0 2px var(--color-accent);
   border-radius: var(--radius);
   align-self: flex-start;
+  cursor: pointer;
 }
 
 .btn-secondary:hover,
