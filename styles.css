@@ -1024,7 +1024,7 @@ h3 {
   width: 100%;
   aspect-ratio: 4 / 3;
   overflow: hidden;
-  background: color-mix(in srgb, var(--sand-taupe) 58%, var(--hanji-ivory));
+  background: #c9c9c9;
 }
 
 .card-media img {
@@ -1406,7 +1406,7 @@ h3 {
   overflow: hidden;
   border: 2px solid var(--deep-forest);
   border-radius: var(--radius-lg);
-  background: color-mix(in srgb, var(--sand-taupe) 58%, var(--hanji-ivory));
+  background: #c9c9c9;
 }
 
 .review-feature-media img {
@@ -2709,11 +2709,11 @@ th {
 }
 
 .service-page .service-hero-media .card-media {
-  background: color-mix(in srgb, var(--color-support) 32%, var(--hanji-ivory));
+  background: #c9c9c9;
 }
 
 .service-page .service-photo .card-media {
-  background: color-mix(in srgb, var(--deep-forest) 14%, var(--hanji-ivory));
+  background: #c9c9c9;
 }
 
 .service-page .service-why-grid .benefit:nth-child(odd) {
@@ -2749,12 +2749,9 @@ th {
   color: var(--deep-forest);
 }
 
-.service-page .service-related .card:nth-child(odd) .card-media {
-  background: color-mix(in srgb, var(--color-support) 32%, var(--hanji-ivory));
-}
-
+.service-page .service-related .card:nth-child(odd) .card-media,
 .service-page .service-related .card:nth-child(even) .card-media {
-  background: color-mix(in srgb, var(--deep-forest) 14%, var(--hanji-ivory));
+  background: #c9c9c9;
 }
 
 @media (max-width: 960px) {
