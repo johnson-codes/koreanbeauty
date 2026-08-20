@@ -804,7 +804,7 @@ h3 {
   font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.04em;
-  box-shadow: inset 0 0 0 2px var(--color-anchor);
+  box-shadow: inset 0 0 0 2px var(--color-accent);
   border-radius: var(--radius);
   align-self: flex-start;
 }
@@ -812,7 +812,7 @@ h3 {
 .btn-secondary:hover,
 .btn-secondary:focus {
   color: var(--deep-forest);
-  box-shadow: inset 0 0 0 2px var(--color-anchor-deep);
+  box-shadow: inset 0 0 0 2px var(--color-accent-hover);
 }
 
 /* Homepage sections */
@@ -994,6 +994,17 @@ h3 {
   margin-top: 1.75rem;
 }
 
+.section-viewall {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.75rem;
+}
+
+.section-viewall .btn-secondary {
+  margin-top: 0;
+  align-self: center;
+}
+
 .card,
 .concern {
   display: flex;
@@ -1006,9 +1017,19 @@ h3 {
 }
 
 .card-media {
+  position: relative;
   width: 100%;
   aspect-ratio: 4 / 3;
+  overflow: hidden;
   background: color-mix(in srgb, var(--sand-taupe) 58%, var(--hanji-ivory));
+}
+
+.card-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .card-copy {
