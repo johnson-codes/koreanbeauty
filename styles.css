@@ -180,6 +180,54 @@ td,
   container-name: header-bar;
 }
 
+.breadcrumb {
+  background: var(--hanji-ivory);
+  border-bottom: 1px solid color-mix(in srgb, var(--deep-forest) 12%, transparent);
+}
+
+.breadcrumb-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.2rem 0;
+  list-style: none;
+  margin: 0;
+  padding: 0.72rem 0;
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.breadcrumb-list li {
+  display: inline-flex;
+  align-items: center;
+  min-width: 0;
+}
+
+.breadcrumb-list li:not(:last-child)::after {
+  content: "›";
+  margin: 0 0.55rem;
+  color: color-mix(in srgb, var(--deep-forest) 58%, var(--clinical-ink));
+  font-weight: 400;
+  pointer-events: none;
+}
+
+.breadcrumb-list a {
+  color: color-mix(in srgb, var(--deep-forest) 82%, var(--clinical-ink));
+  text-decoration: none;
+}
+
+.breadcrumb-list a:hover,
+.breadcrumb-list a:focus-visible {
+  color: var(--clinical-ink);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.breadcrumb-list [aria-current="page"] {
+  color: var(--clinical-ink);
+  font-weight: 500;
+}
+
 .logo-link {
   display: inline-flex;
   flex-shrink: 0;
@@ -2978,6 +3026,10 @@ html[data-lang="ko"] .ba-label {
     padding: 2.75rem 0 3rem;
   }
 
+  .breadcrumb + .service-hero {
+    padding-top: 2.15rem;
+  }
+
   .service-cta {
     padding-block: 4.25rem;
   }
@@ -3005,6 +3057,14 @@ html[data-lang="ko"] .ba-label {
 
 .contact-hero {
   padding: 1.35rem 0 0;
+}
+
+.breadcrumb + .contact-hero {
+  padding-top: 0.7rem;
+}
+
+.breadcrumb + .service-hero {
+  padding-top: 3.75rem;
 }
 
 .contact-hero-frame {
