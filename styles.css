@@ -65,8 +65,13 @@ a {
   line-height: 1;
   letter-spacing: normal;
   display: inline-block;
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
+  flex-shrink: 0;
   white-space: nowrap;
   direction: ltr;
+  font-feature-settings: "liga";
   font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 0, "opsz" 24;
   color: var(--deep-forest);
   -webkit-text-fill-color: var(--deep-forest);
@@ -3337,7 +3342,7 @@ th {
   place-self: stretch;
 }
 
-.about-page #process .process {
+#process .process {
   max-width: 44rem;
   margin-inline: auto;
 }
