@@ -2880,6 +2880,25 @@ html[data-lang="ko"] .ba-label {
   font-size: 1.15rem;
 }
 
+.service-cta-phone {
+  display: flex;
+  width: fit-content;
+  margin: 1rem auto 0;
+  color: var(--deep-forest);
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.service-cta-phone:hover,
+.service-cta-phone:focus {
+  color: var(--color-accent);
+}
+
+.service-cta-phone .material-symbols-outlined {
+  font-size: 1.15rem;
+}
+
 .service-related .card {
   overflow: hidden;
 }
@@ -3905,6 +3924,11 @@ html[data-lang="ko"] .ba-label {
   width: auto;
   max-width: 22rem;
   margin: 1.35rem auto 0;
+}
+
+.about-cta-card .service-cta-phone {
+  justify-content: center;
+  width: 100%;
 }
 
 @media (max-width: 1100px) {
