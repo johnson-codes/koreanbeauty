@@ -210,14 +210,19 @@
   </nav>
 
   <section class="collection-hero">
-    <div class="wrap">
-      <p class="kicker" data-i18n="nav.conditions">Conditions</p>
-      <h1 data-i18n="col.cond.title">All conditions</h1>
-      <p data-i18n="col.cond.lede">Start with what you want to improve. We recommend a path after assessment—not a one-size list.</p>
-      <nav class="collection-jump" aria-label="Jump to a category" data-i18n-aria="col.jump">
-        <a href="#cat-face" data-i18n="nav.face">Face</a>
-        <a href="#cat-body" data-i18n="cond.body">Body</a>
-        <a href="#cat-health" data-i18n="cond.health">Health</a>
+    <div class="wrap collection-hero-grid">
+      <div class="collection-hero-copy">
+        <p class="kicker" data-i18n="nav.conditions">Conditions</p>
+        <h1 data-i18n="col.cond.title">All conditions</h1>
+        <p data-i18n="col.cond.lede">Start with what you want to improve. We recommend a path after assessment—not a one-size list.</p>
+      </div>
+      <nav class="collection-jump" aria-labelledby="collection-jump-heading">
+        <p class="collection-jump-label" id="collection-jump-heading" data-i18n="col.jump">Jump to a category</p>
+        <ul>
+          <li><a href="#cat-face" data-i18n="nav.face">Face</a></li>
+          <li><a href="#cat-body" data-i18n="cond.body">Body</a></li>
+          <li><a href="#cat-health" data-i18n="cond.health">Health</a></li>
+        </ul>
       </nav>
     </div>
   </section>

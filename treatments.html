@@ -210,17 +210,22 @@
   </nav>
 
   <section class="collection-hero">
-    <div class="wrap">
-      <p class="kicker" data-i18n="nav.treatments">Treatments</p>
-      <h1 data-i18n="col.treat.title">All treatments</h1>
-      <p data-i18n="col.treat.lede">All treatments at K Beauty Clinic, grouped as they appear in the menu. Start with a consultation so the plan fits your concern.</p>
-      <nav class="collection-jump" aria-label="Jump to a category" data-i18n-aria="col.jump">
-        <a href="#cat-thread" data-i18n="menu.thread">Thread Lift</a>
-        <a href="#cat-injection" data-i18n="menu.injection">Injection / Microneedling</a>
-        <a href="#cat-lasers" data-i18n="menu.lasers">Lasers / Light</a>
-        <a href="#cat-facials" data-i18n="menu.facials">Facials</a>
-        <a href="#cat-body" data-i18n="menu.body">Body</a>
-        <a href="#cat-hair" data-i18n="menu.hair">Hair</a>
+    <div class="wrap collection-hero-grid">
+      <div class="collection-hero-copy">
+        <p class="kicker" data-i18n="nav.treatments">Treatments</p>
+        <h1 data-i18n="col.treat.title">All treatments</h1>
+        <p data-i18n="col.treat.lede">All treatments at K Beauty Clinic, grouped as they appear in the menu. Start with a consultation so the plan fits your concern.</p>
+      </div>
+      <nav class="collection-jump" aria-labelledby="collection-jump-heading">
+        <p class="collection-jump-label" id="collection-jump-heading" data-i18n="col.jump">Jump to a category</p>
+        <ul>
+          <li><a href="#cat-thread" data-i18n="menu.thread">Thread Lift</a></li>
+          <li><a href="#cat-injection" data-i18n="menu.injection">Injection / Microneedling</a></li>
+          <li><a href="#cat-lasers" data-i18n="menu.lasers">Lasers / Light</a></li>
+          <li><a href="#cat-facials" data-i18n="menu.facials">Facials</a></li>
+          <li><a href="#cat-body" data-i18n="menu.body">Body</a></li>
+          <li><a href="#cat-hair" data-i18n="menu.hair">Hair</a></li>
+        </ul>
       </nav>
     </div>
   </section>
