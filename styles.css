@@ -2446,46 +2446,126 @@ th {
   border-radius: var(--radius);
 }
 
-.ba-overlay {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  pointer-events: none;
-  background:
-    linear-gradient(90deg, color-mix(in srgb, #000 18%, transparent) 0 50%, color-mix(in srgb, #fff 10%, transparent) 50% 100%),
-    linear-gradient(180deg, transparent 48%, color-mix(in srgb, #000 42%, transparent) 100%);
+.ba-slider {
+  --ba: 50%;
+  cursor: ew-resize;
+  touch-action: none;
+  user-select: none;
 }
 
-.ba-overlay::before {
+.ba-slider img {
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
+
+.ba-slider.is-dragging {
+  cursor: grabbing;
+}
+
+.ba-layer {
+  position: absolute;
+  inset: 0;
+}
+
+.ba-before-layer {
+  z-index: 1;
+  clip-path: inset(0 calc(100% - var(--ba)) 0 0);
+}
+
+.ba-before-layer img {
+  filter: grayscale(0.28) brightness(0.78) saturate(0.72);
+}
+
+.ba-after-layer img {
+  filter: saturate(1.08) brightness(1.06);
+}
+
+.ba-handle {
+  position: absolute;
+  top: 0;
+  left: var(--ba);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.8rem;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  transform: translateX(-50%);
+  cursor: ew-resize;
+}
+
+.ba-handle-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #fff;
+  box-shadow: 0 0 0 1px color-mix(in srgb, #000 16%, transparent);
+}
+
+.ba-handle-knob {
+  position: relative;
+  z-index: 1;
+  width: 2.35rem;
+  height: 2.35rem;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 6px 16px color-mix(in srgb, #000 22%, transparent);
+}
+
+.ba-handle-knob::before,
+.ba-handle-knob::after {
   content: "";
   position: absolute;
-  left: 50%;
-  top: 10%;
-  bottom: 10%;
-  width: 1.5px;
-  background: #fff;
-  box-shadow: 0 0 0 1px color-mix(in srgb, #000 12%, transparent);
-  transform: translateX(-50%);
+  top: 50%;
+  width: 0.42rem;
+  height: 0.42rem;
+  border-top: 2px solid var(--color-anchor);
+  border-right: 2px solid var(--color-anchor);
+}
+
+.ba-handle-knob::before {
+  left: 0.55rem;
+  transform: translateY(-50%) rotate(-135deg);
+}
+
+.ba-handle-knob::after {
+  right: 0.55rem;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.ba-handle:focus-visible {
+  outline: none;
+}
+
+.ba-handle:focus-visible .ba-handle-knob {
+  box-shadow:
+    0 0 0 3px var(--hanji-ivory),
+    0 0 0 5px var(--color-anchor);
 }
 
 .ba-label {
-  align-self: end;
-  margin: 0 1.05rem 0.95rem;
+  position: absolute;
+  bottom: 0.9rem;
+  z-index: 1;
   color: #fff;
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
+  pointer-events: none;
+  text-shadow: 0 1px 8px color-mix(in srgb, #000 45%, transparent);
 }
 
 .ba-before {
-  justify-self: start;
+  left: 1rem;
 }
 
 .ba-after {
-  justify-self: end;
+  right: 1rem;
 }
 
 html[data-lang="zh"] .ba-label,

@@ -213,14 +213,30 @@
         </a>
       </div>
       <figure class="service-hero-media">
-        <div class="card-media ba-media">
-          <img src="images/placeholder.svg" alt="">
-          <div class="ba-overlay" aria-hidden="true">
-            <span class="ba-label ba-before" data-i18n="media.before">Before</span>
+        <div class="card-media ba-slider" style="--ba: 50%">
+          <div class="ba-layer ba-after-layer">
+            <img src="images/placeholder.svg" alt="">
             <span class="ba-label ba-after" data-i18n="media.after">After</span>
           </div>
+          <div class="ba-layer ba-before-layer">
+            <img src="images/placeholder.svg" alt="">
+            <span class="ba-label ba-before" data-i18n="media.before">Before</span>
+          </div>
+          <div
+            class="ba-handle"
+            role="slider"
+            tabindex="0"
+            aria-valuemin="4"
+            aria-valuemax="96"
+            aria-valuenow="50"
+            data-i18n-aria="media.slider"
+            aria-label="Drag to compare before and after"
+          >
+            <span class="ba-handle-line" aria-hidden="true"></span>
+            <span class="ba-handle-knob" aria-hidden="true"></span>
+          </div>
         </div>
-        <figcaption class="ba-caption" data-i18n="media.caption">Before vs after</figcaption>
+        <figcaption class="ba-caption" data-i18n="media.caption">Drag to compare · before vs after</figcaption>
       </figure>
     </div>
   </section>

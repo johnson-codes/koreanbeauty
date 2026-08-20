@@ -193,4 +193,55 @@
       });
     }
   }
+
+  document.querySelectorAll(".ba-slider").forEach(function (slider) {
+    var handle = slider.querySelector(".ba-handle");
+    if (!handle) return;
+    var active = false;
+
+    function setValue(percent) {
+      var value = Math.max(4, Math.min(96, Math.round(percent)));
+      slider.style.setProperty("--ba", value + "%");
+      handle.setAttribute("aria-valuenow", String(value));
+    }
+
+    function valueFromEvent(event) {
+      var point = event.touches ? event.touches[0] : event;
+      if (!point) return;
+      var rect = slider.getBoundingClientRect();
+      setValue(((point.clientX - rect.left) / rect.width) * 100);
+    }
+
+    slider.addEventListener("pointerdown", function (event) {
+      active = true;
+      slider.classList.add("is-dragging");
+      if (slider.setPointerCapture) slider.setPointerCapture(event.pointerId);
+      valueFromEvent(event);
+      event.preventDefault();
+    });
+
+    slider.addEventListener("pointermove", function (event) {
+      if (!active) return;
+      valueFromEvent(event);
+    });
+
+    function endDrag() {
+      active = false;
+      slider.classList.remove("is-dragging");
+    }
+
+    slider.addEventListener("pointerup", endDrag);
+    slider.addEventListener("pointercancel", endDrag);
+
+    handle.addEventListener("keydown", function (event) {
+      var now = parseInt(handle.getAttribute("aria-valuenow") || "50", 10);
+      if (event.key === "ArrowLeft" || event.key === "ArrowDown") now -= 5;
+      else if (event.key === "ArrowRight" || event.key === "ArrowUp") now += 5;
+      else if (event.key === "Home") now = 4;
+      else if (event.key === "End") now = 96;
+      else return;
+      event.preventDefault();
+      setValue(now);
+    });
+  });
 })();
