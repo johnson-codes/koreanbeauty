@@ -18,6 +18,27 @@
       else if (lang === "ko") document.documentElement.lang = "ko";
     })();
   </script>
+  <script>
+    (function () {
+      var map = {
+      "pigment": "conditions/face/pigmentation.html",
+      "aging": "conditions/face/aging-and-wrinkles.html",
+      "volume": "conditions/face/volume-loss.html",
+      "acne": "conditions/face/acne.html",
+      "texture": "conditions/face/texture-and-pores.html",
+      "contour": "conditions/face/facial-contouring.html",
+      "hair-loss": "conditions/body/hair-loss.html",
+      "sweating": "conditions/body/excessive-sweating.html",
+      "grinding": "conditions/body/teeth-grinding.html",
+      "unwanted-hair": "conditions/body/unwanted-hair.html",
+      "pain": "conditions/body/pain-reduction.html",
+      "functional": "conditions/health/functional-medicine.html",
+      "preventative": "conditions/health/preventative-health.html"
+      };
+      var key = (location.hash || "").replace(/^#/, "");
+      if (map[key]) location.replace(map[key]);
+    })();
+  </script>
 </head>
 <body class="collection-page conditions-page">
   <div class="site-chrome">
@@ -146,29 +167,29 @@
                     <div class="mega-pane is-active" data-mega-pane="face">
                       <h3 data-i18n="nav.face">Face</h3>
                       <ul class="mega-links mega-links-grid">
-                        <li><a href="conditions.html#pigment" data-i18n="concern.pigment.title">Pigmentation</a></li>
-                        <li><a href="conditions.html#aging" data-i18n="concern.aging.title">Aging and Wrinkles</a></li>
-                        <li><a href="conditions.html#volume" data-i18n="concern.volume.title">Volume Loss</a></li>
-                        <li><a href="conditions.html#acne" data-i18n="concern.acne.title">Acne and Scarring</a></li>
-                        <li><a href="conditions.html#texture" data-i18n="concern.texture.title">Texture and Pores</a></li>
-                        <li><a href="conditions.html#contour" data-i18n="concern.contour.title">Facial Contouring</a></li>
+                        <li><a href="conditions/face/pigmentation.html" data-i18n="concern.pigment.title">Pigmentation</a></li>
+                        <li><a href="conditions/face/aging-and-wrinkles.html" data-i18n="concern.aging.title">Aging and Wrinkles</a></li>
+                        <li><a href="conditions/face/volume-loss.html" data-i18n="concern.volume.title">Volume Loss</a></li>
+                        <li><a href="conditions/face/acne.html" data-i18n="concern.acne.title">Acne and Scarring</a></li>
+                        <li><a href="conditions/face/texture-and-pores.html" data-i18n="concern.texture.title">Texture and Pores</a></li>
+                        <li><a href="conditions/face/facial-contouring.html" data-i18n="concern.contour.title">Facial Contouring</a></li>
                       </ul>
                     </div>
                     <div class="mega-pane" data-mega-pane="body" hidden>
                       <h3 data-i18n="cond.body">Body</h3>
                       <ul class="mega-links">
-                        <li><a href="conditions.html#hair-loss" data-i18n="cond.hairLoss">Hair Loss</a></li>
-                        <li><a href="conditions.html#sweating" data-i18n="cond.sweating">Excessive Sweating</a></li>
-                        <li><a href="conditions.html#grinding" data-i18n="cond.grinding">Teeth Grinding</a></li>
-                        <li><a href="conditions.html#unwanted-hair" data-i18n="cond.unwantedHair">Unwanted Hair</a></li>
-                        <li><a href="conditions.html#pain" data-i18n="cond.pain">Pain Reduction</a></li>
+                        <li><a href="conditions/body/hair-loss.html" data-i18n="cond.hairLoss">Hair Loss</a></li>
+                        <li><a href="conditions/body/excessive-sweating.html" data-i18n="cond.sweating">Excessive Sweating</a></li>
+                        <li><a href="conditions/body/teeth-grinding.html" data-i18n="cond.grinding">Teeth Grinding</a></li>
+                        <li><a href="conditions/body/unwanted-hair.html" data-i18n="cond.unwantedHair">Unwanted Hair</a></li>
+                        <li><a href="conditions/body/pain-reduction.html" data-i18n="cond.pain">Pain Reduction</a></li>
                       </ul>
                     </div>
                     <div class="mega-pane" data-mega-pane="health" hidden>
                       <h3 data-i18n="cond.health">Health</h3>
                       <ul class="mega-links">
-                        <li><a href="conditions.html#functional" data-i18n="cond.functional">Functional Medicine</a></li>
-                        <li><a href="conditions.html#preventative" data-i18n="cond.preventative">Preventative Health</a></li>
+                        <li><a href="conditions/health/functional-medicine.html" data-i18n="cond.functional">Functional Medicine</a></li>
+                        <li><a href="conditions/health/preventative-health.html" data-i18n="cond.preventative">Preventative Health</a></li>
                       </ul>
                     </div>
                   </div>
@@ -240,42 +261,42 @@
             <div class="card-media" aria-hidden="true"><img src="images/placeholder.svg" alt=""></div>
             <div class="card-copy">
               <h3 data-i18n="concern.pigment.title">Pigmentation</h3>
-              <a class="btn-secondary" href="treatments/lasers-light/pico-toning.html" data-i18n="cta.learn">Learn more</a>
+              <a class="btn-secondary" href="conditions/face/pigmentation.html" data-i18n="cta.learn">Learn more</a>
             </div>
           </article>
           <article class="card collection-card" id="aging">
             <div class="card-media" aria-hidden="true"><img src="images/placeholder.svg" alt=""></div>
             <div class="card-copy">
               <h3 data-i18n="concern.aging.title">Aging and Wrinkles</h3>
-              <a class="btn-secondary" href="treatments/injection-microneedling/wrinkle-injections.html" data-i18n="cta.learn">Learn more</a>
+              <a class="btn-secondary" href="conditions/face/aging-and-wrinkles.html" data-i18n="cta.learn">Learn more</a>
             </div>
           </article>
           <article class="card collection-card" id="volume">
             <div class="card-media" aria-hidden="true"><img src="images/placeholder.svg" alt=""></div>
             <div class="card-copy">
               <h3 data-i18n="concern.volume.title">Volume Loss</h3>
-              <a class="btn-secondary" href="treatments/injection-microneedling/dermal-fillers.html" data-i18n="cta.learn">Learn more</a>
+              <a class="btn-secondary" href="conditions/face/volume-loss.html" data-i18n="cta.learn">Learn more</a>
             </div>
           </article>
           <article class="card collection-card" id="acne">
             <div class="card-media" aria-hidden="true"><img src="images/placeholder.svg" alt=""></div>
             <div class="card-copy">
               <h3 data-i18n="concern.acne.title">Acne and Scarring</h3>
-              <a class="btn-secondary" href="treatments/injection-microneedling/microneedling.html" data-i18n="cta.learn">Learn more</a>
+              <a class="btn-secondary" href="conditions/face/acne.html" data-i18n="cta.learn">Learn more</a>
             </div>
           </article>
           <article class="card collection-card" id="texture">
             <div class="card-media" aria-hidden="true"><img src="images/placeholder.svg" alt=""></div>
             <div class="card-copy">
               <h3 data-i18n="concern.texture.title">Texture and Pores</h3>
-              <a class="btn-secondary" href="treatments/facials/chemical-peels.html" data-i18n="cta.learn">Learn more</a>
+              <a class="btn-secondary" href="conditions/face/texture-and-pores.html" data-i18n="cta.learn">Learn more</a>
             </div>
           </article>
           <article class="card collection-card" id="contour">
             <div class="card-media" aria-hidden="true"><img src="images/placeholder.svg" alt=""></div>
             <div class="card-copy">
               <h3 data-i18n="concern.contour.title">Facial Contouring</h3>
-              <a class="btn-secondary" href="treatments/thread-lift/thread-lift.html" data-i18n="cta.learn">Learn more</a>
+              <a class="btn-secondary" href="conditions/face/facial-contouring.html" data-i18n="cta.learn">Learn more</a>
             </div>
           </article>
       </div>
@@ -290,35 +311,35 @@
             <div class="card-media" aria-hidden="true"><img src="images/placeholder.svg" alt=""></div>
             <div class="card-copy">
               <h3 data-i18n="cond.hairLoss">Hair Loss</h3>
-              <a class="btn-secondary" href="treatments/hair/hair-boost.html" data-i18n="cta.learn">Learn more</a>
+              <a class="btn-secondary" href="conditions/body/hair-loss.html" data-i18n="cta.learn">Learn more</a>
             </div>
           </article>
           <article class="card collection-card" id="sweating">
             <div class="card-media" aria-hidden="true"><img src="images/placeholder.svg" alt=""></div>
             <div class="card-copy">
               <h3 data-i18n="cond.sweating">Excessive Sweating</h3>
-              <a class="btn-secondary" href="treatments/body/hyperhidrosis-treatment.html" data-i18n="cta.learn">Learn more</a>
+              <a class="btn-secondary" href="conditions/body/excessive-sweating.html" data-i18n="cta.learn">Learn more</a>
             </div>
           </article>
           <article class="card collection-card" id="grinding">
             <div class="card-media" aria-hidden="true"><img src="images/placeholder.svg" alt=""></div>
             <div class="card-copy">
               <h3 data-i18n="cond.grinding">Teeth Grinding</h3>
-              <a class="btn-secondary" href="treatments/injection-microneedling/jaw-slimming.html" data-i18n="cta.learn">Learn more</a>
+              <a class="btn-secondary" href="conditions/body/teeth-grinding.html" data-i18n="cta.learn">Learn more</a>
             </div>
           </article>
           <article class="card collection-card" id="unwanted-hair">
             <div class="card-media" aria-hidden="true"><img src="images/placeholder.svg" alt=""></div>
             <div class="card-copy">
               <h3 data-i18n="cond.unwantedHair">Unwanted Hair</h3>
-              <a class="btn-secondary" href="treatments/lasers-light/soprano-laser-hair-removal.html" data-i18n="cta.learn">Learn more</a>
+              <a class="btn-secondary" href="conditions/body/unwanted-hair.html" data-i18n="cta.learn">Learn more</a>
             </div>
           </article>
           <article class="card collection-card" id="pain">
             <div class="card-media" aria-hidden="true"><img src="images/placeholder.svg" alt=""></div>
             <div class="card-copy">
               <h3 data-i18n="cond.pain">Pain Reduction</h3>
-              <a class="btn-secondary" href="contact.html" data-i18n="cta.learn">Learn more</a>
+              <a class="btn-secondary" href="conditions/body/pain-reduction.html" data-i18n="cta.learn">Learn more</a>
             </div>
           </article>
       </div>
@@ -333,14 +354,14 @@
             <div class="card-media" aria-hidden="true"><img src="images/placeholder.svg" alt=""></div>
             <div class="card-copy">
               <h3 data-i18n="cond.functional">Functional Medicine</h3>
-              <a class="btn-secondary" href="contact.html" data-i18n="cta.learn">Learn more</a>
+              <a class="btn-secondary" href="conditions/health/functional-medicine.html" data-i18n="cta.learn">Learn more</a>
             </div>
           </article>
           <article class="card collection-card" id="preventative">
             <div class="card-media" aria-hidden="true"><img src="images/placeholder.svg" alt=""></div>
             <div class="card-copy">
               <h3 data-i18n="cond.preventative">Preventative Health</h3>
-              <a class="btn-secondary" href="contact.html" data-i18n="cta.learn">Learn more</a>
+              <a class="btn-secondary" href="conditions/health/preventative-health.html" data-i18n="cta.learn">Learn more</a>
             </div>
           </article>
       </div>
