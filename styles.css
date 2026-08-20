@@ -133,15 +133,15 @@ td,
   top: 0;
   z-index: 20;
   padding-top: 12px;
+  background: var(--color-anchor);
   transition: background-color 0.35s ease, box-shadow 0.35s ease;
 }
 
 .has-hero-video .site-chrome:not(.is-scrolled) {
-  background: linear-gradient(180deg, rgba(23, 37, 34, 0.28) 0%, transparent 100%);
+  background: linear-gradient(180deg, rgba(78, 79, 49, 0.28) 0%, transparent 100%);
 }
 
 .has-hero-video .site-chrome:not(.is-scrolled) .site-header {
-  background: transparent;
   border-bottom-color: transparent;
 }
 
@@ -153,16 +153,15 @@ td,
 }
 
 .site-chrome.is-scrolled .site-header {
-  background: transparent;
   border-bottom-color: rgba(247, 242, 232, 0.14);
 }
 
 .site-header {
   position: relative;
   z-index: 3;
-  background: var(--deep-forest);
+  background: transparent;
   color: var(--hanji-ivory);
-  border-bottom: 1px solid var(--sand-taupe);
+  border-bottom: 1px solid rgba(247, 242, 232, 0.14);
 }
 
 .site-header .wrap {
@@ -805,7 +804,7 @@ h3 {
   font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.04em;
-  box-shadow: inset 0 0 0 1px var(--sand-taupe);
+  box-shadow: inset 0 0 0 2px var(--color-anchor);
   border-radius: var(--radius);
   align-self: flex-start;
 }
@@ -813,7 +812,7 @@ h3 {
 .btn-secondary:hover,
 .btn-secondary:focus {
   color: var(--deep-forest);
-  box-shadow: inset 0 0 0 1px var(--deep-forest);
+  box-shadow: inset 0 0 0 2px var(--color-anchor-deep);
 }
 
 /* Homepage sections */
@@ -2742,6 +2741,10 @@ th {
     grid-template-columns: 1fr;
   }
 
+  .service-hero-media {
+    order: -1;
+  }
+
   .service-why-grid {
     grid-template-columns: 1fr;
   }
@@ -2758,12 +2761,29 @@ th {
     padding-block: 3.75rem;
   }
 
+  .service-split {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
   .service-photo {
     max-width: 22rem;
+    margin-inline: auto;
+  }
+
+  .service-split-copy {
+    max-width: 38rem;
+    width: 100%;
+    text-align: left;
   }
 
   .service-split-copy h2 {
     max-width: none;
+  }
+
+  .service-split-copy .line {
+    margin-left: 0;
+    margin-right: auto;
   }
 
   .service-hero {
