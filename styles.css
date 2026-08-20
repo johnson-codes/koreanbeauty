@@ -167,11 +167,13 @@ td,
 
 .site-header .wrap {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  grid-template-columns: auto minmax(0, 1fr) auto;
   align-items: center;
   column-gap: 1.25rem;
   padding-top: 0.7rem;
   padding-bottom: 0.7rem;
+  container-type: inline-size;
+  container-name: header-bar;
 }
 
 .logo-link {
@@ -215,6 +217,8 @@ td,
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
+  justify-self: center;
+  min-width: 0;
   gap: 0.1rem;
 }
 
@@ -241,7 +245,7 @@ td,
   font-weight: 500;
   letter-spacing: 0.03em;
   line-height: 1;
-  padding: 0.5rem 0.75rem;
+  padding: 0.5rem 0.55rem;
   border-radius: calc(var(--radius) - 6px);
   white-space: nowrap;
   text-decoration: none;
@@ -1897,7 +1901,31 @@ th {
   }
 }
 
-@media (max-width: 1100px) {
+@container header-bar (max-width: 1200px) {
+  .site-logo {
+    height: 56px;
+  }
+
+  .nav-trigger,
+  .primary-nav .nav-link {
+    padding-inline: 0.4rem;
+    font-size: 0.88rem;
+  }
+
+  .header-end {
+    gap: 0.5rem;
+  }
+
+  .header-book-full {
+    display: none;
+  }
+
+  .header-book-short {
+    display: inline;
+  }
+}
+
+.site-header.is-nav-drawer {
   .nav-toggle {
     display: grid;
   }
@@ -1913,7 +1941,7 @@ th {
     border-bottom: 1px solid color-mix(in srgb, var(--hanji-ivory) 18%, transparent);
   }
 
-  .site-header .wrap {
+  .wrap {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1948,8 +1976,8 @@ th {
   }
 
   .nav-toggle {
-    width: 2.15rem;
-    height: 2.15rem;
+    width: 2.75rem;
+    height: 2.75rem;
   }
 
   .primary-nav {
@@ -1975,7 +2003,7 @@ th {
     transition: transform 0.28s ease, visibility 0.28s ease;
   }
 
-  .site-header.is-nav-open .primary-nav {
+  &.is-nav-open .primary-nav {
     transform: translateX(0);
     visibility: visible;
     pointer-events: auto;
@@ -2056,9 +2084,38 @@ th {
   }
 }
 
+@media (max-width: 1100px) {
+  :root {
+    --page-gutter: 1.5rem;
+  }
+
+  .wrap {
+    width: auto;
+  }
+
+  .split,
+  .founder,
+  .reviews,
+  .review-page.is-active,
+  .colour-live {
+    grid-template-columns: 1fr;
+  }
+
+  .benefit-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .founder-portrait,
+  .review-feature {
+    max-width: 24rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media (max-width: 800px) {
   :root {
-    --page-gutter: 1.25rem;
+    --page-gutter: max(1.25rem, env(safe-area-inset-left, 0px), env(safe-area-inset-right, 0px));
   }
 
   .wrap {
@@ -2105,18 +2162,67 @@ th {
 
   .home-hero {
     height: auto;
-    min-height: 120svh;
+    min-height: 100svh;
     max-height: none;
-    padding-bottom: 4.25rem;
+    padding-bottom: 3rem;
   }
 
+  .home-hero .wrap {
+    margin-bottom: 1.75rem;
+  }
+
+  .home-hero h1,
   h1 {
     max-width: none;
+    font-size: clamp(1.85rem, 8.4vw, 2.45rem);
+  }
+
+  .brand-tagline {
+    flex-wrap: wrap;
+    font-size: clamp(0.8rem, 3.4vw, 1.05rem);
+  }
+
+  .hero-line {
+    max-width: none;
+  }
+
+  .btn,
+  .home-hero .btn {
+    max-width: 100%;
   }
 
   .btn-ghost {
     margin-left: 0;
     margin-top: 0.75rem;
+  }
+
+  .reviews-heading {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .faq-item summary {
+    align-items: flex-start;
+    overflow-wrap: anywhere;
+  }
+
+  .process-step article {
+    padding: 1rem 1.05rem;
+  }
+
+  iframe {
+    max-width: 100%;
+  }
+
+  .contact-hours li {
+    flex-wrap: wrap;
+  }
+
+  .contact-facts a,
+  .footer-list a,
+  td,
+  th {
+    overflow-wrap: anywhere;
   }
 
   .site-logo {
@@ -2141,6 +2247,10 @@ th {
 }
 
 @media (max-width: 600px) {
+  :root {
+    --page-gutter: max(1.15rem, env(safe-area-inset-left, 0px), env(safe-area-inset-right, 0px));
+  }
+
   .header-book-full {
     display: none;
   }
@@ -2150,9 +2260,39 @@ th {
   }
 
   .site-header .header-book {
-    min-height: 2.5rem;
+    min-height: 2.75rem;
     padding: 0.5rem 0.7rem;
     font-size: 0.8rem;
+  }
+
+  .contact-card {
+    padding: 1.35rem 1.2rem 1.45rem;
+  }
+
+  .contact-book {
+    padding: 1.5rem 1.2rem 1.6rem;
+  }
+
+  .contact-hero-frame {
+    min-height: 14.5rem;
+    padding: 2.5rem 1.1rem;
+  }
+
+  .contact-map-bar {
+    flex-wrap: wrap;
+  }
+
+  .about-panel {
+    padding: 1.1rem;
+  }
+
+  .guideline main section,
+  .guideline-toc {
+    padding: 1.25rem 1rem 1.35rem;
+  }
+
+  .site-footer {
+    padding-bottom: max(1.35rem, env(safe-area-inset-bottom, 0px));
   }
 }
 
@@ -2163,7 +2303,7 @@ th {
   }
 
   .site-header .header-book {
-    min-height: 2.35rem;
+    min-height: 2.75rem;
     padding: 0.42rem 0.5rem;
   }
 }
@@ -2627,8 +2767,8 @@ th {
   }
 
   .service-hero {
-    min-height: 35.35rem;
-    padding: 3.25rem 0;
+    min-height: 0;
+    padding: 2.75rem 0 3rem;
   }
 
   .service-cta {
@@ -3275,5 +3415,10 @@ th {
 
   .about-panel {
     padding: 1.25rem;
+  }
+
+  .about-cta-card .contact-book-btn {
+    width: 100%;
+    max-width: none;
   }
 }

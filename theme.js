@@ -6,9 +6,16 @@
 
   var chrome = document.querySelector(".site-chrome");
   var header = document.querySelector(".site-header");
+  var headerWrap = header && header.querySelector(".wrap");
   var navToggle = document.querySelector(".nav-toggle");
   var primaryNav = document.querySelector(".primary-nav");
   var navBackdrop = document.querySelector(".nav-backdrop");
+  var navCollapse = 1040;
+
+  function isCompactNav() {
+    if (headerWrap) return headerWrap.getBoundingClientRect().width <= navCollapse;
+    return window.innerWidth <= 1500;
+  }
   var navToggleLabels = {
     open: { en: "Open menu", zh: "打开菜单", ko: "메뉴 열기" },
     close: { en: "Close menu", zh: "关闭菜单", ko: "메뉴 닫기" }
@@ -35,7 +42,7 @@
     var icon = navToggle.querySelector(".material-symbols-outlined");
     if (icon) icon.textContent = open ? "close" : "menu";
     if (primaryNav) {
-      if (window.innerWidth <= 1100) {
+      if (isCompactNav()) {
         primaryNav.setAttribute("aria-hidden", open ? "false" : "true");
         if (open) primaryNav.removeAttribute("inert");
         else primaryNav.setAttribute("inert", "");
@@ -79,17 +86,21 @@
         closeNavMenus();
       }
     });
-    window.addEventListener("resize", function () {
-      if (window.innerWidth > 1100) setNavOpen(false);
+    function syncNavMode() {
+      var compact = isCompactNav();
+      header.classList.toggle("is-nav-drawer", compact);
+      if (!compact) setNavOpen(false);
       else if (!header.classList.contains("is-nav-open") && primaryNav) {
         primaryNav.setAttribute("inert", "");
         primaryNav.setAttribute("aria-hidden", "true");
       }
-    });
-    if (primaryNav && window.innerWidth <= 1100) {
-      primaryNav.setAttribute("inert", "");
-      primaryNav.setAttribute("aria-hidden", "true");
+      setChromeHeight();
     }
+    window.addEventListener("resize", syncNavMode);
+    if (window.ResizeObserver && headerWrap) {
+      new ResizeObserver(syncNavMode).observe(headerWrap);
+    }
+    syncNavMode();
   }
 
   var hoverTimer;
@@ -124,12 +135,12 @@
       else openNavItem(item);
     });
     item.addEventListener("mouseenter", function () {
-      if (window.innerWidth <= 1100) return;
+      if (isCompactNav()) return;
       window.clearTimeout(hoverTimer);
       openNavItem(item);
     });
     item.addEventListener("mouseleave", function () {
-      if (window.innerWidth <= 1100) return;
+      if (isCompactNav()) return;
       hoverTimer = window.setTimeout(function () {
         closeNavMenus();
       }, 140);
