@@ -193,9 +193,12 @@ td,
   list-style: none;
   margin: 0;
   padding: 0.55rem 0;
+  font-family: Inter, Arial, Helvetica, sans-serif;
   font-size: 0.82rem;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.25rem;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 .breadcrumb-list li {
@@ -203,30 +206,42 @@ td,
   flex-direction: row;
   align-items: center;
   min-width: 0;
-  height: 1.2em;
-  line-height: 1.2em;
+  min-height: 0;
+  height: 1.25rem;
+  font-size: 0.82rem;
+  font-weight: 400;
+  line-height: 1.25rem;
 }
 
+.breadcrumb-list li:first-child a,
 .breadcrumb-list a,
 .breadcrumb-list [aria-current="page"] {
-  display: block;
-  height: 1.2em;
-  line-height: 1.2em;
+  display: flex;
+  align-items: center;
+  height: 1.25rem;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 0.82rem;
   font-weight: 400;
+  font-style: normal;
+  line-height: 1.25rem;
 }
 
 .breadcrumb-list li + li::before {
   content: "›";
-  display: block;
-  width: 1.15em;
-  height: 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.15rem;
+  height: 1.25rem;
   margin: 0;
   color: color-mix(in srgb, var(--deep-forest) 58%, var(--clinical-ink));
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 0.82rem;
   font-weight: 400;
-  font-size: 1em;
-  line-height: 1.2em;
+  line-height: 1.25rem;
   text-align: center;
   pointer-events: none;
+  transform: none;
 }
 
 .breadcrumb-list a {
@@ -243,6 +258,7 @@ td,
 
 .breadcrumb-list [aria-current="page"] {
   color: var(--clinical-ink);
+  font-weight: 400;
 }
 
 .collection-hero {
@@ -3853,11 +3869,11 @@ html[data-lang="ko"] .ba-label {
 }
 
 .about-offer-card p {
-  margin: 0 0 1rem;
+  margin: 0 0 0.75rem;
   color: var(--color-muted-text);
 }
 
-.about-offer-card .text-link {
+.about-offer-card .btn-secondary {
   margin-top: auto;
 }
 
