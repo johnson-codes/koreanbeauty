@@ -12,6 +12,7 @@
   --color-border: #E6D8CE;
   --color-muted-text: #4A4B45;
   --color-accent-hover: #B85A4A;
+  --color-button-label: #FFFFFF;
   --color-note: #5C5D56;
 }
 
@@ -707,20 +708,21 @@ td,
   flex-shrink: 0;
   box-sizing: border-box;
   background: var(--color-accent);
-  color: var(--hanji-ivory);
+  color: var(--color-button-label);
+  font-weight: 700;
   box-shadow: none;
 }
 
 .site-header .header-book:hover,
 .site-header .header-book:focus {
   background: var(--color-accent-hover);
-  color: var(--hanji-ivory);
+  color: var(--color-button-label);
 }
 
 .site-header .header-book .material-symbols-outlined {
   font-size: 1.2rem;
-  color: var(--hanji-ivory);
-  -webkit-text-fill-color: var(--hanji-ivory);
+  color: var(--color-button-label);
+  -webkit-text-fill-color: var(--color-button-label);
 }
 
 .header-book-short {
@@ -1011,14 +1013,15 @@ h3 {
 
 .btn-forest {
   background: var(--color-accent);
-  color: var(--hanji-ivory);
+  color: var(--color-button-label);
+  font-weight: 700;
   box-shadow: none;
 }
 
 .btn-forest:hover,
 .btn-forest:focus {
   background: var(--color-accent-hover);
-  color: var(--hanji-ivory);
+  color: var(--color-button-label);
 }
 
 .btn-ghost {
@@ -2069,7 +2072,8 @@ th {
 .site-footer .footer-newsletter-submit {
   margin-top: 0.15rem;
   background: var(--color-accent);
-  color: var(--hanji-ivory);
+  color: var(--color-button-label);
+  font-weight: 700;
   box-shadow: none;
 }
 
@@ -2078,7 +2082,7 @@ th {
 .site-footer .footer-newsletter-submit:hover,
 .site-footer .footer-newsletter-submit:focus {
   background: var(--color-accent-hover);
-  color: var(--hanji-ivory);
+  color: var(--color-button-label);
 }
 
 .site-footer .footer-book .btn .material-symbols-outlined,
@@ -2724,6 +2728,7 @@ th {
 }
 
 .service-page #about-treatment,
+.service-page #about-condition,
 .service-page #benefits,
 .service-page #faq,
 .service-page .service-cta {
